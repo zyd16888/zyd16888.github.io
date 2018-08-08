@@ -1960,7 +1960,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fbddf0;
+  background: #0eff62;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2963,17 +2963,15 @@ hr {
 .menu .menu-item a:hover {
   background: rgba(0,0,0,0.2);
 }
-@media screen and (min-width: 1300px) {
-  body {
-    background-image: url("/images/background4.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-  }
-  #footer a {
-    color: #000;
-    border-bottom: none;
-  }
+body {
+  background-image: url("/images/background4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+#footer a {
+  color: #000;
+  border-bottom: none;
 }
 .container {
   background-color: rgba(0,0,0,0.5);
@@ -3300,7 +3298,7 @@ img:hover {
   display: block;
   text-align: center;
   margin: -100px 50px 40px 50px;
-  padding: 56px 36px 10px 36px;
+  padding: 106px 36px 10px 36px;
 }
 @media (max-width: 767px) {
   #top {
