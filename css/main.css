@@ -1960,7 +1960,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0eff62;
+  background: #ff32f9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3012,7 +3012,7 @@ hr {
   font-style: italic;
   font-size: 20px;
   margin-bottom: 0px;
-  color: #fafad2;
+  color: #666;
 }
 .text-center {
   text-align: center;
