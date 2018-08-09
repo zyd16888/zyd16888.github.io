@@ -22,6 +22,22 @@
 <meta name="theme-color" content="#222">
 
 
+  <script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://www.singlelovely.cn"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+
 
 
 
@@ -496,7 +512,7 @@
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/cf1235a7.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/cf1235a7.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -510,7 +526,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -733,7 +749,7 @@ jso
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/16dd4349.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/16dd4349.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -747,7 +763,7 @@ jso
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -954,7 +970,7 @@ response = request.post(url,dat
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/51937609.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/51937609.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -968,7 +984,7 @@ response = request.post(url,dat
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -1199,7 +1215,7 @@ response = request.post(url,dat
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/98bc273a.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/98bc273a.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1213,7 +1229,7 @@ response = request.post(url,dat
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -1431,7 +1447,7 @@ response = request.post(url,dat
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/a84d1ef1.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/a84d1ef1.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1445,7 +1461,7 @@ response = request.post(url,dat
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -1653,7 +1669,7 @@ response = request.post(url,dat
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/8b3b02a7.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/8b3b02a7.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1667,7 +1683,7 @@ response = request.post(url,dat
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -1891,7 +1907,7 @@ next主题采用的是Swig模板，Swig模板可以参考 Swig中文文档
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/12acf01b.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/12acf01b.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1905,7 +1921,7 @@ next主题采用的是Swig模板，Swig模板可以参考 Swig中文文档
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -2140,7 +2156,7 @@ eNSP模拟器（510版）
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/40ae08c3.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/40ae08c3.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -2154,7 +2170,7 @@ eNSP模拟器（510版）
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -2373,7 +2389,7 @@ eNSP模拟器（510版）
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/a033ab3f.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/a033ab3f.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -2387,7 +2403,7 @@ eNSP模拟器（510版）
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -2612,7 +2628,7 @@ eNSP模拟器（510版）
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/60a25379.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/60a25379.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -2626,7 +2642,7 @@ eNSP模拟器（510版）
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -3008,9 +3024,9 @@ show_date_time();
       <i class="fa fa-area-chart"></i>
     </span>
     
-      <span class="post-meta-item-text">站点总字数：</span>
+      <span class="post-meta-item-text">总字数：</span>
     
-    <span title="站点总字数">103k</span>
+    <span title="总字数">105k</span>
   
 
   
@@ -3576,5 +3592,10 @@ show_date_time();
     POWERMODE.shake = false; // false 为禁用震动特效
     document.body.addEventListener('input', POWERMODE);
 </script>
+
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

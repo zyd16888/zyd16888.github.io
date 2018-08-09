@@ -22,6 +22,22 @@
 <meta name="theme-color" content="#222">
 
 
+  <script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://www.singlelovely.cn"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+
 
 
 
@@ -166,13 +182,14 @@
 
 
   <meta name="description" content="增加6.0+的新特性,去掉部分过时的功能">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo优化基于NexT6.4">
 <meta property="og:url" content="http://www.singlelovely.cn/post/13c8d3a0.html">
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="增加6.0+的新特性,去掉部分过时的功能">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-08T13:09:47.892Z">
+<meta property="og:updated_time" content="2018-08-09T13:09:41.864Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo优化基于NexT6.4">
 <meta name="twitter:description" content="增加6.0+的新特性,去掉部分过时的功能">
@@ -478,11 +495,29 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-08 21:09:47" itemprop="dateModified" datetime="2018-08-08T21:09:47+08:00">2018-08-08</time>
+                <time title="修改时间：2018-08-09 21:09:41" itemprop="dateModified" datetime="2018-08-09T21:09:41+08:00">2018-08-09</time>
               
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -493,7 +528,7 @@
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/13c8d3a0.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/13c8d3a0.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -507,7 +542,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -526,7 +561,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">9.8k</span>
+                <span title="本文字数">11k</span>
               
 
               
@@ -540,7 +575,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">16 分钟</span>
+                <span title="阅读时长">19 分钟</span>
               
             </div>
           
@@ -671,14 +706,32 @@ rep: hex    # 进制：dec(default) and hex</p>
 <p>添加</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 打字礼花及震动特效 --&gt;</span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"https://qianling-1254036047.cos.ap-chengdu.myqcloud.com/js/activate-power-mode.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;script&gt;</span><br><span class="line">    POWERMODE.colorful = <span class="literal">true</span>; <span class="comment">// ture 为启用礼花特效</span></span><br><span class="line">    POWERMODE.shake = <span class="literal">false</span>; <span class="comment">// false 为禁用震动特效</span></span><br><span class="line">    <span class="built_in">document</span>.body.addEventListener(<span class="string">'input'</span>, POWERMODE);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
 <h4 id="添加emoji"><a class="header-anchor" href="#添加emoji">☆</a>添加emoji</h4>
-<div class="note success"><p>大佬的文章：http://very9s.net/post/hexo-support-emoji/</p></div>
-<blockquote>
-<p>引用测试，测试</p>
-</blockquote>
-<div class="note success"><p>注意危险，注意危险，注意危险<br>注意危险，注意危险，注意危险<br>注意危险，注意危险，注意危险</p></div>
-<div class="note class"><p>Content (md partial supported)</p></div>
-<div class="note primary"><p>Content (md partial supported)测试</p></div>
-<div class="note success"><p>成功</p></div>
+<div class="note success"><p>参考自 ：<a href="https://www.jianshu.com/p/57e22584b277#emoji%E6%8F%92%E4%BB%B6" target="_blank" rel="noopener">emoji插件</a></p></div>
+<h4 id="站点地图生成"><a class="header-anchor" href="#站点地图生成">☆</a>站点地图生成</h4>
+<p>安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+<p>在<span id="inline-blue">站点配置文件</span>中启用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 自动生成sitemap</span><br><span class="line">sitemap:</span><br><span class="line">path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
+<h4 id="文章加密码"><a class="header-anchor" href="#文章加密码">☆</a>文章加密码</h4>
+<p><span id="font-blue">打开</span> ~\blog\themes\next6.4\layout_partials\head\</p>
+<p><span id="font-blue">新建</span> password.swig</p>
+<p><span id="font-blue">写入</span></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (function () &#123;</span><br><span class="line">        if (&apos;&#123;&#123; page.password &#125;&#125;&apos;) &#123;</span><br><span class="line">            if (prompt(&apos;请输入文章密码&apos;) !== &apos;&#123;&#123; page.password &#125;&#125;&apos;) &#123;</span><br><span class="line">                alert(&apos;密码错误！&apos;);</span><br><span class="line">                if (history.length === 1) &#123;</span><br><span class="line">                    location.replace(&quot;https://www.singlelovely.cn&quot;); // 这里替换成你的首页</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    history.back();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p><span id="font-blue">然后打开</span>~\blog\themes\next6.4\layout_partials\head\head.swig</p>
+<p><span id="font-blue">写入</span></p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/&gt;</span><br><span class="line">&lt;meta name="theme-color" content="&#123;&#123; theme.android_chrome_color &#125;&#125;"&gt;</span><br><span class="line"></span><br><span class="line"><span class="addition">+&#123;% if not is_index %&#125;</span></span><br><span class="line"><span class="addition">+  &#123;% include 'password.swig' %&#125;</span></span><br><span class="line"><span class="addition">+&#123;% endif %&#125;</span></span><br><span class="line"></span><br><span class="line">&#123;% if theme.needmoreshare2.enable %&#125;</span><br></pre></td></tr></table></figure>
+<p><span id="font-red">最后</span> 在需要加密的文章前面增加属性<span id="inline-yellow"> password </span></p>
+<h4 id="首页文章摘要图"><a class="header-anchor" href="#首页文章摘要图">☆</a>首页文章摘要图</h4>
+<h5 id="方式一：只在首页显示-文章中不显示"><a class="header-anchor" href="#方式一：只在首页显示-文章中不显示">☆</a>方式一：只在首页显示，文章中不显示</h5>
+<p><span id="font-blue">打开</span> ~\blog\themes\next6.4\layout_macro\post.swig</p>
+<p><span id="font-blue">搜索：</span> <span id="inline-green"> post.description</span></p>
+<p><span id="font-blue">下面添加：</span></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if post.image %&#125;</span><br><span class="line">            &lt;div class=&quot;out-img-topic&quot;&gt;</span><br><span class="line">              &lt;img src=&#123;&#123; post.image &#125;&#125; class=&quot;img-topic&quot; /&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"> &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>然后在<span id="font-blue">文章</span> 中写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">image: </span><br><span class="line">- &quot;http://oz2tkq0zj.bkt.clouddn.com/17-11-9/52323298.jpg&quot;</span><br></pre></td></tr></table></figure>
+<h5 id="方式二：首页和文章中都显示"><a class="header-anchor" href="#方式二：首页和文章中都显示">☆</a>方式二：首页和文章中都显示</h5>
+<p><span id="font-blue">直接</span>在<span id="font-blue">文章</span> 中写（默认支持）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">photos: </span><br><span class="line">- &quot;http://oz2tkq0zj.bkt.clouddn.com/17-11-9/52323298.jpg&quot;</span><br></pre></td></tr></table></figure>
 <div class="note default"><p>default</p></div>
       
     </div>
@@ -692,9 +745,6 @@ rep: hex    # 进制：dec(default) and hex</p>
       <div>
         
           
-<div style="text-align:center;color: #8A2BE2;font-size:15px;">
--------------文章结束啦 ~\(≧▽≦)/~ 感谢您的阅读-------------</div>
-
         
       </div>
 
@@ -709,6 +759,12 @@ rep: hex    # 进制：dec(default) and hex</p>
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          
+        </div>
       
 
       
@@ -1020,7 +1076,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#rss"><span class="nav-number">1.</span> <span class="nav-text">☆RSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字数统计："><span class="nav-number">2.</span> <span class="nav-text">☆字数统计：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#next主题为5-x版本"><span class="nav-number">2.1.</span> <span class="nav-text">☆next主题为5.x版本</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#next主题为6-03-版本"><span class="nav-number">2.2.</span> <span class="nav-text">☆next主题为6.03+版本</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义站点内容搜索"><span class="nav-number">3.</span> <span class="nav-text">☆自定义站点内容搜索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#链接持久化"><span class="nav-number">4.</span> <span class="nav-text">☆链接持久化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改标签云"><span class="nav-number">5.</span> <span class="nav-text">☆修改标签云</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#末尾版权信息"><span class="nav-number">6.</span> <span class="nav-text">☆末尾版权信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#侧栏加入已运行的时间"><span class="nav-number">7.</span> <span class="nav-text">☆侧栏加入已运行的时间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改页面宽度"><span class="nav-number">8.</span> <span class="nav-text">☆修改页面宽度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改模板文件-增加div-布局调整-避免互相影响"><span class="nav-number">9.</span> <span class="nav-text">☆修改模板文件（增加div，布局调整，避免互相影响）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#评分上面加文字"><span class="nav-number">10.</span> <span class="nav-text">☆评分上面加文字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#压缩文件"><span class="nav-number">11.</span> <span class="nav-text">☆压缩文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文末结束标记"><span class="nav-number">12.</span> <span class="nav-text">☆文末结束标记</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#live2d看板娘"><span class="nav-number">13.</span> <span class="nav-text">☆Live2d看板娘</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#引入自定义文件-用于样式定制"><span class="nav-number">14.</span> <span class="nav-text">☆引入自定义文件（用于样式定制）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#评论输入打字礼花及震动特效"><span class="nav-number">15.</span> <span class="nav-text">☆评论输入打字礼花及震动特效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加emoji"><span class="nav-number">16.</span> <span class="nav-text">☆添加emoji</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#rss"><span class="nav-number">1.</span> <span class="nav-text">☆RSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字数统计："><span class="nav-number">2.</span> <span class="nav-text">☆字数统计：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#next主题为5-x版本"><span class="nav-number">2.1.</span> <span class="nav-text">☆next主题为5.x版本</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#next主题为6-03-版本"><span class="nav-number">2.2.</span> <span class="nav-text">☆next主题为6.03+版本</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自定义站点内容搜索"><span class="nav-number">3.</span> <span class="nav-text">☆自定义站点内容搜索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#链接持久化"><span class="nav-number">4.</span> <span class="nav-text">☆链接持久化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改标签云"><span class="nav-number">5.</span> <span class="nav-text">☆修改标签云</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#末尾版权信息"><span class="nav-number">6.</span> <span class="nav-text">☆末尾版权信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#侧栏加入已运行的时间"><span class="nav-number">7.</span> <span class="nav-text">☆侧栏加入已运行的时间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改页面宽度"><span class="nav-number">8.</span> <span class="nav-text">☆修改页面宽度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改模板文件-增加div-布局调整-避免互相影响"><span class="nav-number">9.</span> <span class="nav-text">☆修改模板文件（增加div，布局调整，避免互相影响）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#评分上面加文字"><span class="nav-number">10.</span> <span class="nav-text">☆评分上面加文字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#压缩文件"><span class="nav-number">11.</span> <span class="nav-text">☆压缩文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文末结束标记"><span class="nav-number">12.</span> <span class="nav-text">☆文末结束标记</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#live2d看板娘"><span class="nav-number">13.</span> <span class="nav-text">☆Live2d看板娘</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#引入自定义文件-用于样式定制"><span class="nav-number">14.</span> <span class="nav-text">☆引入自定义文件（用于样式定制）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#评论输入打字礼花及震动特效"><span class="nav-number">15.</span> <span class="nav-text">☆评论输入打字礼花及震动特效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加emoji"><span class="nav-number">16.</span> <span class="nav-text">☆添加emoji</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站点地图生成"><span class="nav-number">17.</span> <span class="nav-text">☆站点地图生成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文章加密码"><span class="nav-number">18.</span> <span class="nav-text">☆文章加密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#首页文章摘要图"><span class="nav-number">19.</span> <span class="nav-text">☆首页文章摘要图</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#方式一：只在首页显示-文章中不显示"><span class="nav-number">19.1.</span> <span class="nav-text">☆方式一：只在首页显示，文章中不显示</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方式二：首页和文章中都显示"><span class="nav-number">19.2.</span> <span class="nav-text">☆方式二：首页和文章中都显示</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1052,9 +1108,9 @@ show_date_time();
       <i class="fa fa-area-chart"></i>
     </span>
     
-      <span class="post-meta-item-text">站点总字数：</span>
+      <span class="post-meta-item-text">总字数：</span>
     
-    <span title="站点总字数">103k</span>
+    <span title="总字数">105k</span>
   
 
   
@@ -1641,5 +1697,10 @@ show_date_time();
     POWERMODE.shake = false; // false 为禁用震动特效
     document.body.addEventListener('input', POWERMODE);
 </script>
+
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

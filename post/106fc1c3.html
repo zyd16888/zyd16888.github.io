@@ -22,6 +22,22 @@
 <meta name="theme-color" content="#222">
 
 
+  <script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://www.singlelovely.cn"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+
 
 
 
@@ -503,7 +519,7 @@
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/106fc1c3.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/106fc1c3.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -517,7 +533,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -571,7 +587,7 @@
 
       
         
-    <div id="aplayer-wuLyLGRH" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="356039117" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#7FFF00"></div>
+    <div id="aplayer-UfZFVIBr" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="356039117" data-server="xiami" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#7FFF00"></div>
 <p>  next主题添加about页面后，会默认显示以#开头的的文章目录界面，原因是next主题中并没有给about页面设置模板，而是使用了post也就是文章页面的模板。<br>
   这样带来的后果就是，about页面显得很丑，而精心制作的站点介绍页面没有办法直观的展示出来，解决办法有以下三个：</p>
 <h3 id="方法一"><a class="header-anchor" href="#方法一">☆</a>方法一</h3>
@@ -599,9 +615,6 @@
       <div>
         
           
-<div style="text-align:center;color: #8A2BE2;font-size:15px;">
--------------文章结束啦 ~\(≧▽≦)/~ 感谢您的阅读-------------</div>
-
         
       </div>
 
@@ -630,7 +643,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
         </div>
       
@@ -980,9 +993,9 @@ show_date_time();
       <i class="fa fa-area-chart"></i>
     </span>
     
-      <span class="post-meta-item-text">站点总字数：</span>
+      <span class="post-meta-item-text">总字数：</span>
     
-    <span title="站点总字数">103k</span>
+    <span title="总字数">105k</span>
   
 
   
@@ -1569,5 +1582,10 @@ show_date_time();
     POWERMODE.shake = false; // false 为禁用震动特效
     document.body.addEventListener('input', POWERMODE);
 </script>
+
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>

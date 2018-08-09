@@ -22,6 +22,22 @@
 <meta name="theme-color" content="#222">
 
 
+  <script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://www.singlelovely.cn"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+
 
 
 
@@ -515,7 +531,7 @@
                   <i class="fa fa-comments"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/5133767d.html" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/5133767d.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -529,7 +545,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">阅读次数：</span>
+                 <span class="post-meta-item-text">浏览量：</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -603,9 +619,6 @@
       <div>
         
           
-<div style="text-align:center;color: #8A2BE2;font-size:15px;">
--------------文章结束啦 ~\(≧▽≦)/~ 感谢您的阅读-------------</div>
-
         
       </div>
 
@@ -634,9 +647,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android/" rel="tag"># Android</a>
+            <a href="/tags/Android/" rel="tag"><i class="fa fa-tag"></i> Android</a>
           
-            <a href="/tags/学习/" rel="tag"># 学习</a>
+            <a href="/tags/学习/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
           
         </div>
       
@@ -961,9 +974,9 @@ show_date_time();
       <i class="fa fa-area-chart"></i>
     </span>
     
-      <span class="post-meta-item-text">站点总字数：</span>
+      <span class="post-meta-item-text">总字数：</span>
     
-    <span title="站点总字数">103k</span>
+    <span title="总字数">105k</span>
   
 
   
@@ -1550,5 +1563,10 @@ show_date_time();
     POWERMODE.shake = false; // false 为禁用震动特效
     document.body.addEventListener('input', POWERMODE);
 </script>
+
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
 </html>
