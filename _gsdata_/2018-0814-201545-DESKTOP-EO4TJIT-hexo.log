@@ -1,0 +1,41 @@
+2018-08-14 20:15:45: == 分析比较具有相同大小但文件修改时间不同的文件校验和
+2018-08-14 20:15:46: FTP [class 0]: Listing one file is not supported (returns nothing): cannot start transfer: 550: Not a directory
+2018-08-14 20:15:46: -- 分析开始 User Command
+2018-08-14 20:16:59: 变更：15， 冲突：0， 复制时间：0， 复制状态：0， 错误： 0, All: 304
+2018-08-14 20:16:59: Left to Right: Copy File: 15 
+2018-08-14 20:16:59: -- 分析已结束。历时 00:01:14, 速度： 21 文件/秒
+2018-08-14 20:16:59: 
+2018-08-14 20:19:18: == 同步开始由 User Command
+2018-08-14 20:19:19: FTP [class 0]: Listing one file is not supported (returns nothing): cannot start transfer: 550: Not a directory
+2018-08-14 20:19:21: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/about/index.html
+2018-08-14 20:19:21: 新建复制 'F:/blog/public/about/index.html' -> 'ftp://v0.ftp.upyun.com/about/index.html' (34,984)
+2018-08-14 20:19:21: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/baidusitemap.xml
+2018-08-14 20:19:21: 新建复制 'F:/blog/public/baidusitemap.xml' -> 'ftp://v0.ftp.upyun.com/baidusitemap.xml' (17,972)
+2018-08-14 20:19:22: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/css/main.css
+2018-08-14 20:19:22: 新建复制 'F:/blog/public/css/main.css' -> 'ftp://v0.ftp.upyun.com/css/main.css' (67,997)
+2018-08-14 20:19:23: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/index.html
+2018-08-14 20:19:23: 新建复制 'F:/blog/public/index.html' -> 'ftp://v0.ftp.upyun.com/index.html' (79,821)
+2018-08-14 20:19:24: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/106fc1c3.html
+2018-08-14 20:19:24: 新建复制 'F:/blog/public/post/106fc1c3.html' -> 'ftp://v0.ftp.upyun.com/post/106fc1c3.html' (44,770)
+2018-08-14 20:19:25: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/23e28675.html
+2018-08-14 20:19:25: 新建复制 'F:/blog/public/post/23e28675.html' -> 'ftp://v0.ftp.upyun.com/post/23e28675.html' (45,955)
+2018-08-14 20:19:25: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/63840324.html
+2018-08-14 20:19:25: 新建复制 'F:/blog/public/post/63840324.html' -> 'ftp://v0.ftp.upyun.com/post/63840324.html' (48,085)
+2018-08-14 20:19:26: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/72dd6893.html
+2018-08-14 20:19:26: 新建复制 'F:/blog/public/post/72dd6893.html' -> 'ftp://v0.ftp.upyun.com/post/72dd6893.html' (44,333)
+2018-08-14 20:19:27: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/9a8cdc59.html
+2018-08-14 20:19:27: 新建复制 'F:/blog/public/post/9a8cdc59.html' -> 'ftp://v0.ftp.upyun.com/post/9a8cdc59.html' (106,708)
+2018-08-14 20:19:28: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/a033ab3f.html
+2018-08-14 20:19:28: 新建复制 'F:/blog/public/post/a033ab3f.html' -> 'ftp://v0.ftp.upyun.com/post/a033ab3f.html' (50,162)
+2018-08-14 20:19:28: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/a11ee691.html
+2018-08-14 20:19:28: 新建复制 'F:/blog/public/post/a11ee691.html' -> 'ftp://v0.ftp.upyun.com/post/a11ee691.html' (41,309)
+2018-08-14 20:19:29: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/cd12463.html
+2018-08-14 20:19:29: 新建复制 'F:/blog/public/post/cd12463.html' -> 'ftp://v0.ftp.upyun.com/post/cd12463.html' (48,633)
+2018-08-14 20:19:30: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/fa0e7c88.html
+2018-08-14 20:19:30: 新建复制 'F:/blog/public/post/fa0e7c88.html' -> 'ftp://v0.ftp.upyun.com/post/fa0e7c88.html' (48,175)
+2018-08-14 20:19:31: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/post/fdf0e152.html
+2018-08-14 20:19:31: 新建复制 'F:/blog/public/post/fdf0e152.html' -> 'ftp://v0.ftp.upyun.com/post/fdf0e152.html' (41,228)
+2018-08-14 20:19:32: Copy Confirmed by CheckSum: ftp://v0.ftp.upyun.com/sitemap.xml
+2018-08-14 20:19:32: 新建复制 'F:/blog/public/sitemap.xml' -> 'ftp://v0.ftp.upyun.com/sitemap.xml' (5,942)
+2018-08-14 20:19:33: == 同步完成. 历时: 00:00:15, 速度: 50.6 KB/s, 完成: 15, 错误: 0
+2018-08-14 20:19:33: 
