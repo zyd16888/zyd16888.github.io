@@ -1960,7 +1960,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #222ff0;
+  background: #1bf4ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3573,7 +3573,7 @@ span#font-blue {
   font-size: 100%;
   font-weight: bold;
   line-height: 1;
-  color: #00f;
+  color: #4169e1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
