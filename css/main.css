@@ -1960,7 +1960,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #87ffd9;
+  background: #016ed4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3587,4 +3587,13 @@ span#font-green {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
+}
+span#inline-toc {
+  display: inline-block;
+  border-radius: 80% 100% 90% 20%;
+  background-color: #e3f2fd;
+  color: #555;
+  padding: 0.05em 0.4em;
+  margin: 2px 5px 2px 0px;
+  line-height: 1.5;
 }
