@@ -23,18 +23,14 @@
 
 
   <script>
-    (function () {
-        if ('') {
-            if (prompt('请输入文章密码') !== '') {
-                alert('密码错误！');
-                if (history.length === 1) {
-                    location.replace("https://www.singlelovely.cn"); // 这里替换成你的首页
-                } else {
-                    history.back();
-                }
-            }
-        }
-    })();
+	(function(){
+		if(''){
+			if (prompt('请输入文章密码','') !== ''){
+				alert('密码错误！');
+				history.back();
+			}
+		}
+	})();
 </script>
 
 
@@ -195,6 +191,8 @@
 <meta name="twitter:title" content="CZLisyx-浮生志">
 <meta name="twitter:description" content="☆ about ☆ 个人简介    CZLisyx    略懂 C Java    来自山西  就读于北京    Email: cxsz16888@gmail.com ☆ 关于本站    hexo主题托管于hexo-next    本站托管在Github    Hexo搭建博客指南:Next主题    折腾开始于2018年1月20日，基本在2018年1月25日完工。    2018年7月29日~2">
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="CZLisyx-浮生志" type="application/atom+xml" />
