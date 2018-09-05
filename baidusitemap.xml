@@ -4,23 +4,8 @@
 
     
   <url>
-    <loc>http://www.singlelovely.cn/post/72dd6893.html</loc>
-    <lastmod>2018-09-05T00:43:05.782Z</lastmod>
-    <data>
-        <display>
-        <title>闲语</title>
-        <pubTime>2018-01-12T16:00:00.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.singlelovely.cn/post/38df1aba.html</loc>
-    <lastmod>2018-09-04T12:34:06.128Z</lastmod>
+    <lastmod>2018-09-05T00:50:09.859Z</lastmod>
     <data>
         <display>
         <title>Java集成开发环境安装</title>
@@ -35,6 +20,21 @@
              
               <breadCrumb title="Java" url="http://www.singlelovely.cn/categories/Java/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.singlelovely.cn/post/72dd6893.html</loc>
+    <lastmod>2018-09-05T00:43:05.782Z</lastmod>
+    <data>
+        <display>
+        <title>闲语</title>
+        <pubTime>2018-01-12T16:00:00.000Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>
