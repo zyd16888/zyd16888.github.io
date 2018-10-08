@@ -1960,7 +1960,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a885bb;
+  background: #c85885;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3600,6 +3600,5 @@ p#div-box-yellow {
   padding: 10px;
   margin: 10px 0;
   border: 2px solid #f0ad4e;
-  border-left-width: 5px;
   border-radius: 10px;
 }
