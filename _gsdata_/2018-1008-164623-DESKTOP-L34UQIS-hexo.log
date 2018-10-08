@@ -1,0 +1,199 @@
+2018-10-08 16:46:24: FTP [class 0]: Listing one file is not supported (returns nothing): cannot start transfer: 550: Not a directory
+2018-10-08 16:46:24: -- 分析开始 User Command
+2018-10-08 16:46:25: Not using/deleting cached state file, because remote state file has changed since last Sync:
+State file: ftp://v0.ftp.upyun.com/_gsdata_/_file_state_v4._gs
+name=_file_state_v4._gs folder=0 link=0 file=1 attrs=0 size=1362 mod-time=2018-10-08 16:43:00 cre-time=2018-10-08 16:43:00 ab=0 ckt=0 cks= dsply= cmnt= != 
+name= folder=0 link=0 file=0 attrs=0 size=-1 mod-time=(null-time) cre-time=(null-time) ab=0 ckt=0 cks= dsply= cmnt=
+2018-10-08 16:46:49: /404.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /about/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /archives/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /assets/css/APlayer.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /assets/js/APlayer.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /atom.xml: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /categories/Android/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /categories/C语言/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /categories/Java/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /categories/python/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /categories/数据库/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /categories/汇编/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /categories/转载/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /categories/闲读/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /categories/音乐/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /css/blog-encrypt.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /css/main.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/algolia_logo.svg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/apple-touch-icon-next.ico: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/apple-touch-icon-next.png: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/avatar.gif: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/background2.jpg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/background3.jpg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/background5.jpg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/background6.jpg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/cc-by-nc-sa.svg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/cc-by-nc.svg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/cc-by.svg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/cc-zero.svg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/favicon-16x16-next.ico: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/favicon-16x16-next.png: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/favicon-32x32-next.ico: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/favicon-32x32-next.png: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/favicon-48x48-next.ico: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/head.png: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/loading.gif: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/placeholder.gif: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/quote-r.svg: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /images/searchicon.png: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /js/src/algolia-search.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /js/src/av-min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /js/src/clicklove.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /js/src/post-details.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /js/src/schemes/pisces.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /js/src/scroll-cookie.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /js/src/utils.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /js/src/Valine.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/bookmark/bookmark.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/bookmark/LICENSE: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/bookmark/README.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/canvas-nest/canvas-nest.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/canvas-nest/README.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/crypto-js.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/LICENSE: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/README.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/blank.gif: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/fancybox_loading.gif: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/fancybox_sprite.png: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/fancybox_sprite@2x.png: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/helpers/jquery.fancybox-buttons.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/helpers/jquery.fancybox-media.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/helpers/jquery.fancybox-thumbs.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/helpers/jquery.fancybox-thumbs.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/jquery.fancybox.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/fancybox/source/jquery.fancybox.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/font-awesome/css/font-awesome.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/font-awesome/css/font-awesome.css.map: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/font-awesome/css/font-awesome.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/font-awesome/fonts/fontawesome-webfont.eot: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/font-awesome/fonts/fontawesome-webfont.woff: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/font-awesome/fonts/fontawesome-webfont.woff2: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/font-awesome/HELP-US-OUT.txt: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/jquery/index.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-barber-shop.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-big-counter.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-center-atom.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-center-radar.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-center-simple.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-corner-indicator.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-flash.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-loading-bar.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-mac-osx.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace-theme-minimal.min.css: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/pace.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pace/README.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pangu/dist/pangu.js.map: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pangu/dist/pangu.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pangu/LICENSE: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/pangu/README.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/reading_progress/LICENSE: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/reading_progress/package.json: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/reading_progress/reading_progress.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/reading_progress/README.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/ua-parser-js/dist/ua-parser.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/ua-parser-js/dist/ua-parser.pack.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/velocity/velocity.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/velocity/velocity.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/velocity/velocity.ui.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /lib/velocity/velocity.ui.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/miku.model.json: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/miku.physics.json: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/moc/miku.2048/texture_00.png: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/moc/miku.moc: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/mtn/miku_idle_01.mtn: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/mtn/miku_m_01.mtn: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/mtn/miku_m_02.mtn: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/mtn/miku_m_03.mtn: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/mtn/miku_m_05.mtn: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/assets/mtn/miku_m_06.mtn: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/lib/L2Dwidget.0.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/lib/L2Dwidget.0.min.js.map: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/lib/L2Dwidget.min.js: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /live2dw/lib/L2Dwidget.min.js.map: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /page/2/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /page/3/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /page/4/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/106fc1c3.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/13c8d3a0.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/16dd4349.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/1bb05bfb.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/23e28675.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/29cebcea.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/30631cd4.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/47112e7a.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/5133767d.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/53b2030c.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/60a25379.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/60cd4fc4.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/63840324.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/6d7b9178.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/72dd6893.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/74b1112a.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/8b3b02a7.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/8c8e25d.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/936c5fbe.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/98bc273a.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/9a8cdc59.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/a033ab3f.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/a11ee691.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/a84d1ef1.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/b04d82e3.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/bfc7c122.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/cd12463.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/d87f7e0c.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/e07f2122.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /post/fdf0e152.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /search.xml: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /sitemap.xml: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/Android/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/C语言/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/eNSP/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/hexo/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/ICT/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/Java/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/Linux/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/MySQL/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/python/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/Testing/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/vps/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/免流/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/励志/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/区块链/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/学习/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/情感/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/数据库/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/数据通信/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/梦想/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/爬虫/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/生活/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /tags/课程设计/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: /top/index.html: 警告：较旧的文件将替换较新的文件
+2018-10-08 16:46:49: 变更：229， 冲突：0， 复制时间：0， 复制状态：0， 错误： 0, All: 321
+2018-10-08 16:46:49: Left to Right: Copy File: 229 
+2018-10-08 16:46:49: -- 分析已结束。历时 00:00:26, 速度： 12 文件/秒
+2018-10-08 16:46:49: 
+2018-10-08 17:34:19: == 同步开始由 User Command
+2018-10-08 17:34:20: FTP [class 0]: Listing one file is not supported (returns nothing): cannot start transfer: 550: Not a directory
+2018-10-08 17:34:21: 覆盖复制 'F:/blog/public/404.html' -> 'ftp://v0.ftp.upyun.com/404.html' (727)
+- 错误: Cannot rename temp file to destination file: Server says: {"msg":"too many requests of the same uri","code":42900002,"id":"1702cca489cb1b3915cacd34bfe3b774"}, Deleting: Server says: {"msg":"file or directory not found","code":40400001,"id":"0d7f15acaa79854b8f4f4e5809a5b903"}
+2018-10-08 17:34:23: 覆盖复制 'F:/blog/public/about/index.html' -> 'ftp://v0.ftp.upyun.com/about/index.html' (34,939)
+2018-10-08 17:34:24: 覆盖复制 'F:/blog/public/archives/index.html' -> 'ftp://v0.ftp.upyun.com/archives/index.html' (64,115)
+- 错误: Cannot rename temp file to destination file: Server says: {"msg":"too many requests of the same uri","code":42900002,"id":"3cd88d6b86db083434d3d7f603bd1fc9"}, Deleting: Server says: {"msg":"too many requests of the same uri","code":42900002,"id":"1d90e7826559213a2fbac4fa9d87b7de"}
+2018-10-08 17:34:24: 覆盖复制 'F:/blog/public/assets/css/APlayer.min.css' -> 'ftp://v0.ftp.upyun.com/assets/css/APlayer.min.css' (12,528)
+- 错误: Cannot rename temp file to destination file: Server says: {"msg":"too many requests of the same uri","code":42900002,"id":"b2203c0f254c40c20c4abfdcd8598336"}, Deleting: Server says: {"msg":"file or directory not found","code":40400001,"id":"8ab34b375be22d6bb60e006d43251e2c"}
+2018-10-08 17:34:25: 覆盖复制 'F:/blog/public/assets/js/APlayer.min.js' -> 'ftp://v0.ftp.upyun.com/assets/js/APlayer.min.js' (59,325)
+- 错误: Cannot rename temp file to destination file: Server says: {"msg":"too many requests of the same uri","code":42900002,"id":"d713225a1742b78ff8bf2ee6ce100b37"}, Deleting: Server says: {"msg":"file or directory not found","code":40400001,"id":"bae02b176b0c1d7704ef8330958e769d"}
+2018-10-08 17:34:26: Stop requested by Stop By User: #1
+2018-10-08 17:34:26: 新建复制 'F:/blog/public/assets/js/Meting.min.js' -> 'ftp://v0.ftp.upyun.com/assets/js/Meting.min.js' (1,795)
+- 错误: Cannot rename temp file to destination file: Server says: {"msg":"too many requests of the same uri","code":42900002,"id":"4ca716aa15a0a75ffb8c63c845283c9d"}, Deleting: Server says: {"msg":"too many requests of the same uri","code":42900002,"id":"4d549aa6ea64c6af7f5622d29f6c8e8d"}
+2018-10-08 17:34:27: 保持文件状态 
+- ERROR: Cannot move state file temp to perm: Server says: {"msg":"too many requests of the same uri","code":42900002,"id":"1ff796b41f05b79e87b97a2d2919490e"}
+2018-10-08 17:34:27: stopped by Stop By User
+2018-10-08 17:34:27: 
