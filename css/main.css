@@ -1960,7 +1960,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #afffff;
+  background: #ff4ba8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3270,19 +3270,22 @@ img:hover {
 .posts-collapse .post-header {
   border-bottom: 1px dashed #8608ef;
 }
+#content {
+  opacity: 0.7;
+}
 .post-block.archives_title {
-  background: rgba(255,255,255,0.8);
+  background: #fff;
 }
 .post-block.index {
   padding: 35px 36px 36px 36px;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
-  background: rgba(255,255,255,0.8);
+  background: #fff;
 }
 .post-block.page {
   margin-top: 40px;
-  background: rgba(255,255,255,0.8);
+  background: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   padding: 26px 36px 36px 36px;
 }
