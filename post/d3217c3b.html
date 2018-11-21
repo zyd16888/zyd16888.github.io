@@ -176,7 +176,7 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="网络安全课本内容整理">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-19T12:33:47.377Z">
+<meta property="og:updated_time" content="2018-11-21T14:29:41.203Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网络安全复习">
 <meta name="twitter:description" content="网络安全课本内容整理">
@@ -485,7 +485,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-19 20:33:47" itemprop="dateModified" datetime="2018-11-19T20:33:47+08:00">2018-11-19</time>
+                <time title="修改时间：2018-11-21 22:29:41" itemprop="dateModified" datetime="2018-11-21T22:29:41+08:00">2018-11-21</time>
               
             
           </span>
@@ -551,7 +551,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">9.7k</span>
+                <span title="本文字数">9.8k</span>
               
 
               
@@ -588,10 +588,12 @@
 
       
         
-    <div id="aplayer-MdILbWoZ" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="26427662" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>
+    <div id="aplayer-skTIygcz" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2426530028" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
+
+    <div id="aplayer-sbRiPAQM" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="11100236" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>
 <h1>第一章 网络安全特性概述</h1>
 <h3 id="网络安全含义"><a class="header-anchor" href="#网络安全含义">☆</a>网络安全含义</h3>
-<p><span id="font-blue">网络安全</span>泛指网络系统的硬件、软件及其系统中的数据受到保护，不因偶然的或者恶意的原因而遭到破坏、更改和泄漏，系统能够连续可靠正常地运行，网络服务不被中断。</p>
+<p><span id="inline-blue">网络安全</span>泛指网络系统的硬件、软件及其系统中的数据受到保护，不因偶然的或者恶意的原因而遭到破坏、更改和泄漏，系统能够连续可靠正常地运行，网络服务不被中断。</p>
 <p>网络安全的内容包括系统安全和信息安全两部分。</p>
 <ul>
 <li>系统安全主要指网络设备的硬件、操作系统和应用软件的安全。</li>
@@ -618,18 +620,14 @@
 <li>P2DR模型：Policy策略，Protection防护、Detection检测、Response响应</li>
 </ul>
 <h3 id="网络攻击类型"><a class="header-anchor" href="#网络攻击类型">☆</a>网络攻击类型</h3>
-<ol>
-<li>被动攻击
+<p><span id="inline-toc">1.</span> 被动攻击</p>
 <ul>
 <li>只是窃听或监视数据传输，即取得中途的信息，这里的被动指攻击者不对数据进行任何修改。</li>
 </ul>
-</li>
-<li>主动攻击
+<p><span id="inline-toc">2.</span> 主动攻击</p>
 <ul>
 <li>是指以某种方式修改消息内容或生成假消息。这种攻击很难防止，但容易被发现和恢复。这些攻击包括中断、篡改和伪造。</li>
 </ul>
-</li>
-</ol>
 <h3 id="网络安全的服务与机制"><a class="header-anchor" href="#网络安全的服务与机制">☆</a>网络安全的服务与机制</h3>
 <h4 id="五大网络安全服务"><a class="header-anchor" href="#五大网络安全服务">☆</a>五大网络安全服务</h4>
 <ul>
@@ -712,7 +710,7 @@
 </li>
 </ul>
 <h1>第三章 网络可用性实现机制与评价</h1>
-<p><span id="font-blue">网络可用性</span>是指网络可以提供正确服务的能力，它是为可修复系统提出的，是对系统服务正常和异常状态交互变化过程的一种量化，是网络可以被使用的概率。系统可靠性越高，可维护性越好则可用性越高。<br>
+<p><span id="inline-blue">网络可用性</span>是指网络可以提供正确服务的能力，它是为可修复系统提出的，是对系统服务正常和异常状态交互变化过程的一种量化，是网络可以被使用的概率。系统可靠性越高，可维护性越好则可用性越高。<br>
 可靠性：提供正确服务的连续性，描述为系统在一个特定时间内能持续执行特定任务的概率，侧重分析服务正常运行的连续性。</p>
 <h3 id="网络可用性保障机制"><a class="header-anchor" href="#网络可用性保障机制">☆</a>网络可用性保障机制</h3>
 <ul>
@@ -742,13 +740,31 @@
 <p><span id="inline-purple">MTBF：</span>平均无故障时间，反映网络系统的可靠性，取决于网络设备硬件和软件本身的质量，可靠性越高设备成本越高<br>
 <span id="inline-purple">MTTR：</span>平均修复时间，反映网络系统的可维护性，在MTBF一定的情况下，MTTR越小网络的可用性越大</p>
 <h3 id="网络可用性量化评估的基本方法"><a class="header-anchor" href="#网络可用性量化评估的基本方法">☆</a>网络可用性量化评估的基本方法</h3>
-<p>如果平均无故障时间(MTBF）远大于平均修复时间(MTTR)，那么系统的可用性将很高。如果平均修复时间很小，那么可用性也将很高。如果可靠性下降(MTBF变小），那么就需要减小MTTR （提高可维护性）才能达到同样的可用性。对一定的可用性，如果可靠性增长了，可维护性就不那么重要了。所以可以在可靠性和可维护性之间做出平衡来达到同样的可用性目的。</p>
+<p>如果平均无故障时间(MTBF）远大于平均修复时间(MTTR)，那么系统的可用性将很高。</p>
+<p>如果平均修复时间很小，那么可用性也将很高。</p>
+<p>如果可靠性下降(MTBF变小），那么就需要减小MTTR （提高可维护性）才能达到同样的可用性。</p>
+<p>对一定的可用性，如果可靠性增长了，可维护性就不那么重要了。</p>
+<p>所以可以在可靠性和可维护性之间做出平衡来达到同样的可用性目的。</p>
 <h3 id="设备串联形成的系统可用性评估方法"><a class="header-anchor" href="#设备串联形成的系统可用性评估方法">☆</a>设备串联形成的系统可用性评估方法</h3>
-<p>设网络串联系统是由n个网络设备串联而成的，只要有一个设备不可用系统就是不可用的。假设整个系统的可用性是A，每个设备的可靠性为A_i，整个系统可用是指系统中的每个设备都必须可用，其计算公式如下：<br>
-A=∏<sub>i=1</sub><sup>n</sup>A<sub>i</sub><br>
+<p>设网络串联系统是由n个网络设备串联而成的，只要有一个设备不可用系统就是不可用的。</p>
+<p>假设整个系统的可用性是A，每个设备的可靠性为A<sub>i</sub>，整个系统可用是指系统中的每个设备都必须可用，其计算公式如下：<br>
+							图片11<br>
 n个设备串联的可用性会随着设备串联结构的增多越来越低，例如，假设每个设备可用性值是0.99，5个设备串联后的可用性接近0.95，10 个设备串联后的可用性就已经接近0.9。</p>
 <h3 id="设备并联形成的系统可用性评估方法"><a class="header-anchor" href="#设备并联形成的系统可用性评估方法">☆</a>设备并联形成的系统可用性评估方法</h3>
-<p>为增加系统的可用性，将多个设备并联起来，n个网络设备并联的可用性是指：在并联系统中，多个并联设备同时运行工作，只要有一个设备正常工作系统就是可用的。在并联系统中只有一个子系统是真正需要的，其余n-1个子系统都被称为冗余子系统。系统随着冗余子系统数量的增加，其平均无故障时间(MTBF)也随着增加。这样的并联结构的冗余的代价也是很高的。整个系统的可用性是A，每个设备的可靠性为A_i，计算公式如下：A=1-∏_(i=1)^n▒A ̅_i</p>
+<p>为增加系统的可用性，将多个设备并联起来，n个网络设备并联的可用性是指：</p>
+<ul>
+<li>
+<p>在并联系统中，多个并联设备同时运行工作，只要有一个设备正常工作系统就是可用的。</p>
+</li>
+<li>
+<p>在并联系统中只有一个子系统是真正需要的，其余n-1个子系统都被称为冗余子系统。</p>
+</li>
+<li>
+<p>系统随着冗余子系统数量的增加，其平均无故障时间(MTBF)也随着增加。这样的并联结构的冗余的代价也是很高的。</p>
+</li>
+</ul>
+<p>整个系统的可用性是A，每个设备的可靠性为A<sub>i</sub>，计算公式如下：</p>
+<p>图片2</p>
 <h1>第四章 网络访问的可控性实现机制与评价</h1>
 <h3 id="网络安全中网络访问的可控性概述"><a class="header-anchor" href="#网络安全中网络访问的可控性概述">☆</a>网络安全中网络访问的可控性概述</h3>
 <ul>
@@ -760,121 +776,156 @@ n个设备串联的可用性会随着设备串联结构的增多越来越低，�
 </li>
 </ul>
 <h3 id="防火墙含义"><a class="header-anchor" href="#防火墙含义">☆</a>防火墙含义</h3>
-<p>防火墙：在两个网络之间执行访问控制策略的一个或一组安全系统，可对整个网络进行访问控制。是一种计算机硬件和软件系统集合，是实现网络安全策略的有效工具之一。<br>
-分为硬件防火墙和软件防火墙。常说的防火墙通指硬件防火墙<br>
-硬件防火墙：路由器、计算机或二者的组合配上具有过滤功能的软件形成，软硬件结合打到隔离内外部网络的目的。价格较贵，效果较好<br>
-软件防火墙：用纯软件的方式实现防火墙功能，价格便宜，但只能通过一定的规则来打到限制一些非法用户访问内部网的目的。</p>
+<p>防火墙：在两个网络之间执行访问控制策略的一个或一组安全系统，可对整个网络进行访问控制。是一种计算机硬件和软件系统集合，是实现网络安全策略的有效工具之一。</p>
+<div class="note primary">分为硬件防火墙和软件防火墙。</div>
+<p>常说的防火墙通指硬件防火墙</p>
+<p><span id="inline-blue">硬件防火墙：</span>路由器、计算机或二者的组合配上具有过滤功能的软件形成，软硬件结合打到隔离内外部网络的目的。价格较贵，效果较好</p>
+<p><span id="inline-blue">软件防火墙：</span>用纯软件的方式实现防火墙功能，价格便宜，但只能通过一定的规则来打到限制一些非法用户访问内部网的目的。</p>
 <p>防火墙技术<br>
-防火墙基本技术包括包过滤技术、代理服务技术和NAT技术。<br>
-1．包过滤：通过拦截数据包过滤掉不应入网的信息。在网络的出入口（如路由器上）对通过的数据包进行检测，满足条件的数据包才允许通过，否则抛弃。优点：用一个放在重要位置的包过滤路由器即可保护整个网络；不需用户软件支持，也不要对客户机进行特殊设置。缺点：配置包过滤规则比较困难，常会忽略建立一些必要规则，或错误配置了已有的规则，且易产生难以发现的冲突。<br>
-2．代理服务技术：又称应用级网关，建立协议过滤和转发功能。包过滤只是在网络层拦截所有的信息流，代理服务可以进行身份认证等包过滤没有的控制功能，能力强，缺点是对用户不透明，速度慢。<br>
-3．NAT：网络地址转换技术：通过有限的全球唯一的IP地址（外部地址）作为中继，使计算机网内部使用的非全球位移的IP地址（内部地址）可以对Internet进行透明访问。打到屏蔽内部地址的作用，提高网络安全性，解决地址紧缺的问题。外部主机对内部主机的内部地址进行直接访问是不可能的，因此提高了网络安全性。</p>
+<span id="font-green">防火墙基本技术</span>包括<span id="inline-green">包过滤技术</span>、<span id="inline-green">代理服务技术</span>和<span id="inline-green">NAT技术</span>。</p>
+<p><span id="inline-toc">1．</span><span id="inline-green">包过滤：</span>通过拦截数据包过滤掉不应入网的信息。在网络的出入口（如路由器上）对通过的数据包进行检测，满足条件的数据包才允许通过，否则抛弃。优点：用一个放在重要位置的包过滤路由器即可保护整个网络；不需用户软件支持，也不要对客户机进行特殊设置。缺点：配置包过滤规则比较困难，常会忽略建立一些必要规则，或错误配置了已有的规则，且易产生难以发现的冲突。</p>
+<p><span id="inline-toc">2．</span><span id="inline-green">代理服务技术：</span>又称应用级网关，建立协议过滤和转发功能。包过滤只是在网络层拦截所有的信息流，代理服务可以进行身份认证等包过滤没有的控制功能，能力强，缺点是对用户不透明，速度慢。</p>
+<p><span id="inline-toc">3．</span><span id="inline-green">NAT：</span><span id="font-green">网络地址转换技术：</span>通过有限的全球唯一的IP地址（外部地址）作为中继，使计算机网内部使用的非全球位移的IP地址（内部地址）可以对Internet进行透明访问。打到屏蔽内部地址的作用，提高网络安全性，解决地址紧缺的问题。外部主机对内部主机的内部地址进行直接访问是不可能的，因此提高了网络安全性。</p>
 <h3 id="防火墙体系结构"><a class="header-anchor" href="#防火墙体系结构">☆</a>防火墙体系结构</h3>
-<p>防火墙体系结构一般有四种（安全程度递增的：过滤路由器结构、双穴主机结构、主机过滤结构、子网过滤结构。<br>
-1.过滤路由器结构：最简单的防火墙结构，可以由厂家专门生产的过滤路由器来实现，也可由安装了具有过滤功能软件的普通路由器实现。过滤路由器防火墙作为内外连接的唯一通道，要求所有的报文都必须在此通过检查。<br>
-2.双穴主机结构：围绕具有双重宿主的主机而构筑的。计算机至少有两个网络接口，同时连接两个不同的网络，这样的主机可以充当与这些接口相连的网络之间的路由器，并能够从一个网络到另一个网络发送IP数据包。防火墙内部的网络系统能与双重宿主主机通信，同时防火墙外部在Internet上的网络系统也能与双重宿主主机通信。通过双重宿主主机进行控制和代理，防火墙内外的计算机便可进行通信。<br>
-3.主机过滤结构：由内部网中提供安全保障的主机（堡垒主机)，加上一台单独的过滤路由器，一起构成该结构的防火墙。它既有主机控制又有路由器过滤，因此称为主机过滤结构。又分为单宿堡垒主机和双宿堡垒主机，单宿堡垒主机只有一个网卡连接在内部网上，双宿堡垒主机有两个网卡：一个连接在内部网上，另一个连接在路由器上，具有更好的安全性。</p>
-<ol start="4">
-<li>子网过滤结构：添加了额外的安全层到主机过滤体系结构中，即通过添加一个称为参数网络的网络，更进一步地把内部网络与Internet隔离开。</li>
-</ol>
+<p>防火墙体系结构一般有四种,安全程度递增的：过滤路由器结构、双穴主机结构、主机过滤结构、子网过滤结构。</p>
+<p><span id="inline-toc">1. </span>过滤路由器结构：最简单的防火墙结构，可以由厂家专门生产的过滤路由器来实现，也可由安装了具有过滤功能软件的普通路由器实现。过滤路由器防火墙作为内外连接的唯一通道，要求所有的报文都必须在此通过检查。</p>
+<p><span id="inline-toc">2. </span>双穴主机结构：围绕具有双重宿主的主机而构筑的。计算机至少有两个网络接口，同时连接两个不同的网络，这样的主机可以充当与这些接口相连的网络之间的路由器，并能够从一个网络到另一个网络发送IP数据包。防火墙内部的网络系统能与双重宿主主机通信，同时防火墙外部在Internet上的网络系统也能与双重宿主主机通信。通过双重宿主主机进行控制和代理，防火墙内外的计算机便可进行通信。</p>
+<p><span id="inline-toc">3. </span>主机过滤结构：由内部网中提供安全保障的主机（堡垒主机)，加上一台单独的过滤路由器，一起构成该结构的防火墙。它既有主机控制又有路由器过滤，因此称为主机过滤结构。又分为单宿堡垒主机和双宿堡垒主机，单宿堡垒主机只有一个网卡连接在内部网上，双宿堡垒主机有两个网卡：一个连接在内部网上，另一个连接在路由器上，具有更好的安全性。</p>
+<p><span id="inline-toc">4. </span>子网过滤结构：添加了额外的安全层到主机过滤体系结构中，即通过添加一个称为参数网络的网络，更进一步地把内部网络与Internet隔离开。</p>
 <h3 id="系统资源访问控制的分类"><a class="header-anchor" href="#系统资源访问控制的分类">☆</a>系统资源访问控制的分类</h3>
-<p>1．访问控制的方式：分为自主访问控制和强制访问控制。<br>
-	自主访问控制：允许用户可以自主地在系统中规定谁可以存取它拥有的资源实体。有权访问且可以授权或收权其他用户。可以非常灵活地对策略进行调整。由于其易用性与可扩展性，自主访问控制机制经常被用于商业系统。<br>
-	强制访问控制：用户权限和文件安全属性都是固定的，由系统决定一个用户对某个客体能否实行访问。<br>
-2．访问控制的主体：分为基于用户的访问控制和基于角色的访问控制。<br>
-基于用户：指每个用户都分配其权限，缺点是用户太多，可扩展性差。<br>
-基于角色：是在用户和访问许可权之间引入角色的概念，用户与特定的一个或多个角色相联系，角色再与一个或多个访问许可权相联系，从而实现对用户的访问控制。角色可以根据实际的工作需要生成或取消。</p>
+<p><span id="inline-toc">1．</span>访问控制的方式：分为自主访问控制和强制访问控制。</p>
+<p><span id="inline-purple">自主访问控制：</span>允许用户可以自主地在系统中规定谁可以存取它拥有的资源实体。有权访问且可以授权或收权其他用户。可以非常灵活地对策略进行调整。由于其易用性与可扩展性，自主访问控制机制经常被用于商业系统。</p>
+<p><span id="inline-purple">强制访问控制：</span>用户权限和文件安全属性都是固定的，由系统决定一个用户对某个客体能否实行访问。</p>
+<p><span id="inline-toc">2．</span>访问控制的主体：分为基于用户的访问控制和基于角色的访问控制。</p>
+<p><span id="inline-purple">基于用户：</span>指每个用户都分配其权限，缺点是用户太多，可扩展性差。</p>
+<p><span id="inline-purple">基于角色：</span>是在用户和访问许可权之间引入角色的概念，用户与特定的一个或多个角色相联系，角色再与一个或多个访问许可权相联系，从而实现对用户的访问控制。角色可以根据实际的工作需要生成或取消。</p>
 <h1>第五章 数据保密性实现机制与评价</h1>
-<p>数据保密性<br>
-在网络安全中，数据的保密性是指为了防止网络中各个系统之间交换的数据被未授权的实体截获或被非法存取造成泄密而提供的加密保护。</p>
+<p><span id="inline-blue">数据保密性</span>在网络安全中，数据的保密性是指为了防止网络中各个系统之间交换的数据被未授权的实体截获或被非法存取造成泄密而提供的加密保护。</p>
 <h3 id="基本加密技术与评价"><a class="header-anchor" href="#基本加密技术与评价">☆</a>基本加密技术与评价</h3>
-<pre><code>替换加密：明文消息的字符换成另一个字符、数字、符号。不一定替换成原字符集，同时也可以一对多替换。
-置换加密：对明文字幕重新进行排列，字母本身不变。
-</code></pre>
+<p><span id="font-green">替换加密：</span>明文消息的字符换成另一个字符、数字、符号。不一定替换成原字符集，同时也可以一对多替换。</p>
+<p><span id="font-green">置换加密：</span>对明文字幕重新进行排列，字母本身不变。</p>
 <h3 id="加密算法分类"><a class="header-anchor" href="#加密算法分类">☆</a>加密算法分类</h3>
-<p>1、按密码体制：对称密钥、非对称密钥<br>
-	对称密钥：同一个密钥加密解密，应用：数据加密标准DES、高级加密标准AES。优点：速度快；缺点：用户必须让接收人知道自己用的密钥，需双方共同保密密钥。密钥发布时还需防止任何攻击者发现或窃听密钥。<br>
-非对称密钥：用公钥加密的结果只能用私钥解密，用私钥加密的结果只能用公钥解密，公钥不能推导出来私钥。优点：加密解密能力分开，实现多个用户加密的消息只能由一个用户解读，或一个用户加密的消息可由多个用户解读。可扩展性强。目前应用最多的公开密钥系统有RSA</p>
-<p>2、按加密方式分类：序列（流）加密法、分组（块）加密法<br>
-序列加密：使用一次只对明文中的单个位或字节进行运算的算法。有点：产生流密钥序列简单、加密解密过程均不需复杂算法；缺点：明文、密文和密钥流任意两者可以很容易求得第三者，且很难得到完全随机的密钥流。密钥变换过于频繁，密钥分配较难。目前应用最广泛的序列密码：RC4<br>
-分组加密法：是将明文按一定的位长分组，这个固定长度叫块大小。一次加密明文中的一个块。具有较强的抗攻击能力。块越大保密性越好，但加解密算法和设备越复杂，块大小一般64或128字节。应用：DES、IDEA、AES、TEA。</p>
-<p>数据加密标准DES<br>
-DES：是一个分组加密算法，以64位为分组对数据加密；是一个对称算法，加密解密是同一个密钥。6步：</p>
-<ol>
-<li>输入64位明文（56位密钥+8位奇偶校验）</li>
-<li>64位明文块送入初始置换函数进行初始置换</li>
-<li>置换后的内容分为两块，左明文和右明文，各32位</li>
-<li>两块明文都要经过16轮加密，每一轮都进行替换与置换操作</li>
-<li>将左右明文重新连接起来，对组成的块进行最终置换</li>
-<li>输出64位明文</li>
-</ol>
-<p>加密解密过程的唯一差别是密钥部分倒过来。</p>
-<p>数据加密标准DES的分析评价<br>
-具有极高的安全性，目前为止，出了穷举搜索法对算法进行攻击，没有发现更有效的方法。通过利用多种加密思想实现安全性：替换机制、置换机制、进行多轮反复加密、在替换和置换中同时揉进了压缩与扩展操作、使用了异或的加密操作、算法不公开S盒的设计准则、算法具有雪崩效应。<br>
-雪崩效应：明文的一点点变动就会引起密文发生大的变化。<br>
-DES密钥发布问题也是决定DES安全程度的重要问题，基本解决方法：</p>
+<p><span id="inline-toc">1. </span>按密码体制：对称密钥、非对称密钥</p>
+<p><span id="inline-green">对称密钥：</span>同一个密钥加密解密，<span id="font-blue">应用：</span>数据加密标准DES、高级加密标准AES。<span id="font-blue">优点：</span>速度快；<span id="font-blue">缺点：</span>用户必须让接收人知道自己用的密钥，需双方共同保密密钥。密钥发布时还需防止任何攻击者发现或窃听密钥。</p>
+<p><span id="inline-green">非对称密钥：</span>用公钥加密的结果只能用私钥解密，用私钥加密的结果只能用公钥解密，公钥不能推导出来私钥。<span id="font-blue">优点：</span>加密解密能力分开，实现多个用户加密的消息只能由一个用户解读，或一个用户加密的消息可由多个用户解读。可扩展性强。目前应用最多的公开密钥系统有RSA</p>
+<p><span id="inline-toc">2.</span>按加密方式分类：序列（流）加密法、分组（块）加密法</p>
+<p><span id="inline-green">序列加密：</span>使用一次只对明文中的单个位或字节进行运算的算法。有点：产生流密钥序列简单、加密解密过程均不需复杂算法；缺点：明文、密文和密钥流任意两者可以很容易求得第三者，且很难得到完全随机的密钥流。密钥变换过于频繁，密钥分配较难。目前应用最广泛的序列密码：RC4</p>
+<p><span id="inline-green">分组加密法：</span>是将明文按一定的位长分组，这个固定长度叫块大小。一次加密明文中的一个块。具有较强的抗攻击能力。块越大保密性越好，但加解密算法和设备越复杂，块大小一般64或128字节。应用：DES、IDEA、AES、TEA。</p>
+<h3 id="数据加密标准des"><a class="header-anchor" href="#数据加密标准des">☆</a>数据加密标准DES</h3>
+<p>DES：是一个分组加密算法，以64位为分组对数据加密；是一个对称算法，加密解密是同一个密钥。</p>
+<p><span id="inline-blue">6步：</span></p>
+<p><span id="inline-toc">1.</span> 输入64位明文（56位密钥+8位奇偶校验）</p>
+<p><span id="inline-toc">2. </span>64位明文块送入初始置换函数进行初始置换</p>
+<p><span id="inline-toc">3. </span>置换后的内容分为两块，左明文和右明文，各32位</p>
+<p><span id="inline-toc">4. </span>两块明文都要经过16轮加密，每一轮都进行替换与置换操作</p>
+<p><span id="inline-toc">5. </span>将左右明文重新连接起来，对组成的块进行最终置换</p>
+<p><span id="inline-toc">6. </span>输出64位明文</p>
+<blockquote class="blockquote-center"><p>加密解密过程的唯一差别是密钥部分倒过来。</p>
+</blockquote>
+<h3 id="数据加密标准des的分析评价"><a class="header-anchor" href="#数据加密标准des的分析评价">☆</a>数据加密标准DES的分析评价</h3>
+<p>具有极高的安全性，目前为止，出了穷举搜索法对算法进行攻击，没有发现更有效的方法。通过利用多种加密思想实现安全性：替换机制、置换机制、进行多轮反复加密、在替换和置换中同时揉进了压缩与扩展操作、使用了异或的加密操作、算法不公开S盒的设计准则、算法具有雪崩效应。</p>
+<p><span id="inline-green">雪崩效应：</span>明文的一点点变动就会引起密文发生大的变化。</p>
+<p><span id="font-blue">DES密钥发布问题</span>也是决定DES安全程度的重要问题，基本解决方法：</p>
 <ol>
 <li>根据密钥交换协议/算法来实现密钥的发布问题，双方可以用这个方法确定对称密钥，然后用这个密钥进行加密解密；</li>
-<li>结合非对称密钥，先利用接收方得公钥对DES使用的密钥进行加密，然后再利用DES进行加密。<br>
-DES可扩展性不好，但密文长度等于明文长度，加密的信息有效率较高<br>
-DES工作算法模式：电子编码簿、加密块链接、加密反馈、输出反馈。</li>
+<li>结合非对称密钥，先利用接收方得公钥对DES使用的密钥进行加密，然后再利用DES进行加密。</li>
 </ol>
-<p>RSA加密机制分析与评价<br>
-RSA：最广泛接受的公钥方案。算法本身简单，关键选择正确密钥。不存在密钥的发布问题。可扩展性比DES好，信息有效率没有DES高。RSA算法比DES算法速度慢很多</p>
-<p>RSA与DES结合加密机制与评价</p>
-<ol>
-<li>性能和信息有效率得到改善：用对称密钥加密算法和一次性会话密钥加密明文：速度快、明文小</li>
-<li>解决了密钥的发布问题</li>
-<li>RSA的中间人攻击：指中间人不需要知道发送方和接收方的思瑶就可以非法查看双方的内容。主要漏洞是公钥被非法替换和调包。</li>
-</ol>
+<div class="note info">
+DES可扩展性不好，但密文长度等于明文长度，加密的信息有效率较高。<br>DES工作算法模式：电子编码簿、加密块链接、加密反馈、输出反馈。
+</div>
+<h3 id="rsa加密机制分析与评价"><a class="header-anchor" href="#rsa加密机制分析与评价">☆</a>RSA加密机制分析与评价</h3>
+<div class="note success">
+RSA：最广泛接受的公钥方案。
+</div>
+<p>算法本身简单，关键选择正确密钥。不存在密钥的发布问题。可扩展性比DES好，信息有效率没有DES高。RSA算法比DES算法速度慢很多</p>
+<h3 id="rsa与des结合加密机制与评价"><a class="header-anchor" href="#rsa与des结合加密机制与评价">☆</a>RSA与DES结合加密机制与评价</h3>
+<p><span id="inline-toc">1.</span> 性能和信息有效率得到改善：用对称密钥加密算法和一次性会话密钥加密明文：速度快、明文小</p>
+<p><span id="inline-toc">2.</span> 解决了密钥的发布问题</p>
+<p><span id="inline-toc">3.</span> RSA的中间人攻击：指中间人不需要知道发送方和接收方的思瑶就可以非法查看双方的内容。主要漏洞是公钥被非法替换和调包。</p>
 <h1>第六章 数据完整性 实现机制与评价</h1>
-<p>数据完整性<br>
-数据完整性是防止非法实体对交换数据的修改、插入、替换和删除，或者如果被修改、插入、替换和删除时可以被检测出来。在常规的网络安全中，可以通过消息认证模式来保证，基本思路是通过增加额外的信息验证码来对数据完整性验证。<br>
-碰撞：对于两个不同的消息，如果它们的验证码值相同，则发生了碰撞。</p>
-<p>基于消息摘要的完整性验证与评价<br>
-最常用的消息完整性验证方法。消息摘要一般通过摘要函数生成。哈希函数是生成消息摘要常用的算法。常用算法：MD4，MD5，SHA-1<br>
-如果两个消息得到相同的消息摘要，则称为冲突。<br>
-	优点：双方不需要共享密钥；消息摘要与信息密切关联，接受者能够确信信息为被篡改过；信息有效率较高。<br>
-	缺点：若攻击者修改网络传输的信息部分同时也根据哈希函数重新计算消息摘要并替换，这时验证机制检测不出消息是否是伪造的，只知道是否完整。</p>
-<p>基于消息摘要与对称密钥加密的完整性验证机制与评价<br>
-假设A是发送方，B是接收方，A要发送的消息是M0，A与B共享密钥K，产生摘要的函数为H。<br>
-第1步：A用消息摘要算法H计算信息M0的消息摘要MD0。<br>
-第2步：A将M0、MD0合在一起，用K加密信息，通过网络发送给B。<br>
-第3步：B收到加密的信息后，用同一密钥K把密文解密，并将=者分开，分别设为M1和MD1。<br>
-第4步：B用与原始信息相同的消息摘要计算方法H重新计算信息M1的消息摘要MD2。<br>
-第5步：B将计算的消息摘要MD2同分离出的消息摘要MD1进行对比，如果相等，B断定信息是完整的，如果不相等，则B断定信息遭到篡改。<br>
-优点：该机制防止了攻击者篡改信息的攻击，如果攻击者篡改了消息，则B 自己计算的消息摘要MD2同分离出来的消息摘要MD1就不相等了。也防止了攻击者同时把信息部分和消息摘要部分替换并且保持它们之间的正确匹配关系的攻击，因为密钥K只有双方知道，攻击者同时替换后没办法再用双方的密钥K重新加密。在这种机制中，参照对象是消息摘要。<br>
-缺点与改进：机制的前提是需要双方共享对称密钥K，存在密钥发布问题。因此可以用非对称密钥加密体制加密信息，但对合并后的信息全部用非对称密钥加密将导致加密的速度过慢，实用性较差，所以采用对称密钥体制和非对称密钥结合的方法解决密钥的发布问题，就产生基于非对称密钥和对称密钥结合的完整性验证机制。</p>
-<p>MD5消息摘要计算算法与评价<br>
-MD5是计算机安全领域广泛使用的一种哈希函数，泳衣提供消息的完整性保护，把一个任意长的信息变化产生一个128位的消息摘要。除了满足能满足完成完整性验证必须的要求外，还效率高，提高了完整性验证的性能。<br>
-步骤：<br>
-MD5将消息分为若干个512位分组（大块）来处理输入的消息，且每一分组又被划分为16个32位子分组（子块），经过了一系列的处理后，算法的输出由四个32位分组组成，将这四个分组链接生成一个128位的消息摘要。<br>
-对于每个大块，信息从512位压缩为128位，位数变为1/4，每一轮前初始化四个32位的固定值的链接量，四个组合在一起正好是128位。<br>
-MD5以32位运算为基础，加密有四轮，每轮运算16次。每一轮中每个小块按不同顺序都参与运算，四轮的第一步进行不同的P处理，其他步骤相同。每一轮的操作也称压缩操作。如下所示：<br>
-第1步：P处理首先处理b、c、d。（共abcd四个变量）<br>
-第2步：变量a加进P处理的输出<br>
-第3步：消息子块加进第2步输出<br>
-第4步：常量加进第3步输出<br>
-第5步：第4步的输出（abcd内容）循环左移S位<br>
-第6步：变量b加进第5步输出<br>
-第7步：第6步 的输出赋值给变量a<br>
-最后的输出成为下一步的新的abcd。</p>
-<p>评价：MD5的核心处理是重复进行位逻辑运算，使得最终输出的摘要中的每一位都与输入消息中所有位相关，达到很好的混淆效果，具有雪崩现象。</p>
+<h3 id="数据完整性"><a class="header-anchor" href="#数据完整性">☆</a>数据完整性</h3>
+<p><span id="inline-blue">数据完整性</span>是防止非法实体对交换数据的修改、插入、替换和删除，或者如果被修改、插入、替换和删除时可以被检测出来。</p>
+<p>在常规的网络安全中，可以通过消息认证模式来保证，基本思路是通过增加额外的信息验证码来对数据完整性验证。</p>
+<p><span id="inline-green">碰撞：</span>对于两个不同的消息，如果它们的验证码值相同，则发生了碰撞。</p>
+<h3 id="基于消息摘要的完整性验证与评价"><a class="header-anchor" href="#基于消息摘要的完整性验证与评价">☆</a>基于消息摘要的完整性验证与评价</h3>
+<div class="note success">最常用的消息完整性验证方法。</div>
+<ul>
+<li>消息摘要一般通过摘要函数生成。</li>
+</ul>
+<ul>
+<li>
+<p>哈希函数是生成消息摘要常用的算法。</p>
+</li>
+<li>
+<p>常用算法：MD4，MD5，SHA-1</p>
+</li>
+</ul>
+<p>如果两个消息得到相同的消息摘要，则称为<span id="font-green">冲突。</span></p>
+<p><span id="font-blue">优点：</span>双方不需要共享密钥；消息摘要与信息密切关联，接受者能够确信信息为被篡改过；信息有效率较高。</p>
+<p><span id="font-blue">缺点：</span>若攻击者修改网络传输的信息部分同时也根据哈希函数重新计算消息摘要并替换，这时验证机制检测不出消息是否是伪造的，只知道是否完整。</p>
+<h3 id="基于消息摘要与对称密钥加密的完整性验证机制与评价"><a class="header-anchor" href="#基于消息摘要与对称密钥加密的完整性验证机制与评价">☆</a>基于消息摘要与对称密钥加密的完整性验证机制与评价</h3>
+<p>假设A是发送方，B是接收方，A要发送的消息是M0，A与B共享密钥K，产生摘要的函数为H。</p>
+<ul>
+<li>第1步：A用消息摘要算法H计算信息M0的消息摘要MD0。</li>
+<li>第2步：A将M0、MD0合在一起，用K加密信息，通过网络发送给B。</li>
+<li>第3步：B收到加密的信息后，用同一密钥K把密文解密，并将=者分开，分别设为M1和MD1。</li>
+<li>第4步：B用与原始信息相同的消息摘要计算方法H重新计算信息M1的消息摘要MD2。</li>
+<li>第5步：B将计算的消息摘要MD2同分离出的消息摘要MD1进行对比，如果相等，B断定信息是完整的，如果不相等，则B断定信息遭到篡改。</li>
+</ul>
+<p><span id="font-blue">优点：</span></p>
+<ul>
+<li>该机制防止了攻击者篡改信息的攻击。
+<ul>
+<li>如果攻击者篡改了消息，则B 自己计算的消息摘要MD2同分离出来的消息摘要MD1就不相等了。</li>
+</ul>
+</li>
+<li>也防止了攻击者同时把信息部分和消息摘要部分替换并且保持它们之间的正确匹配关系的攻击。
+<ul>
+<li>因为密钥K只有双方知道，攻击者同时替换后没办法再用双方的密钥K重新加密。在这种机制中，参照对象是消息摘要。</li>
+</ul>
+</li>
+</ul>
+<p><span id="font-blue">缺点与改进：</span></p>
+<ul>
+<li>机制的前提是需要双方共享对称密钥K，存在密钥发布问题。</li>
+<li>可以用非对称密钥加密体制加密信息</li>
+<li>对合并后的信息全部用非对称密钥加密将导致加密的速度过慢，实用性较差</li>
+<li>采用对称密钥体制和非对称密钥结合的方法解决密钥的发布问题，就产生基于非对称密钥和对称密钥结合的完整性验证机制。</li>
+</ul>
+<h4 id="md5消息摘要计算算法与评价"><a class="header-anchor" href="#md5消息摘要计算算法与评价">☆</a>MD5消息摘要计算算法与评价</h4>
+<p>MD5是计算机安全领域广泛使用的一种哈希函数，用以提供消息的完整性保护，把一个任意长的信息变化产生一个128位的消息摘要。除了满足能满足完成完整性验证必须的要求外，还效率高，提高了完整性验证的性能。</p>
+<p><span id="inline-blue">步骤：</span></p>
+<p>MD5将消息分为若干个512位分组（大块）来处理输入的消息，且每一分组又被划分为16个32位子分组（子块），经过了一系列的处理后，算法的输出由四个32位分组组成，将这四个分组链接生成一个128位的消息摘要。</p>
+<p>对于每个大块，信息从512位压缩为128位，位数变为1/4，每一轮前初始化四个32位的固定值的链接量，四个组合在一起正好是128位。</p>
+<p>MD5以32位运算为基础，加密有四轮，每轮运算16次。每一轮中每个小块按不同顺序都参与运算，四轮的第一步进行不同的P处理，其他步骤相同。</p>
+<p>每一轮的操作也称压缩操作。如下所示：</p>
+<ul>
+<li>第1步：P处理首先处理b、c、d。（共abcd四个变量）</li>
+<li>第2步：变量a加进P处理的输出</li>
+<li>第3步：消息子块加进第2步输出</li>
+<li>第4步：常量加进第3步输出</li>
+<li>第5步：第4步的输出（abcd内容）循环左移S位</li>
+<li>第6步：变量b加进第5步输出</li>
+<li>第7步：第6步 的输出赋值给变量a</li>
+<li>最后的输出成为下一步的新的abcd。</li>
+</ul>
+<p><span id="inline-blue">评价：</span><br>
+MD5的核心处理是重复进行位逻辑运算，使得最终输出的摘要中的每一位都与输入消息中所有位相关，达到很好的混淆效果，具有雪崩现象。</p>
 <h1>第七章 用户身份可鉴别性实现机制与评价</h1>
-<p>用户身份可鉴别性<br>
-用户身份可鉴别性：指用户在使用网络资源时，通过对用户身份信息的交换对用户身份的真实性进行确认的过程。<br>
+<h3 id="用户身份可鉴别性"><a class="header-anchor" href="#用户身份可鉴别性">☆</a>用户身份可鉴别性</h3>
+<p><span id="inline-blue">用户身份可鉴别性：</span>指用户在使用网络资源时，通过对用户身份信息的交换对用户身份的真实性进行确认的过程。<br>
 涉及对象：①提供身份信息的被验证者；②检验身份信息正确性和合法性的认证服务器；③提供仲裁和调解的可信第三方；④企图进行窃听和伪装身份的攻击者；⑤认证设备。</p>
-<p>用户身份鉴别因素的数量和种类<br>
-用户身份鉴别一般通过多个因素来共同鉴别用户身份的真伪，称为多因子鉴别， 最常见的是以下三因子：<br>
+<h3 id="用户身份鉴别因素的数量和种类"><a class="header-anchor" href="#用户身份鉴别因素的数量和种类">☆</a>用户身份鉴别因素的数量和种类</h3>
+<p>用户身份鉴别一般通过多个因素来共同鉴别用户身份的真伪，称为多因子鉴别， 最常见的是以下三因子：<br>
 ① 用户所知道的东西，如口令、密码等：<br>
 ② 用户所拥有的东西，如信用卡或U盾等：<br>
 ③ 用户所具有的东西，如声音、指纹、视网膜、签字或笔迹等。</p>
-<p>数字证书<br>
-为了进行有效的身份鉴别，类似现实生活中的身份证，在网络中每个用户也发一个网络身份证，即数字证书。由一个可信的权威机构发行。是一种计算机文件，文件扩展名：.cer（certificate）。证明证书中的用户与证书中的公钥关联的正确性。</p>
-<p>数字证书的内容<br>
-最简单的证书至少包括三项基本内容：公钥、用户名（也称主体名）和证书机构的数字签名。一般情况下证书中还包括序号、起始日期、 终止日期、签发者名等信息，证书的内容和格式遵循X.509国际标准，它于1993和1995年做了两次修订。这个标准的最新版本是X.509V3。在数字证书中用户名被称为主题名，这是因为数字证书不仅可以发给个体用户，还可以发给组织，最后一个字段是证书机构的签名。</p>
-<p>生成数字证书的参与方<br>
-生成数字证书的参与方至少需要两方参与，即主体（最终用户）和签发者（证书机构CA)。证书生成与管理还可能涉及第三方——注册机构RA。<br>
+<h3 id="数字证书"><a class="header-anchor" href="#数字证书">☆</a>数字证书</h3>
+<p>为了进行有效的身份鉴别，类似现实生活中的身份证，在网络中每个用户也发一个网络身份证，即数字证书。由一个可信的权威机构发行。是一种计算机文件，文件扩展名：.cer（certificate）。证明证书中的用户与证书中的公钥关联的正确性。</p>
+<h3 id="数字证书的内容"><a class="header-anchor" href="#数字证书的内容">☆</a>数字证书的内容</h3>
+<p>最简单的证书至少包括三项基本内容：公钥、用户名（也称主体名）和证书机构的数字签名。一般情况下证书中还包括序号、起始日期、 终止日期、签发者名等信息，证书的内容和格式遵循X.509国际标准，它于1993和1995年做了两次修订。这个标准的最新版本是X.509V3。在数字证书中用户名被称为主题名，这是因为数字证书不仅可以发给个体用户，还可以发给组织，最后一个字段是证书机构的签名。</p>
+<h3 id="生成数字证书的参与方"><a class="header-anchor" href="#生成数字证书的参与方">☆</a>生成数字证书的参与方</h3>
+<p>生成数字证书的参与方至少需要两方参与，即主体（最终用户）和签发者（证书机构CA)。证书生成与管理还可能涉及第三方——注册机构RA。<br>
 1、主体：申请数字证书的人或者组织，主要任务是产生公／私钥密钥对、提出申请和提供与申请者相关的证明材料等。<br>
 2、注册机构及作用：从最终用户角度看，证书机构与注册机构差别不大。注册机构是用户与证书机构之间的中间实体，帮助证书机构完成日常工作，注册机构通常提供下列服务：①接收与验证最终用户的注册信息：②为最终用户生成密钥：③接收与授权证书吊销请求。<br>
 好处：<br>
@@ -884,31 +935,41 @@ MD5以32位运算为基础，加密有四轮，每轮运算16次。每一轮中�
 ①证书的数字签名与发放，用户相信证书的真假主要看是不是经过可信的CA签名，因此CA对证书的签名很重要。为了防止数字凭证的伪造，证书机构的公共密钥必须是可靠的，证书机构必须公布其公钥。<br>
 ②证书的管理工作，如跟踪证书状态，对因故无效的证书发出吊销通知等。</li>
 </ol>
-<p>证书的生成（5步）：<br>
-第1步：密钥生成：自己用软件生成；注册机构为用户生成。<br>
-第2步：主体注册：用户提供共相关的信息和证明材料。<br>
-第3步：由RA完成验证：验证用户身份材料是否真实可靠；验证用户自己持有的私钥跟向注册机构提供的公钥是否相对应。<br>
-第4步：数字证书的生成<br>
-第5步：数字证书的分发</p>
-<p>用户身份可鉴别性机制与评价<br>
-1、 基于口令的用户身份鉴别机制：最常用的鉴别形式<br>
-	优点：简单易用，在安全性要求不高的情况下易于实现<br>
-	缺点：数据库存放的是明文口令；口令以明文形式传递给服务器；口令相对固定。<br>
-2、基于口令摘要的用户身份鉴别机制：<br>
-	优点：解决了基于口令的机制的两打安全隐患，在网络截获、副武器攻击和口令猜测方面都保证了用户鉴别的安全。<br>
-	缺点：无法阻止重放攻击。服务器不能鉴别出登录请求来自合法用户还是攻击者。<br>
-3、基于随机挑战的用户身份鉴别机制：用户用口令摘要加密随机挑战<br>
-		优点：解决了基于口令摘要的重放攻击，增加了随机性，提高了安全性。<br>
-		缺点：比基于摘要的用户鉴别机制多了一次交互，同时需要客户本地计算机计算口令摘要，并用计算出来的口令摘要加密从服务器收到的随机挑战，存在密钥的分发问题。</p>
+<p>证书的生成（5步）：</p>
+<ul>
+<li>第1步：密钥生成：自己用软件生成；注册机构为用户生成。</li>
+<li>第2步：主体注册：用户提供共相关的信息和证明材料。</li>
+<li>第3步：由RA完成验证：验证用户身份材料是否真实可靠；验证用户自己持有的私钥跟向注册机构提供的公钥是否相对应。</li>
+<li>第4步：数字证书的生成</li>
+<li>第5步：数字证书的分发</li>
+</ul>
+<h3 id="用户身份可鉴别性机制与评价"><a class="header-anchor" href="#用户身份可鉴别性机制与评价">☆</a>用户身份可鉴别性机制与评价</h3>
+<ol>
+<li>
+<p>基于口令的用户身份鉴别机制：最常用的鉴别形式<br>
+优点：简单易用，在安全性要求不高的情况下易于实现<br>
+缺点：数据库存放的是明文口令；口令以明文形式传递给服务器；口令相对固定。</p>
+</li>
+<li>
+<p>基于口令摘要的用户身份鉴别机制：<br>
+优点：解决了基于口令的机制的两打安全隐患，在网络截获、副武器攻击和口令猜测方面都保证了用户鉴别的安全。<br>
+缺点：无法阻止重放攻击。服务器不能鉴别出登录请求来自合法用户还是攻击者。</p>
+</li>
+<li>
+<p>基于随机挑战的用户身份鉴别机制：用户用口令摘要加密随机挑战<br>
+优点：解决了基于口令摘要的重放攻击，增加了随机性，提高了安全性。<br>
+缺点：比基于摘要的用户鉴别机制多了一次交互，同时需要客户本地计算机计算口令摘要，并用计算出来的口令摘要加密从服务器收到的随机挑战，存在密钥的分发问题。</p>
+</li>
+</ol>
 <h1>第八章 用户不可抵赖性实现机制</h1>
-<p>用户不可抵赖性<br>
-	不可抵赖性：旨在生成、手机、维护有关已声明的事件或动作的证据，并使该证据可得和缺人，一次来解决关于此事件或动作发生或未发生而引起的争议。主要通过数字签名来保证。<br>
+<h3 id="用户不可抵赖性"><a class="header-anchor" href="#用户不可抵赖性">☆</a>用户不可抵赖性</h3>
+<p>不可抵赖性：旨在生成、手机、维护有关已声明的事件或动作的证据，并使该证据可得和缺人，一次来解决关于此事件或动作发生或未发生而引起的争议。主要通过数字签名来保证。<br>
 	包括两个方面：发送信息方不可抵赖；信息的接收方不可抵赖。<br>
 	一个完整的抗抵赖性机制包括两部分：签名部分+验证部分：<br>
 		签名部分密钥必须秘密、独有，只有签名人掌握；<br>
 验证部分的密钥应当公开，以便于他人进行验证。</p>
-<p>数字签名<br>
-数字签名：附加在数据单元上的一些数据，或是对数据单元所做的密码变换，这种数据或变换允许数据单元的接收者用于确认数据单元的来源和数据单元的完整性，并保护数据，防止被他人伪造。<br>
+<h3 id="数字签名"><a class="header-anchor" href="#数字签名">☆</a>数字签名</h3>
+<p>数字签名：附加在数据单元上的一些数据，或是对数据单元所做的密码变换，这种数据或变换允许数据单元的接收者用于确认数据单元的来源和数据单元的完整性，并保护数据，防止被他人伪造。<br>
 一个签名算法至少应满足三个条件：<br>
 	（1）签名者时候不能否认自己的签名<br>
 	（2）接收者能验证签名，而其他任何人都不能伪造签名；<br>
@@ -1283,7 +1344,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">第一章 网络安全特性概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络安全含义"><span class="nav-number">1.0.1.</span> <span class="nav-text">☆网络安全含义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两种网络安全基本模型与攻击方式"><span class="nav-number">1.0.2.</span> <span class="nav-text">☆两种网络安全基本模型与攻击方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络攻击类型"><span class="nav-number">1.0.3.</span> <span class="nav-text">☆网络攻击类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络安全的服务与机制"><span class="nav-number">1.0.4.</span> <span class="nav-text">☆网络安全的服务与机制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#五大网络安全服务"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">☆五大网络安全服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#八大网络安全机制"><span class="nav-number">1.0.4.2.</span> <span class="nav-text">☆八大网络安全机制</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">第三章 网络可用性实现机制与评价</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络可用性保障机制"><span class="nav-number">2.0.1.</span> <span class="nav-text">☆网络可用性保障机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络可用性a计算公式"><span class="nav-number">2.0.2.</span> <span class="nav-text">☆网络可用性A计算公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络可用性量化评估的基本方法"><span class="nav-number">2.0.3.</span> <span class="nav-text">☆网络可用性量化评估的基本方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设备串联形成的系统可用性评估方法"><span class="nav-number">2.0.4.</span> <span class="nav-text">☆设备串联形成的系统可用性评估方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设备并联形成的系统可用性评估方法"><span class="nav-number">2.0.5.</span> <span class="nav-text">☆设备并联形成的系统可用性评估方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">第四章 网络访问的可控性实现机制与评价</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络安全中网络访问的可控性概述"><span class="nav-number">3.0.1.</span> <span class="nav-text">☆网络安全中网络访问的可控性概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防火墙含义"><span class="nav-number">3.0.2.</span> <span class="nav-text">☆防火墙含义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防火墙体系结构"><span class="nav-number">3.0.3.</span> <span class="nav-text">☆防火墙体系结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统资源访问控制的分类"><span class="nav-number">3.0.4.</span> <span class="nav-text">☆系统资源访问控制的分类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">第五章 数据保密性实现机制与评价</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本加密技术与评价"><span class="nav-number">4.0.1.</span> <span class="nav-text">☆基本加密技术与评价</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加密算法分类"><span class="nav-number">4.0.2.</span> <span class="nav-text">☆加密算法分类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">第六章 数据完整性 实现机制与评价</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">第七章 用户身份可鉴别性实现机制与评价</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">第八章 用户不可抵赖性实现机制</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">第一章 网络安全特性概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络安全含义"><span class="nav-number">1.0.1.</span> <span class="nav-text">☆网络安全含义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两种网络安全基本模型与攻击方式"><span class="nav-number">1.0.2.</span> <span class="nav-text">☆两种网络安全基本模型与攻击方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络攻击类型"><span class="nav-number">1.0.3.</span> <span class="nav-text">☆网络攻击类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络安全的服务与机制"><span class="nav-number">1.0.4.</span> <span class="nav-text">☆网络安全的服务与机制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#五大网络安全服务"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">☆五大网络安全服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#八大网络安全机制"><span class="nav-number">1.0.4.2.</span> <span class="nav-text">☆八大网络安全机制</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">第三章 网络可用性实现机制与评价</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络可用性保障机制"><span class="nav-number">2.0.1.</span> <span class="nav-text">☆网络可用性保障机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络可用性a计算公式"><span class="nav-number">2.0.2.</span> <span class="nav-text">☆网络可用性A计算公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络可用性量化评估的基本方法"><span class="nav-number">2.0.3.</span> <span class="nav-text">☆网络可用性量化评估的基本方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设备串联形成的系统可用性评估方法"><span class="nav-number">2.0.4.</span> <span class="nav-text">☆设备串联形成的系统可用性评估方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设备并联形成的系统可用性评估方法"><span class="nav-number">2.0.5.</span> <span class="nav-text">☆设备并联形成的系统可用性评估方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">第四章 网络访问的可控性实现机制与评价</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网络安全中网络访问的可控性概述"><span class="nav-number">3.0.1.</span> <span class="nav-text">☆网络安全中网络访问的可控性概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防火墙含义"><span class="nav-number">3.0.2.</span> <span class="nav-text">☆防火墙含义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防火墙体系结构"><span class="nav-number">3.0.3.</span> <span class="nav-text">☆防火墙体系结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统资源访问控制的分类"><span class="nav-number">3.0.4.</span> <span class="nav-text">☆系统资源访问控制的分类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">第五章 数据保密性实现机制与评价</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本加密技术与评价"><span class="nav-number">4.0.1.</span> <span class="nav-text">☆基本加密技术与评价</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加密算法分类"><span class="nav-number">4.0.2.</span> <span class="nav-text">☆加密算法分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据加密标准des"><span class="nav-number">4.0.3.</span> <span class="nav-text">☆数据加密标准DES</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据加密标准des的分析评价"><span class="nav-number">4.0.4.</span> <span class="nav-text">☆数据加密标准DES的分析评价</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rsa加密机制分析与评价"><span class="nav-number">4.0.5.</span> <span class="nav-text">☆RSA加密机制分析与评价</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rsa与des结合加密机制与评价"><span class="nav-number">4.0.6.</span> <span class="nav-text">☆RSA与DES结合加密机制与评价</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">第六章 数据完整性 实现机制与评价</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据完整性"><span class="nav-number">5.0.1.</span> <span class="nav-text">☆数据完整性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于消息摘要的完整性验证与评价"><span class="nav-number">5.0.2.</span> <span class="nav-text">☆基于消息摘要的完整性验证与评价</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于消息摘要与对称密钥加密的完整性验证机制与评价"><span class="nav-number">5.0.3.</span> <span class="nav-text">☆基于消息摘要与对称密钥加密的完整性验证机制与评价</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#md5消息摘要计算算法与评价"><span class="nav-number">5.0.3.1.</span> <span class="nav-text">☆MD5消息摘要计算算法与评价</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">第七章 用户身份可鉴别性实现机制与评价</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用户身份可鉴别性"><span class="nav-number">6.0.1.</span> <span class="nav-text">☆用户身份可鉴别性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户身份鉴别因素的数量和种类"><span class="nav-number">6.0.2.</span> <span class="nav-text">☆用户身份鉴别因素的数量和种类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字证书"><span class="nav-number">6.0.3.</span> <span class="nav-text">☆数字证书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字证书的内容"><span class="nav-number">6.0.4.</span> <span class="nav-text">☆数字证书的内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成数字证书的参与方"><span class="nav-number">6.0.5.</span> <span class="nav-text">☆生成数字证书的参与方</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户身份可鉴别性机制与评价"><span class="nav-number">6.0.6.</span> <span class="nav-text">☆用户身份可鉴别性机制与评价</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">第八章 用户不可抵赖性实现机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用户不可抵赖性"><span class="nav-number">7.0.1.</span> <span class="nav-text">☆用户不可抵赖性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字签名"><span class="nav-number">7.0.2.</span> <span class="nav-text">☆数字签名</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
