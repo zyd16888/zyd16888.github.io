@@ -1960,7 +1960,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1670a8;
+  background: #b9f61a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3088,10 +3088,10 @@ h6 {
   padding-left: 32px;
 }
 pre .addition {
-  background: #e6ffed;
+  background: #008011;
 }
 pre .deletion {
-  background: #ffeef0;
+  background: #800000;
 }
 .sidebar-toggle {
   right: 10px;
