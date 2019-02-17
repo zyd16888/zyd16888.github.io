@@ -176,7 +176,7 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="美化和必备软件安装">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-17T11:51:28.679Z">
+<meta property="og:updated_time" content="2019-02-17T12:12:48.421Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu系统折腾记">
 <meta name="twitter:description" content="美化和必备软件安装">
@@ -465,7 +465,7 @@
                 
               
 
-              <time title="创建时间：2019-02-17 19:54:00 / 修改时间：19:51:28" itemprop="dateCreated datePublished" datetime="2019-02-17T19:54:00+08:00">2019-02-17</time>
+              <time title="创建时间：2019-02-17 19:54:00 / 修改时间：20:12:48" itemprop="dateCreated datePublished" datetime="2019-02-17T19:54:00+08:00">2019-02-17</time>
             
 
             
@@ -573,7 +573,7 @@
 
       
         <h2 id="换源"><a class="header-anchor" href="#换源">☆</a>换源</h2>
-<p><a href="http://Ubuntu18.xn--04cn-wh5fl8o8plylayeo00wgtixxmx20eng0c.archive.ubuntu.com" target="_blank" rel="noopener">Ubuntu18.04国内版默认的源地址为cn.archive.ubuntu.com</a>，ping结果显示归属地为英国，速度较慢，需要更换为国内的镜像地址。<br>
+<p>Ubuntu18.04国内版默认的源地址为 <a href="http://cn.archive.ubuntu.com" target="_blank" rel="noopener">cn.archive.ubuntu.com</a> ， ping结果显示归属地为英国，速度较慢，需要更换为国内的镜像地址。<br>
 使用如下命令：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//得到系统版本代号，防止更换错误</span><br><span class="line">lsb_release -c  </span><br><span class="line"></span><br><span class="line">//备份原有源</span><br><span class="line">cp /etc/apt/sources.list /etc/apt/sources.list.backup</span><br></pre></td></tr></table></figure>
 <p>清华大学镜像站： <a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/</a></p>
@@ -581,12 +581,12 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span></span><br><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span></span><br><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span></span><br><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span></span><br><span class="line">deb http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span></span><br><span class="line">deb-src http:<span class="comment">//mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span></span><br></pre></td></tr></table></figure>
 <p>更换完成后执行</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
-<h2 id="安装ssr"><a class="header-anchor" href="#安装ssr">☆</a>安装ssr</h2>
+<h2 id="安装-span-id-font-red-ssr-span"><a class="header-anchor" href="#安装-span-id-font-red-ssr-span">☆</a>安装<span id="font-red">ssr</span></h2>
 <p>桌面客户端下载：<a href="https://github.com/erguotou520/electron-ssr" target="_blank" rel="noopener">地址</a></p>
 <p>参考：<a href="https://alanlee.fun/2018/05/18/ubuntu-ssr/" target="_blank" rel="noopener">教程</a></p>
 <p>安装libsodium，用来支持chacha20系列加密方式</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/libsodium.sh &amp;&amp; chmod +x libsodium.sh &amp;&amp; bash libsodium.sh</span><br></pre></td></tr></table></figure>
-<p>脚本来源：<a href="https://doubibackup.com/" target="_blank" rel="noopener">逗比根据地</a></p>
+<p><s>脚本来源：<a href="https://doubibackup.com/" target="_blank" rel="noopener">逗比根据地</a></s></p>
 <p>注意：装完libsodium后需要重启系统</p>
 <h2 id="安装必备软件"><a class="header-anchor" href="#安装必备软件">☆</a>安装必备软件</h2>
 <p>国外公司对Linux系统的支持还是比较好的，vscode、chrome等去官网下载deb包安装就行了</p>
@@ -596,13 +596,13 @@
 <p>教程及演示： <a href="https://www.lulinux.com/archives/1319" target="_blank" rel="noopener">https://www.lulinux.com/archives/1319</a></p>
 <h2 id="美化"><a class="header-anchor" href="#美化">☆</a>美化</h2>
 <h3 id="终端及管理器安装"><a class="header-anchor" href="#终端及管理器安装">☆</a>终端及管理器安装</h3>
-<p>打开终端，查看shell版本<br>
-gnome-shell --version<br>
-如无gnome shell 使用下面命令安装<br>
-sudo apt install gnome-shell</p>
+<p>打开终端，查看shell版本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gnome-shell --version</span><br></pre></td></tr></table></figure>
+<p>如无gnome shell 使用下面命令安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install gnome-shell</span><br></pre></td></tr></table></figure>
 <p>然后安装 gnome-tweak 中文名为 优化</p>
-<p>使用下面命令安装，或者在Ubuntu软件搜索gnome-tweak安装</p>
-<p>sudo apt install gnome-tweak-tool</p>
+<p>使用下面命令安装，或者在Ubuntu软件搜索<span id="inline-green">gnome-tweak</span>安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install gnome-tweak-tool</span><br></pre></td></tr></table></figure>
 <h3 id="gnome-tweak-插件安装"><a class="header-anchor" href="#gnome-tweak-插件安装">☆</a>gnome-tweak 插件安装</h3>
 <ul>
 <li>通过Ubuntu软件商店搜索安装
@@ -612,7 +612,7 @@ sudo apt install gnome-shell</p>
 </li>
 <li>通过<a href="extensions.gnome.org">官网</a>下载
 <ul>
-<li>chrome浏览器需到应用商店安装 <code>GNOME Shell integration</code> 扩展程序</li>
+<li>chrome浏览器需到应用商店安装 <span id="inline-green">GNOME Shell integration</span> 扩展程序</li>
 <li>火狐浏览器根据页面提示执行</li>
 </ul>
 </li>
@@ -638,7 +638,7 @@ sudo apt install gnome-shell</p>
 <h2 id="网易云的安装及踩坑"><a class="header-anchor" href="#网易云的安装及踩坑">☆</a>网易云的安装及踩坑</h2>
 <p>之所以要单独写一个网易云，实在是因为坑太多了，记录一下，以防万一</p>
 <h3 id="安装"><a class="header-anchor" href="#安装">☆</a>安装</h3>
-<p>去官网下载安装包，通过<code>sudo dpkg -i</code>安装</p>
+<p>去官网下载安装包，通过<span id="inline-blue">sudo dpkg -i</span>安装</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i netease-cloud-music_1.1.0_amd64_ubuntu.deb</span><br></pre></td></tr></table></figure>
 <p>上面的操作可能会出错，一般来说就是依赖的软件环境不完整，执行以下命令</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get -f install</span><br></pre></td></tr></table></figure>
@@ -647,17 +647,17 @@ sudo apt install gnome-shell</p>
 <p>通过终端进行启动</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netease-cloud-music</span><br></pre></td></tr></table></figure>
 <p>发现报错并卡住</p>
-<blockquote>
-<p>Gtk-Message: 12:02:46.607: Failed to load module “canberra-gtk-module”</p>
-</blockquote>
-<p>安装相应依赖，不安装依赖通过 <code>sudo netease-cloud-music</code> 也能启动，但是控制台会有报错信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Gtk-Message: 12:02:46.607: Failed to load module "canberra-gtk-module"</span><br></pre></td></tr></table></figure>
+<p>安装相应依赖，不安装依赖通过 <span id="inline-blue">sudo netease-cloud-music</span> 也能启动，但是控制台会有报错信息</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libcanberra-gtk*</span><br></pre></td></tr></table></figure>
-<p>结果安装依赖后还是得通过 <code>sudo netease-cloud-music</code> 启动，并且不能关闭终端窗口</p>
+<p>结果安装依赖后还是得通过 <span id="inline-blue">sudo netease-cloud-music</span> 启动，并且不能关闭终端窗口</p>
 <h3 id="问题解决"><a class="header-anchor" href="#问题解决">☆</a>问题解决</h3>
 <p>以上方法虽然能够使网易云音乐运行，但每次都需要打开一个终端不能关闭，让有轻微强迫症的我看了觉得很不舒服。</p>
-<p>”启动密籍“：双击网易云音乐图标后，点击关机，十秒内就出现界面（此方法实测可用）</p>
+<div class="note success">
+<span id="font-blue">启动密籍：</span>双击网易云音乐图标后，点击关机，十秒内就出现界面（此方法实测可用）
+</div>
 <p>方法2(请自行测试)：<br>
-<a href="http://%E5%9C%A8~%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%84%9A%E6%9C%AC.netease.sh" target="_blank" rel="noopener">在~目录下新建一个脚本.netease.sh</a>,该脚本的内容如下(注意更换password)：</p>
+在~目录下新建一个脚本<span id="inline-blue">.netease.sh</span>,该脚本的内容如下(注意更换password)：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"password"</span> | sudo -S netease-cloud-music &amp;</span><br><span class="line">sleep 0.1</span><br><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
 <p>编辑~/.bashrc，在末尾增加了一行：</p>
 <blockquote>
@@ -675,7 +675,7 @@ sudo apt install gnome-shell</p>
 </ul>
 </li>
 <li>
-<p>通过命令 <code>sudo dpkg -i</code> 安装</p>
+<p>通过命令 <span id="inline-blue">sudo dpkg -i</span> 安装</p>
 </li>
 </ul>
 
@@ -1047,7 +1047,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#换源"><span class="nav-number">1.</span> <span class="nav-text">☆换源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装ssr"><span class="nav-number">2.</span> <span class="nav-text">☆安装ssr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装必备软件"><span class="nav-number">3.</span> <span class="nav-text">☆安装必备软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装国内软件"><span class="nav-number">4.</span> <span class="nav-text">☆安装国内软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#美化"><span class="nav-number">5.</span> <span class="nav-text">☆美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端及管理器安装"><span class="nav-number">5.1.</span> <span class="nav-text">☆终端及管理器安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gnome-tweak-插件安装"><span class="nav-number">5.2.</span> <span class="nav-text">☆gnome-tweak 插件安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐的插件"><span class="nav-number">5.3.</span> <span class="nav-text">☆推荐的插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考教程"><span class="nav-number">5.4.</span> <span class="nav-text">☆参考教程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网易云的安装及踩坑"><span class="nav-number">6.</span> <span class="nav-text">☆网易云的安装及踩坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">6.1.</span> <span class="nav-text">☆安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动"><span class="nav-number">6.2.</span> <span class="nav-text">☆启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题解决"><span class="nav-number">6.3.</span> <span class="nav-text">☆问题解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deb包安装方式"><span class="nav-number">7.</span> <span class="nav-text">☆deb包安装方式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#换源"><span class="nav-number">1.</span> <span class="nav-text">☆换源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-span-id-font-red-ssr-span"><span class="nav-number">2.</span> <span class="nav-text">☆安装ssr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装必备软件"><span class="nav-number">3.</span> <span class="nav-text">☆安装必备软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装国内软件"><span class="nav-number">4.</span> <span class="nav-text">☆安装国内软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#美化"><span class="nav-number">5.</span> <span class="nav-text">☆美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端及管理器安装"><span class="nav-number">5.1.</span> <span class="nav-text">☆终端及管理器安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gnome-tweak-插件安装"><span class="nav-number">5.2.</span> <span class="nav-text">☆gnome-tweak 插件安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐的插件"><span class="nav-number">5.3.</span> <span class="nav-text">☆推荐的插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考教程"><span class="nav-number">5.4.</span> <span class="nav-text">☆参考教程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网易云的安装及踩坑"><span class="nav-number">6.</span> <span class="nav-text">☆网易云的安装及踩坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">6.1.</span> <span class="nav-text">☆安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动"><span class="nav-number">6.2.</span> <span class="nav-text">☆启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题解决"><span class="nav-number">6.3.</span> <span class="nav-text">☆问题解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deb包安装方式"><span class="nav-number">7.</span> <span class="nav-text">☆deb包安装方式</span></a></li></ol></div>
             
 
           </div>
