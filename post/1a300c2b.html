@@ -176,7 +176,7 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="美化和必备软件安装">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-17T12:12:48.421Z">
+<meta property="og:updated_time" content="2019-02-25T02:01:15.161Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu系统折腾记">
 <meta name="twitter:description" content="美化和必备软件安装">
@@ -465,12 +465,24 @@
                 
               
 
-              <time title="创建时间：2019-02-17 19:54:00 / 修改时间：20:12:48" itemprop="dateCreated datePublished" datetime="2019-02-17T19:54:00+08:00">2019-02-17</time>
+              <time title="创建时间：2019-02-17 19:54:00" itemprop="dateCreated datePublished" datetime="2019-02-17T19:54:00+08:00">2019-02-17</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-25 10:01:15" itemprop="dateModified" datetime="2019-02-25T10:01:15+08:00">2019-02-25</time>
               
             
           </span>
@@ -536,7 +548,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.3k</span>
+                <span title="本文字数">3.4k</span>
               
 
               
@@ -550,7 +562,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">5 分钟</span>
+                <span title="阅读时长">6 分钟</span>
               
             </div>
           
@@ -678,7 +690,12 @@
 <p>通过命令 <span id="inline-blue">sudo dpkg -i</span> 安装</p>
 </li>
 </ul>
-
+<h2 id="双系统下无法访问win磁盘问题"><a class="header-anchor" href="#双系统下无法访问win磁盘问题">☆</a>双系统下无法访问win磁盘问题</h2>
+<h3 id="方法一"><a class="header-anchor" href="#方法一">☆</a>方法一</h3>
+<p>通过win系统重启进入ubuntu系统</p>
+<h3 id="方法二"><a class="header-anchor" href="#方法二">☆</a>方法二</h3>
+<p>执行以下命令,记得加磁盘分区号</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ntfsfix /dev/sda  or   sudo ntfsfix /dev/nvmeOn</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -1047,7 +1064,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#换源"><span class="nav-number">1.</span> <span class="nav-text">☆换源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-span-id-font-red-ssr-span"><span class="nav-number">2.</span> <span class="nav-text">☆安装ssr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装必备软件"><span class="nav-number">3.</span> <span class="nav-text">☆安装必备软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装国内软件"><span class="nav-number">4.</span> <span class="nav-text">☆安装国内软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#美化"><span class="nav-number">5.</span> <span class="nav-text">☆美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端及管理器安装"><span class="nav-number">5.1.</span> <span class="nav-text">☆终端及管理器安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gnome-tweak-插件安装"><span class="nav-number">5.2.</span> <span class="nav-text">☆gnome-tweak 插件安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐的插件"><span class="nav-number">5.3.</span> <span class="nav-text">☆推荐的插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考教程"><span class="nav-number">5.4.</span> <span class="nav-text">☆参考教程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网易云的安装及踩坑"><span class="nav-number">6.</span> <span class="nav-text">☆网易云的安装及踩坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">6.1.</span> <span class="nav-text">☆安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动"><span class="nav-number">6.2.</span> <span class="nav-text">☆启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题解决"><span class="nav-number">6.3.</span> <span class="nav-text">☆问题解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deb包安装方式"><span class="nav-number">7.</span> <span class="nav-text">☆deb包安装方式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#换源"><span class="nav-number">1.</span> <span class="nav-text">☆换源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-span-id-font-red-ssr-span"><span class="nav-number">2.</span> <span class="nav-text">☆安装ssr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装必备软件"><span class="nav-number">3.</span> <span class="nav-text">☆安装必备软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装国内软件"><span class="nav-number">4.</span> <span class="nav-text">☆安装国内软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#美化"><span class="nav-number">5.</span> <span class="nav-text">☆美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端及管理器安装"><span class="nav-number">5.1.</span> <span class="nav-text">☆终端及管理器安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gnome-tweak-插件安装"><span class="nav-number">5.2.</span> <span class="nav-text">☆gnome-tweak 插件安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐的插件"><span class="nav-number">5.3.</span> <span class="nav-text">☆推荐的插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考教程"><span class="nav-number">5.4.</span> <span class="nav-text">☆参考教程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网易云的安装及踩坑"><span class="nav-number">6.</span> <span class="nav-text">☆网易云的安装及踩坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">6.1.</span> <span class="nav-text">☆安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动"><span class="nav-number">6.2.</span> <span class="nav-text">☆启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题解决"><span class="nav-number">6.3.</span> <span class="nav-text">☆问题解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deb包安装方式"><span class="nav-number">7.</span> <span class="nav-text">☆deb包安装方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双系统下无法访问win磁盘问题"><span class="nav-number">8.</span> <span class="nav-text">☆双系统下无法访问win磁盘问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一"><span class="nav-number">8.1.</span> <span class="nav-text">☆方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二"><span class="nav-number">8.2.</span> <span class="nav-text">☆方法二</span></a></li></ol></li></ol></div>
             
 
           </div>
