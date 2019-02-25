@@ -176,7 +176,7 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="美化和必备软件安装">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-25T02:01:15.161Z">
+<meta property="og:updated_time" content="2019-02-25T13:44:21.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu系统折腾记">
 <meta name="twitter:description" content="美化和必备软件安装">
@@ -482,7 +482,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-25 10:01:15" itemprop="dateModified" datetime="2019-02-25T10:01:15+08:00">2019-02-25</time>
+                <time title="修改时间：2019-02-25 21:44:21" itemprop="dateModified" datetime="2019-02-25T21:44:21+08:00">2019-02-25</time>
               
             
           </span>
@@ -548,7 +548,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.4k</span>
+                <span title="本文字数">3.6k</span>
               
 
               
@@ -651,17 +651,17 @@
 <p>之所以要单独写一个网易云，实在是因为坑太多了，记录一下，以防万一</p>
 <h3 id="安装"><a class="header-anchor" href="#安装">☆</a>安装</h3>
 <p>去官网下载安装包，通过<span id="inline-blue">sudo dpkg -i</span>安装</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i netease-cloud-music_1.1.0_amd64_ubuntu.deb</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i netease-cloud-music_1.1.0_amd64_ubuntu.deb</span><br></pre></td></tr></table></figure>
 <p>上面的操作可能会出错，一般来说就是依赖的软件环境不完整，执行以下命令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get -f install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get -f install</span><br></pre></td></tr></table></figure>
 <h3 id="启动"><a class="header-anchor" href="#启动">☆</a>启动</h3>
 <p>在软件中能看到网易云音乐的图标，可是点击运行之后却没有任何窗口出现。</p>
 <p>通过终端进行启动</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netease-cloud-music</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netease-cloud-music</span><br></pre></td></tr></table></figure>
 <p>发现报错并卡住</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Gtk-Message: 12:02:46.607: Failed to load module "canberra-gtk-module"</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Gtk-Message: 12:02:46.607: Failed to load module <span class="string">"canberra-gtk-module"</span></span><br></pre></td></tr></table></figure>
 <p>安装相应依赖，不安装依赖通过 <span id="inline-blue">sudo netease-cloud-music</span> 也能启动，但是控制台会有报错信息</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libcanberra-gtk*</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libcanberra-gtk*</span><br></pre></td></tr></table></figure>
 <p>结果安装依赖后还是得通过 <span id="inline-blue">sudo netease-cloud-music</span> 启动，并且不能关闭终端窗口</p>
 <h3 id="问题解决"><a class="header-anchor" href="#问题解决">☆</a>问题解决</h3>
 <p>以上方法虽然能够使网易云音乐运行，但每次都需要打开一个终端不能关闭，让有轻微强迫症的我看了觉得很不舒服。</p>
@@ -695,7 +695,11 @@
 <p>通过win系统重启进入ubuntu系统</p>
 <h3 id="方法二"><a class="header-anchor" href="#方法二">☆</a>方法二</h3>
 <p>执行以下命令,记得加磁盘分区号</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ntfsfix /dev/sda  or   sudo ntfsfix /dev/nvmeOn</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ntfsfix /dev/sda  or   sudo ntfsfix /dev/nvmeOn</span><br></pre></td></tr></table></figure>
+<h2 id="pppoe-拨号上网"><a class="header-anchor" href="#pppoe-拨号上网">☆</a>PPPoE 拨号上网</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 pppoeconf</span></span><br><span class="line">sudo apt install pppoeconf</span><br><span class="line"><span class="comment"># 配置</span></span><br><span class="line">sudo pppoeconf</span><br><span class="line"><span class="comment"># 手动连接</span></span><br><span class="line">sudo pon dsl-provider</span><br><span class="line"><span class="comment"># 手动断开</span></span><br><span class="line">sudo poff dsl-provider</span><br><span class="line"><span class="comment"># 查看状态</span></span><br><span class="line">sudo plog</span><br><span class="line"><span class="comment"># 查看接口信息</span></span><br><span class="line">sudo ip addr show ppp0</span><br></pre></td></tr></table></figure>
+<p>注意：不适用于需要客户端的登陆方式，因为客户端一般都有二次验证</p>
+
       
     </div>
 
@@ -1064,7 +1068,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#换源"><span class="nav-number">1.</span> <span class="nav-text">☆换源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-span-id-font-red-ssr-span"><span class="nav-number">2.</span> <span class="nav-text">☆安装ssr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装必备软件"><span class="nav-number">3.</span> <span class="nav-text">☆安装必备软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装国内软件"><span class="nav-number">4.</span> <span class="nav-text">☆安装国内软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#美化"><span class="nav-number">5.</span> <span class="nav-text">☆美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端及管理器安装"><span class="nav-number">5.1.</span> <span class="nav-text">☆终端及管理器安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gnome-tweak-插件安装"><span class="nav-number">5.2.</span> <span class="nav-text">☆gnome-tweak 插件安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐的插件"><span class="nav-number">5.3.</span> <span class="nav-text">☆推荐的插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考教程"><span class="nav-number">5.4.</span> <span class="nav-text">☆参考教程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网易云的安装及踩坑"><span class="nav-number">6.</span> <span class="nav-text">☆网易云的安装及踩坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">6.1.</span> <span class="nav-text">☆安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动"><span class="nav-number">6.2.</span> <span class="nav-text">☆启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题解决"><span class="nav-number">6.3.</span> <span class="nav-text">☆问题解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deb包安装方式"><span class="nav-number">7.</span> <span class="nav-text">☆deb包安装方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双系统下无法访问win磁盘问题"><span class="nav-number">8.</span> <span class="nav-text">☆双系统下无法访问win磁盘问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一"><span class="nav-number">8.1.</span> <span class="nav-text">☆方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二"><span class="nav-number">8.2.</span> <span class="nav-text">☆方法二</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#换源"><span class="nav-number">1.</span> <span class="nav-text">☆换源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-span-id-font-red-ssr-span"><span class="nav-number">2.</span> <span class="nav-text">☆安装ssr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装必备软件"><span class="nav-number">3.</span> <span class="nav-text">☆安装必备软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装国内软件"><span class="nav-number">4.</span> <span class="nav-text">☆安装国内软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#美化"><span class="nav-number">5.</span> <span class="nav-text">☆美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端及管理器安装"><span class="nav-number">5.1.</span> <span class="nav-text">☆终端及管理器安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gnome-tweak-插件安装"><span class="nav-number">5.2.</span> <span class="nav-text">☆gnome-tweak 插件安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐的插件"><span class="nav-number">5.3.</span> <span class="nav-text">☆推荐的插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考教程"><span class="nav-number">5.4.</span> <span class="nav-text">☆参考教程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网易云的安装及踩坑"><span class="nav-number">6.</span> <span class="nav-text">☆网易云的安装及踩坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">6.1.</span> <span class="nav-text">☆安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动"><span class="nav-number">6.2.</span> <span class="nav-text">☆启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题解决"><span class="nav-number">6.3.</span> <span class="nav-text">☆问题解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#deb包安装方式"><span class="nav-number">7.</span> <span class="nav-text">☆deb包安装方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双系统下无法访问win磁盘问题"><span class="nav-number">8.</span> <span class="nav-text">☆双系统下无法访问win磁盘问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一"><span class="nav-number">8.1.</span> <span class="nav-text">☆方法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二"><span class="nav-number">8.2.</span> <span class="nav-text">☆方法二</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pppoe-拨号上网"><span class="nav-number">9.</span> <span class="nav-text">☆PPPoE 拨号上网</span></a></li></ol></div>
             
 
           </div>
