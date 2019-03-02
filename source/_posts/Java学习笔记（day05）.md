@@ -85,9 +85,12 @@ sticky:
 		* 原因：你访问了不存在的索引。
 	* b:NullPointerException:空指针异常
 		* 原因：数组已经不在指向堆内存了。而你还用数组名去访问元素。
-		* int[] arr = {1,2,3};
-		* arr = null;
-		* System.out.println(arr[0]);
+
+```java
+ int[] arr = {1,2,3};
+ arr = null;
+ System.out.println(arr[0]);
+```
 
 ## 05.09 数组的操作1遍历 (掌握)
 
@@ -95,7 +98,7 @@ sticky:
 	* 数组遍历：就是依次输出数组中的每一个元素。
 	* 数组的属性:arr.length数组的长度
 	* 数组的最大索引:arr.length - 1;
-	 
+
 ```java
 			public static void print(int[] arr) {
 				for (int i = 0;i < arr.length ;i++ ) {
@@ -108,35 +111,38 @@ sticky:
 
 * A:案例演示
 	* 数组获取最值(获取数组中的最大值最小值)
-		
-			public static int getMax(int[] arr) {
-				int max = arr[0];
-				for (int i = 1;i < arr.length ;i++ ) {			//从数组的第二个元素开始遍历
-					if (max < arr[i]) {							//如果max记录的值小于的数组中的元素
-						max = arr[i];							//max记录住较大的
-					}
-				}
-		
-				return max;
-			}
+
+```java
+public static int getMax(int[] arr) {
+	int max = arr[0];
+	for (int i = 1;i < arr.length ;i++ ) {			//从数组的第二个元素开始遍历
+		if (max < arr[i]) {							//如果max记录的值小于的数组中的元素
+			max = arr[i];							//max记录住较大的
+		}
+	}
+
+	return max;
+}
+```
+
 ## 05.11 数组的操作3反转 (掌握)
 
 * A:案例演示
 	* 数组元素反转(就是把元素对调)
 
 ```java
-			public static void reverseArray(int[] arr) {
-				for (int i = 0;i < arr.length / 2 ; i++) {
-					//arr[0]和arr[arr.length-1-0]交换
-					//arr[1]和arr[arr.length-1-1]交换
-					//arr[2]和arr[arr.lentth-1-2]
-					//...
-		
-					int temp = arr[i];
-					arr[i] = arr[arr.length-1-i];
-					arr[arr.length-1-i] = temp;
-				}
-			}
+public static void reverseArray(int[] arr) {
+	for (int i = 0;i < arr.length / 2 ; i++) {
+		//arr[0]和arr[arr.length-1-0]交换
+		//arr[1]和arr[arr.length-1-1]交换
+		//arr[2]和arr[arr.lentth-1-2]
+		//...
+
+		int temp = arr[i];
+		arr[i] = arr[arr.length-1-i];
+		arr[arr.length-1-i] = temp;
+	}
+}
 ```
 
 ## 05.12 数组的操作4查表法 (掌握)
@@ -145,10 +151,10 @@ sticky:
 	* 数组查表法(根据键盘录入索引,查找对应星期)
 
 ```java
-			public static char getWeek(int week) {
-				char[] arr = {' ','一','二','三','四','五','六','日'};		//定义了一张星期表
-				return arr[week];											//通过索引获取表中的元素
-			}
+public static char getWeek(int week) {
+	char[] arr = {' ','一','二','三','四','五','六','日'};		//定义了一张星期表
+	return arr[week];											//通过索引获取表中的元素
+}
 ```
 
 ## 05.13 数组的操作5基本查找 (掌握)
@@ -157,14 +163,14 @@ sticky:
 	* 数组元素查找(查找指定元素第一次在数组中出现的索引)
 
 ```java
-			public static int getIndex(int[] arr,int value) {
-				for (int i = 0;i < arr.length ;i++ ) {				//数组的遍历
-					if (arr[i] == value) {							//如果数组中的元素与查找的元素匹配
-						return i;
-					}
-				}
-				return -1;
-			} 
+public static int getIndex(int[] arr,int value) {
+	for (int i = 0;i < arr.length ;i++ ) {				//数组的遍历
+		if (arr[i] == value) {							//如果数组中的元素与查找的元素匹配
+			return i;
+		}
+	}
+	return -1;
+}
 ```
 
 ## 05.14 二维数组概述和格式1的讲解 (了解)
@@ -219,16 +225,17 @@ sticky:
 
 	* 外循环控制的是二维数组的长度，其实就是一维数组的个数。
 	* 内循环控制的是一维数组的长度。
+
 ```java
-			int[][] arr = {{1,2,3},{4,5},{6,7,8,9}};
-	
-			for (int i = 0;i < arr.length ;i++ ) {			//获取到每个二维数组中的一维数组
-				for (int j = 0;j < arr[i].length ;j++ ) {	//获取每个一维数组中的元素
-					System.out.print(arr[i][j] + " ");
-				}
-	
-				System.out.println();
-			}
+int[][] arr = {{1,2,3},{4,5},{6,7,8,9}};
+
+for (int i = 0;i < arr.length ;i++ ) {          //获取到每个二维数组中的一维数组
+	for (int j = 0;j < arr[i].length ;j++ ) {	//获取每个一维数组中的元素
+		System.out.print(arr[i][j] + " ");
+	}
+
+	System.out.println();
+}
 ```
 
 ## 05.19 二维数组练习2求和 (掌握)
@@ -241,53 +248,53 @@ sticky:
 		第二季度：77,33,88
 		第三季度：25,45,65
 		第四季度：11,66,99
-		
+
 ```java
-		int[][] arr = {{22,66,44},{77,33,88},{25,45,65},{11,66,99}};
+int[][] arr = {{22,66,44},{77,33,88},{25,45,65},{11,66,99}};
 
-		int sum = 0;									//定义变量,记录每次相加的结果
-		for (int i = 0;i < arr.length ;i++ ) {			//获取每一个一维数组
-			for (int j = 0;j < arr[i].length ;j++ ) {	//获取每一个一维数组中的元素
-				sum = sum + arr[i][j];					//累加
-			}
-		}
+int sum = 0;									//定义变量,记录每次相加的结果
+for (int i = 0;i < arr.length ;i++ ) {			//获取每一个一维数组
+	for (int j = 0;j < arr[i].length ;j++ ) {	//获取每一个一维数组中的元素
+		sum = sum + arr[i][j];					//累加
+	}
+}
 
-		System.out.println(sum);
+System.out.println(sum);
 ```
 
 ## 05.20 思考题Java中的参数传递问题及图解 (掌握)
 
 * A:案例演示
 * 
-		看程序写结果，并画内存图解释
+看程序写结果，并画内存图解释
 
 ```java
-		public static void main(String[] args) {
-			int a = 10;
-			int b = 20;
-			System.out.println("a:"+a+",b:"+b);
-			change(a,b);
-			System.out.println("a:"+a+",b:"+b);
-	
-			int[] arr = {1,2,3,4,5};
-			change(arr);
-			System.out.println(arr[1]);
+public static void main(String[] args) {
+	int a = 10;
+	int b = 20;
+	System.out.println("a:"+a+",b:"+b);
+	change(a,b);
+	System.out.println("a:"+a+",b:"+b);
+
+	int[] arr = {1,2,3,4,5};
+	change(arr);
+	System.out.println(arr[1]);
+}
+
+public static void change(int a,int b) {
+	System.out.println("a:"+a+",b:"+b);
+	a = b;
+	b = a + b;
+	System.out.println("a:"+a+",b:"+b);
+}
+
+public static void change(int[] arr) {
+	for(int x=0; x<arr.length; x++) {
+		if(arr[x]%2==0) {
+			arr[x]*=2;
 		}
-	
-		public static void change(int a,int b) {
-			System.out.println("a:"+a+",b:"+b);
-			a = b;
-			b = a + b;
-			System.out.println("a:"+a+",b:"+b);
-		}
-	
-		public static void change(int[] arr) {
-			for(int x=0; x<arr.length; x++) {
-				if(arr[x]%2==0) {
-					arr[x]*=2;
-				}
-			}
-		}
+	}
+}
 ```
 
 ## 05.21_day05总结

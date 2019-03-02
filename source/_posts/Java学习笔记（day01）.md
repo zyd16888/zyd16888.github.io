@@ -71,7 +71,7 @@ password:
 	* b:Shift
 	* c:Ctrl
 	* d:Alt
-	* e:空格	
+	* e:空格
 	* f:Enter
 	* g:Window
 	* h:上下左右键

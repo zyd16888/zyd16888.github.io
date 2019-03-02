@@ -273,6 +273,9 @@ sticky:
 	* byte可以作为switch的表达式吗?
 	* long可以作为switch的表达式吗?
 	* String可以作为switch的表达式吗?
+
+	>char，byte，short，int以及它们的包装类都可以。JAVA SE 7以后，String 类型也可以。
+
 * C:执行流程
 	* 先计算表达式的值
 	* 然后和case后面的匹配，如果有就执行对应的语句，否则执行default控制的语句
@@ -303,7 +306,8 @@ sticky:
 ## 03.22 选择结构switch语句练习 (掌握)
 
 * A:看程序写结果：
-* 
+
+```java
 		int x = 2;
 		int y = 3;
 		switch(x){
@@ -315,10 +319,12 @@ sticky:
 			case 4:
 				y++;
 		}
-		System.out.println("y="+y);
-	
+		System.out.println("y="+y);  // y=4
+```
+
 * B:看程序写结果：
-* 
+
+```java
 		int x = 2;
 		int y = 3;
 		switch(x){
@@ -329,13 +335,15 @@ sticky:
 			case 4:
 				y++;
 		}
-		System.out.println("y="+y);
+		System.out.println("y="+y); //y=6
+```
 
 ## 03.23 选择结构if语句和switch语句的区别 (掌握)
 
 * A:总结switch语句和if语句的各自使用场景
 * 	switch建议判断固定值的时候用
 * 	if建议判断区间或范围的时候用
+
 * B:案例演示
 	* 分别用switch语句和if语句实现下列需求：
 		* 键盘录入月份，输出对应的季节

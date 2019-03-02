@@ -171,24 +171,24 @@ sticky:
 //内部类之所以能访问外部类，是能获取到外部类的引用：外部类名.this
 
 ```java
-		class Outer {
-			public int num = 10;
-			class Inner {
-				public int num = 20;
-				public void show() {
-					int num = 30;
-					System.out.println(num);
-					System.out.println(this.num);
-					System.out.println(Outer.this.num);
-				}
-			}
+class Outer {
+	public int num = 10;
+	class Inner {
+		public int num = 20;
+		public void show() {
+			int num = 30;
+			System.out.println(num);
+			System.out.println(this.num);
+			System.out.println(Outer.this.num);
 		}
-		class InnerClassTest {
-			public static void main(String[] args) {
-				Outer.Inner oi = new Outer().new Inner();
-				oi.show();
-			}	
-		}
+	}
+}
+class InnerClassTest {
+	public static void main(String[] args) {
+		Outer.Inner oi = new Outer().new Inner();
+		oi.show();
+	}	
+}
 ```
 
 ## 10.12 局部内部类访问局部变量的问题 (掌握)
