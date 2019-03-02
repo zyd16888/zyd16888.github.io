@@ -176,7 +176,7 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="Java基础">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-02T04:24:43.513Z">
+<meta property="og:updated_time" content="2019-03-02T08:08:03.059Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习笔记（day05）">
 <meta name="twitter:description" content="Java基础">
@@ -482,7 +482,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 12:24:43" itemprop="dateModified" datetime="2019-03-02T12:24:43+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-02 16:08:03" itemprop="dateModified" datetime="2019-03-02T16:08:03+08:00">2019-03-02</time>
               
             
           </span>
@@ -720,14 +720,12 @@
 <li>b:NullPointerException:空指针异常
 <ul>
 <li>原因：数组已经不在指向堆内存了。而你还用数组名去访问元素。</li>
-<li>int[] arr = {1,2,3};</li>
-<li>arr = null;</li>
-<li>System.out.println(arr[0]);</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">arr = <span class="keyword">null</span>;</span><br><span class="line">System.out.println(arr[<span class="number">0</span>]);</span><br></pre></td></tr></table></figure>
 <h2 id="05-09-数组的操作1遍历-掌握"><a class="header-anchor" href="#05-09-数组的操作1遍历-掌握">☆</a>05.09 数组的操作1遍历 (掌握)</h2>
 <ul>
 <li>A:案例演示
@@ -743,23 +741,11 @@
 <ul>
 <li>A:案例演示
 <ul>
-<li>
-<p>数组获取最值(获取数组中的最大值最小值)</p>
-<pre><code>public static int getMax(int[] arr) {
-	int max = arr[0];
-	for (int i = 1;i &lt; arr.length ;i++ ) {			//从数组的第二个元素开始遍历
-		if (max &lt; arr[i]) {							//如果max记录的值小于的数组中的元素
-			max = arr[i];							//max记录住较大的
-		}
-	}
-
-	return max;
-}
-</code></pre>
-</li>
+<li>数组获取最值(获取数组中的最大值最小值)</li>
 </ul>
 </li>
 </ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getMax</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> max = arr[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>;i &lt; arr.length ;i++ ) &#123;			<span class="comment">//从数组的第二个元素开始遍历</span></span><br><span class="line">		<span class="keyword">if</span> (max &lt; arr[i]) &#123;							<span class="comment">//如果max记录的值小于的数组中的元素</span></span><br><span class="line">			max = arr[i];							<span class="comment">//max记录住较大的</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> max;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="05-11-数组的操作3反转-掌握"><a class="header-anchor" href="#05-11-数组的操作3反转-掌握">☆</a>05.11 数组的操作3反转 (掌握)</h2>
 <ul>
 <li>A:案例演示
@@ -768,7 +754,7 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">reverseArray</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr.length / <span class="number">2</span> ; i++) &#123;</span><br><span class="line">		<span class="comment">//arr[0]和arr[arr.length-1-0]交换</span></span><br><span class="line">		<span class="comment">//arr[1]和arr[arr.length-1-1]交换</span></span><br><span class="line">		<span class="comment">//arr[2]和arr[arr.lentth-1-2]</span></span><br><span class="line">		<span class="comment">//...</span></span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> temp = arr[i];</span><br><span class="line">		arr[i] = arr[arr.length-<span class="number">1</span>-i];</span><br><span class="line">		arr[arr.length-<span class="number">1</span>-i] = temp;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">reverseArray</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr.length / <span class="number">2</span> ; i++) &#123;</span><br><span class="line">		<span class="comment">//arr[0]和arr[arr.length-1-0]交换</span></span><br><span class="line">		<span class="comment">//arr[1]和arr[arr.length-1-1]交换</span></span><br><span class="line">		<span class="comment">//arr[2]和arr[arr.lentth-1-2]</span></span><br><span class="line">		<span class="comment">//...</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> temp = arr[i];</span><br><span class="line">		arr[i] = arr[arr.length-<span class="number">1</span>-i];</span><br><span class="line">		arr[arr.length-<span class="number">1</span>-i] = temp;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="05-12-数组的操作4查表法-掌握"><a class="header-anchor" href="#05-12-数组的操作4查表法-掌握">☆</a>05.12 数组的操作4查表法 (掌握)</h2>
 <ul>
 <li>A:案例演示
@@ -883,7 +869,7 @@ int[] x,y[];	x是一维数组,y是二维数组
 </ul>
 </li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] arr = &#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>&#125;,&#123;<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;&#125;;</span><br><span class="line">	</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr.length ;i++ ) &#123;			<span class="comment">//获取到每个二维数组中的一维数组</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; arr[i].length ;j++ ) &#123;	<span class="comment">//获取每个一维数组中的元素</span></span><br><span class="line">		System.out.print(arr[i][j] + <span class="string">" "</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] arr = &#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>&#125;,&#123;<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr.length ;i++ ) &#123;          <span class="comment">//获取到每个二维数组中的一维数组</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; arr[i].length ;j++ ) &#123;	<span class="comment">//获取每个一维数组中的元素</span></span><br><span class="line">		System.out.print(arr[i][j] + <span class="string">" "</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="05-19-二维数组练习2求和-掌握"><a class="header-anchor" href="#05-19-二维数组练习2求和-掌握">☆</a>05.19 二维数组练习2求和 (掌握)</h2>
 <ul>
 <li>A:案例演示</li>
@@ -901,12 +887,10 @@ int[] x,y[];	x是一维数组,y是二维数组
 <h2 id="05-20-思考题java中的参数传递问题及图解-掌握"><a class="header-anchor" href="#05-20-思考题java中的参数传递问题及图解-掌握">☆</a>05.20 思考题Java中的参数传递问题及图解 (掌握)</h2>
 <ul>
 <li>A:案例演示</li>
-<li>
-<pre><code>看程序写结果，并画内存图解释
-</code></pre>
-</li>
+<li></li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line">	<span class="keyword">int</span> b = <span class="number">20</span>;</span><br><span class="line">	System.out.println(<span class="string">"a:"</span>+a+<span class="string">",b:"</span>+b);</span><br><span class="line">	change(a,b);</span><br><span class="line">	System.out.println(<span class="string">"a:"</span>+a+<span class="string">",b:"</span>+b);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">int</span>[] arr = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">	change(arr);</span><br><span class="line">	System.out.println(arr[<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line">	</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">change</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">	System.out.println(<span class="string">"a:"</span>+a+<span class="string">",b:"</span>+b);</span><br><span class="line">	a = b;</span><br><span class="line">	b = a + b;</span><br><span class="line">	System.out.println(<span class="string">"a:"</span>+a+<span class="string">",b:"</span>+b);</span><br><span class="line">&#125;</span><br><span class="line">	</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">change</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">0</span>; x&lt;arr.length; x++) &#123;</span><br><span class="line">		<span class="keyword">if</span>(arr[x]%<span class="number">2</span>==<span class="number">0</span>) &#123;</span><br><span class="line">			arr[x]*=<span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>看程序写结果，并画内存图解释</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line">	<span class="keyword">int</span> b = <span class="number">20</span>;</span><br><span class="line">	System.out.println(<span class="string">"a:"</span>+a+<span class="string">",b:"</span>+b);</span><br><span class="line">	change(a,b);</span><br><span class="line">	System.out.println(<span class="string">"a:"</span>+a+<span class="string">",b:"</span>+b);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span>[] arr = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">	change(arr);</span><br><span class="line">	System.out.println(arr[<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">change</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">	System.out.println(<span class="string">"a:"</span>+a+<span class="string">",b:"</span>+b);</span><br><span class="line">	a = b;</span><br><span class="line">	b = a + b;</span><br><span class="line">	System.out.println(<span class="string">"a:"</span>+a+<span class="string">",b:"</span>+b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">change</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> x=<span class="number">0</span>; x&lt;arr.length; x++) &#123;</span><br><span class="line">		<span class="keyword">if</span>(arr[x]%<span class="number">2</span>==<span class="number">0</span>) &#123;</span><br><span class="line">			arr[x]*=<span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="05-21-day05总结"><a class="header-anchor" href="#05-21-day05总结">☆</a>05.21_day05总结</h2>
 <ul>
 <li>把今天的知识点总结一遍。</li>
@@ -1316,7 +1300,7 @@ show_date_time();
     
       <span class="post-meta-item-text">总字数：</span>
     
-    <span title="总字数">217k</span>
+    <span title="总字数">218k</span>
   
 
   

@@ -176,7 +176,7 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="☆03.01 逻辑运算符的基本用法(掌握)   A:逻辑运算符有哪些  &amp;amp;,|,^,! &amp;amp;&amp;amp;,||    B:案例演示   逻辑运算符的基本用法   注意事项：  a:逻辑运算符一般用于连接boolean类型的表达式或者值。 b:表达式：就是用运算符把常量或者变量连接起来的符合java语法的式子。  算术表达式：a + b 比较表达式：a == b(条件表达式)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-02T04:24:43.511Z">
+<meta property="og:updated_time" content="2019-03-02T08:01:17.952Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习笔记（day03）">
 <meta name="twitter:description" content="☆03.01 逻辑运算符的基本用法(掌握)   A:逻辑运算符有哪些  &amp;amp;,|,^,! &amp;amp;&amp;amp;,||    B:案例演示   逻辑运算符的基本用法   注意事项：  a:逻辑运算符一般用于连接boolean类型的表达式或者值。 b:表达式：就是用运算符把常量或者变量连接起来的符合java语法的式子。  算术表达式：a + b 比较表达式：a == b(条件表达式)">
@@ -482,7 +482,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 12:24:43" itemprop="dateModified" datetime="2019-03-02T12:24:43+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-02 16:01:17" itemprop="dateModified" datetime="2019-03-02T16:01:17+08:00">2019-03-02</time>
               
             
           </span>
@@ -548,7 +548,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.5k</span>
+                <span title="本文字数">4.6k</span>
               
 
               
@@ -562,7 +562,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">7 分钟</span>
+                <span title="阅读时长">8 分钟</span>
               
             </div>
           
@@ -1063,6 +1063,9 @@ else {
 <li>long可以作为switch的表达式吗?</li>
 <li>String可以作为switch的表达式吗?</li>
 </ul>
+<blockquote>
+<p>char，byte，short，int以及它们的包装类都可以。JAVA SE 7以后，String 类型也可以。</p>
+</blockquote>
 </li>
 <li>
 <p>C:执行流程</p>
@@ -1115,48 +1118,26 @@ else {
 </ul>
 <h2 id="03-22-选择结构switch语句练习-掌握"><a class="header-anchor" href="#03-22-选择结构switch语句练习-掌握">☆</a>03.22 选择结构switch语句练习 (掌握)</h2>
 <ul>
-<li>
-<p>A:看程序写结果：</p>
-</li>
-<li>
-<pre><code>int x = 2;
-int y = 3;
-switch(x){
-	default:
-		y++;
-		break;
-	case 3:
-		y++;
-	case 4:
-		y++;
-}
-System.out.println(&quot;y=&quot;+y);
-</code></pre>
-</li>
-<li>
-<p>B:看程序写结果：</p>
-</li>
-<li>
-<pre><code>int x = 2;
-int y = 3;
-switch(x){
-	default:
-		y++;
-	case 3:
-		y++;
-	case 4:
-		y++;
-}
-System.out.println(&quot;y=&quot;+y);
-</code></pre>
-</li>
+<li>A:看程序写结果：</li>
 </ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">int</span> y = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">switch</span>(x)&#123;</span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">		y++;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">		y++;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">		y++;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">"y="</span>+y);  <span class="comment">// y=4</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>B:看程序写结果：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">int</span> y = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">switch</span>(x)&#123;</span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">		y++;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">		y++;</span><br><span class="line">	<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">		y++;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">"y="</span>+y); <span class="comment">//y=6</span></span><br></pre></td></tr></table></figure>
 <h2 id="03-23-选择结构if语句和switch语句的区别-掌握"><a class="header-anchor" href="#03-23-选择结构if语句和switch语句的区别-掌握">☆</a>03.23 选择结构if语句和switch语句的区别 (掌握)</h2>
 <ul>
-<li>A:总结switch语句和if语句的各自使用场景</li>
-<li>switch建议判断固定值的时候用</li>
-<li>if建议判断区间或范围的时候用</li>
-<li>B:案例演示
+<li>
+<p>A:总结switch语句和if语句的各自使用场景</p>
+</li>
+<li>
+<p>switch建议判断固定值的时候用</p>
+</li>
+<li>
+<p>if建议判断区间或范围的时候用</p>
+</li>
+<li>
+<p>B:案例演示</p>
 <ul>
 <li>分别用switch语句和if语句实现下列需求：
 <ul>
@@ -1573,7 +1554,7 @@ show_date_time();
     
       <span class="post-meta-item-text">总字数：</span>
     
-    <span title="总字数">217k</span>
+    <span title="总字数">218k</span>
   
 
   
