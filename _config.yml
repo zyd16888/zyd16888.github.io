@@ -1,0 +1,228 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: CZLisyx-浮生志
+subtitle:   z y d
+description: <center class="site-description">跌跌撞撞，仍对世界微笑</br>彷徨失措，依然勇敢前行</center>
+keywords: 
+author: Cxsz Zhu
+language: zh-CN
+timezone: 
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://www.singlelovely.cn
+root: /
+# permalink: :year/:month/:day/:title/
+# permalink_defaults:
+permalink: post/:abbrlink.html
+permalink_defaults:
+#链接持久化
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+    - README.md
+    - 404.html
+    - _posts/模板.md
+    - _posts/test/*
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+# 代码高亮设置
+highlight:
+  enable: true
+  line_number: true
+# 代码自动高亮
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+
+index_generator:
+  path: ''
+  per_page: 15
+  order_by: -date
+
+## 修改归档页面、某一分类页面、某一标签页面的显示篇数
+## 参考：http://theme-next.iissnan.com/faqs.html#setting-page-size
+
+archive_generator:
+  per_page: 0
+  yearly: false
+  monthly: false
+  daily: false
+
+  
+# Category & Tag
+# URL 中的分类和标签“翻译”成英文
+# 见：https://github.com/hexojs/hexo/issues/1162
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next6.4
+
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+# RSS，要先进入站点文件夹根目录安装插件
+# npm install hexo-generator-feed --save 即可
+# 无需更多配置
+# 参数说明查看 README：https://github.com/hexojs/hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+# 文章数，0 为全部
+  limit: 0
+  hub:
+# 是否包含文章内容
+  content: true
+
+
+
+# 搜索功能
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# aplayer音乐播放器
+aplayer:
+  meting: true
+# 字数统计
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: false
+
+
+
+
+
+# live2d:
+#   enable: true
+#   pluginModelPath: assets/
+#   model:
+#     use: live2d-widget-model-miku  #模板目录，在node_modules里
+#   display:
+#     position: right
+#     width: 150 
+#     height: 300
+#   mobile:
+#     show: false  #是否在手机进行显示
+
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-miku  #模板目录，在node_modules里
+  display:
+    position: left
+    width: 150
+    height: 300
+  mobile:
+    show: false
+
+ 
+# live2d:
+#   model: live2d-widget-model-miku
+#   width: 150
+#   height: 300
+#   scaling: 2
+#   mobileShow: true
+#   mobileScaling: 0.5
+#   opacityDefault: 1
+#   position: left
+#   horizontalOffset: 10
+#   verticalOffset: -40
+#   className: live2d
+#   id: live2dcanvas
+
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji  # add emoji
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ☆
+
+
+# 自动生成sitemap
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml   
+    
+    
+ # Security
+## 加密
+encrypt:
+    enable: true   
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: git@github.com:zyd16888/zyd16888.github.io.git
+  branch: master
