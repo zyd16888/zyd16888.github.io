@@ -176,7 +176,7 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="美化和必备软件安装">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-02T04:24:43.542Z">
+<meta property="og:updated_time" content="2019-03-09T03:01:10.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu系统折腾记">
 <meta name="twitter:description" content="美化和必备软件安装">
@@ -482,7 +482,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-02 12:24:43" itemprop="dateModified" datetime="2019-03-02T12:24:43+08:00">2019-03-02</time>
+                <time title="修改时间：2019-03-09 11:01:10" itemprop="dateModified" datetime="2019-03-09T11:01:10+08:00">2019-03-09</time>
               
             
           </span>
@@ -694,7 +694,7 @@
 <h3 id="方法一"><a class="header-anchor" href="#方法一">☆</a>方法一</h3>
 <p>通过win系统重启进入ubuntu系统</p>
 <h3 id="方法二"><a class="header-anchor" href="#方法二">☆</a>方法二</h3>
-<p>执行以下命令,记得加磁盘分区号</p>
+<p>执行以下命令,记得加磁盘分区号(如果执行前已挂载磁盘需要先卸载，执行完毕重新挂载即可)</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ntfsfix /dev/sda  or   sudo ntfsfix /dev/nvmeOn</span><br></pre></td></tr></table></figure>
 <h2 id="pppoe-拨号上网"><a class="header-anchor" href="#pppoe-拨号上网">☆</a>PPPoE 拨号上网</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 pppoeconf</span></span><br><span class="line">sudo apt install pppoeconf</span><br><span class="line"><span class="comment"># 配置</span></span><br><span class="line">sudo pppoeconf</span><br><span class="line"><span class="comment"># 手动连接</span></span><br><span class="line">sudo pon dsl-provider</span><br><span class="line"><span class="comment"># 手动断开</span></span><br><span class="line">sudo poff dsl-provider</span><br><span class="line"><span class="comment"># 查看状态</span></span><br><span class="line">sudo plog</span><br><span class="line"><span class="comment"># 查看接口信息</span></span><br><span class="line">sudo ip addr show ppp0</span><br></pre></td></tr></table></figure>
@@ -778,6 +778,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/post/41bba354.html" rel="prev" title="VScode配置C++/Java开发环境">
+                VScode配置C++/Java开发环境 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -855,7 +859,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">55</span>
+                    <span class="site-state-item-count">56</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1102,7 +1106,7 @@ show_date_time();
     
       <span class="post-meta-item-text">总字数：</span>
     
-    <span title="总字数">218k</span>
+    <span title="总字数">222k</span>
   
 
   

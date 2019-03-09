@@ -213,7 +213,7 @@ exit
 
 ### 方法二
 
-执行以下命令,记得加磁盘分区号
+执行以下命令,记得加磁盘分区号(如果执行前已挂载磁盘需要先卸载，执行完毕重新挂载即可)
 
 ```bash
 sudo ntfsfix /dev/sda  or   sudo ntfsfix /dev/nvmeOn
