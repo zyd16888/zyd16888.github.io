@@ -83,10 +83,10 @@ password:
             "name": "C/C++",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
@@ -109,7 +109,7 @@ password:
 {
     "version": "2.0.0",
     "command": "g++",
-    "args": ["-g","${file}","-o","${workspaceRoot}/${fileBasenameNoExtension}.exe"],
+    "args": ["-g","${file}","-o","${fileDirname}/${fileBasenameNoExtension}.exe"],
     "problemMatcher": {
         "owner": "cpp",
         "fileLocation": ["relative", "${workspaceRoot}"],
