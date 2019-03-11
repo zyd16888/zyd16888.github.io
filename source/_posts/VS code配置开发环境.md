@@ -9,7 +9,7 @@ tags:
 categories: 学习
 description: VScode配置C++/Java开发环境
 image: 
-- "http://data.singlelovely.cn/CoverPicture/41bba354.jpg"
+- "https://data.singlelovely.cn/CoverPicture/41bba354.jpg!CoverPicture"
 photos:
 sticky:
 date: 2019-03-08 23:56:00

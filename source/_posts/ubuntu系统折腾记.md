@@ -11,7 +11,7 @@ description: 美化和必备软件安装
 date: 2019-02-17 19:54:00
 password:
 image:
-- "http://data.singlelovely.cn/CoverPicture/1a300c2b.png"
+- "https://data.singlelovely.cn/CoverPicture/1a300c2b.png!CoverPicture"
 photos:
 sticky:
 ---

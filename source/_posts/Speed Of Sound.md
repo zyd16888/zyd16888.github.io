@@ -10,7 +10,7 @@ tags:
 categories: 音乐
 password:
 photos: 
-- "http://data.singlelovely.cn/CoverPicture/1bb05bfb.png"
+- "https://data.singlelovely.cn/CoverPicture/1bb05bfb.png!CoverPicture"
 image:
 ---
 </br>
@@ -36,6 +36,7 @@ How long do I have to climb</br>
 Up on the side of this mountain of mine</br>
 一直沿着这座山向上爬</p>
 </br>
+<!--more-->
 
 **当我抬头仰望时，其它所有的一切都以声速在脑后消散，如飞鸟般，你也能看到吗？**
 

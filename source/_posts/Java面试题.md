@@ -11,7 +11,7 @@ sticky:
 date: 2019-02-01 22:45:00
 password:
 image:
-- "http://data.singlelovely.cn/CoverPicture/d2fd1f13.jpg"
+- "https://data.singlelovely.cn/CoverPicture/d2fd1f13.jpg!CoverPicture"
 photos:
 ---
 
