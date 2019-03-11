@@ -65,11 +65,12 @@ password:
 如果只需要简单的运行调试功能，安装以下两个插件就好
 
 <span id="font-blue">Debugger for Java</span>
+
 <span id="font-blue">Language support for Java（TM）by Red Hat</span>
 
 ## C++配置
 
-#### 准备条件
+### 准备条件
 
 <p id = "div-border-top-purple">电脑上安装g++、gcc、gdb等编译调试环境，并配置环境变量</p>
 
@@ -127,11 +128,12 @@ password:
 
 ### 插件
 
-<span id="font-blue">C/C++</span> ：提供语言支持，debugging等功能。
+<span id="font-blue"> C/C++ </span> ：提供语言支持，debugging等功能。
 
-<span id="font-blue">C++ Intellisense</span> ： 提供智能分析提示等。
+<span id="font-blue"> C++ Intellisense </span> ：提供智能分析提示等。
 
-## launch.json 文件属性值详解（java举例）
+
+## launch.json文件属性值详解（java举例）
 
 ### Launch
 
@@ -178,9 +180,11 @@ password:
 - java.debug.settings.maxStringLength： 变量视图或调试控制台中显示的最大字符串长度。超过此长度的字符串将被裁剪。默认值为0，表示没有进行修剪
 - java.debug.settings.enableHotCodeReplace： 启用Java源代码的热代码替换。确保VScode 中的 Java 代码没有禁用自动构建。有关用法和限制的更多信息，请参阅 wiki page
 
+
 ## 后记
 
 <p id = "div-border-left-green">为了不违背轻量化的本质，只实现单文件执行，及简单的项目运行。复杂项目还是用IDE。如果啥IDE干的事儿啥都能干，和直接装一个IDE又有何区别？？？</p>
+
 
 ## 参考内容
 

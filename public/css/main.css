@@ -1960,7 +1960,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f5f;
+  background: #d50b29;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2954,7 +2954,7 @@ hr {
   background-image: linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
 }
 .header {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.6);
 }
 .menu .menu-item a {
   color: #000;
@@ -2968,6 +2968,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
+  color: #333;
 }
 #footer a {
   color: #000;
@@ -3137,7 +3138,7 @@ pre .deletion {
 }
 .footer {
   line-height: 1.5;
-  background-color: rgba(255,255,255,0.76);
+  background-color: rgba(255,255,255,0.7);
   color: #333;
   border-top-width: 3px;
   border-top-style: solid;
@@ -3271,7 +3272,7 @@ img:hover {
   border-bottom: 1px dashed #8608ef;
 }
 .content {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 .post-block.archives_title {
   background: #fff;
