@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://www.singlelovely.cn/post/1a300c2b.html</loc>
+    <lastmod>2019-03-29T15:31:13.626Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu系统折腾记</title>
+        <pubTime>2019-02-17T11:54:00.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="系统" url="http://www.singlelovely.cn/categories/%E7%B3%BB%E7%BB%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.singlelovely.cn/post/521a3173.html</loc>
     <lastmod>2019-03-13T15:24:58.108Z</lastmod>
     <data>
@@ -130,28 +152,6 @@
            
              
               <breadCrumb title="学习" url="http://www.singlelovely.cn/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.singlelovely.cn/post/1a300c2b.html</loc>
-    <lastmod>2019-03-11T04:22:46.670Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu系统折腾记</title>
-        <pubTime>2019-02-17T11:54:00.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="系统" url="http://www.singlelovely.cn/categories/%E7%B3%BB%E7%BB%9F/"/>
           
         </display>
     </data>
@@ -938,26 +938,6 @@
 
     
   <url>
-    <loc>http://www.singlelovely.cn/post/106fc1c3.html</loc>
-    <lastmod>2019-03-02T04:24:43.527Z</lastmod>
-    <data>
-        <display>
-        <title>about页面不显示右侧文章目录sidebar</title>
-        <pubTime>2018-06-04T10:01:12.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.singlelovely.cn/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.singlelovely.cn/post/65a05ef.html</loc>
     <lastmod>2019-03-02T04:24:43.527Z</lastmod>
     <data>
@@ -975,6 +955,26 @@
            
              
               <breadCrumb title="系统" url="http://www.singlelovely.cn/categories/%E7%B3%BB%E7%BB%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.singlelovely.cn/post/106fc1c3.html</loc>
+    <lastmod>2019-03-02T04:24:43.527Z</lastmod>
+    <data>
+        <display>
+        <title>about页面不显示右侧文章目录sidebar</title>
+        <pubTime>2018-06-04T10:01:12.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.singlelovely.cn/categories/hexo/"/>
           
         </display>
     </data>
