@@ -66,7 +66,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 ```
 
 ~~脚本来源：[逗比根据地](https://doubibackup.com/)~~
-
+![](https://data.singlelovely.cn/images/20190313215256.png)
 注意：装完libsodium后需要重启系统
 
 ## 安装必备软件
@@ -81,7 +81,14 @@ github地址： https://github.com/wszqkzqk/deepin-wine-ubuntu
 
 教程及演示： https://www.lulinux.com/archives/1319
 
+![](https://data.singlelovely.cn/images/20190329233059.png!CoverPicture)
+
+![](https://data.singlelovely.cn/images/20190329233016.png!CoverPicture)
+
+
 ## 美化
+
+![](https://data.singlelovely.cn/images/20190329232929.png!CoverPicture)
 
 ### 终端及管理器安装
 
@@ -122,6 +129,9 @@ sudo apt install gnome-tweak-tool
     - 图标包目录：/usr/share/icons
 - TopIcons Plus : 起到了任务栏的作用,用来解决上面wine程序任务栏图标问题
 - Gnome-shell Extensions ：通过Ubuntu软件商店安装 插件集合，一次性安装多个常用插件
+
+![](https://data.singlelovely.cn/images/20190313215118.png)
+![](https://data.singlelovely.cn/images/20190313215028.png)
 
 ### 参考教程
 
