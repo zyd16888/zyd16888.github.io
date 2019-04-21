@@ -938,6 +938,26 @@
 
     
   <url>
+    <loc>http://www.singlelovely.cn/post/106fc1c3.html</loc>
+    <lastmod>2019-03-02T04:24:43.527Z</lastmod>
+    <data>
+        <display>
+        <title>about页面不显示右侧文章目录sidebar</title>
+        <pubTime>2018-06-04T10:01:12.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.singlelovely.cn/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.singlelovely.cn/post/65a05ef.html</loc>
     <lastmod>2019-03-02T04:24:43.527Z</lastmod>
     <data>
@@ -955,26 +975,6 @@
            
              
               <breadCrumb title="系统" url="http://www.singlelovely.cn/categories/%E7%B3%BB%E7%BB%9F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.singlelovely.cn/post/106fc1c3.html</loc>
-    <lastmod>2019-03-02T04:24:43.527Z</lastmod>
-    <data>
-        <display>
-        <title>about页面不显示右侧文章目录sidebar</title>
-        <pubTime>2018-06-04T10:01:12.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.singlelovely.cn/categories/hexo/"/>
           
         </display>
     </data>
