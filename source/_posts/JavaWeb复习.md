@@ -7,7 +7,7 @@ tags:
   - Java
   - 学习
 categories: Java
-description: JavaWeb复习
+description: 完全根据PPT复习范围整理，如发现错误请在评论区留言，会及时修改
 date: 2019-05-29 00:20:00
 password:
 image:
@@ -16,7 +16,7 @@ photos:
 sticky:
 ---
 
-{% meting "480801768" "netease" "playlist" "mutex:true" "listmaxheight:340px" "preload:none" "theme:#ad7a86" %}
+{% meting "40962509" "netease" "playlist" "mutex:true" "listmaxheight:340px" "preload:none" "theme:#00CED1" %}
 
 ## 第一章开发任务概述
 
@@ -42,20 +42,21 @@ JavaScript是一种广泛应用于客户端的脚本语言，通过嵌入到HTML
 ### 服务器端开发技术
 
 1、Servlet技术
-
+<p id = "div-border-left-yellow">
 Servlet是以Java技术为基础的服务器端应用程序组件，与运行在浏览器端的Applet相对应。Serv」et是被Web服务器（如Tomcat)加载和执行，而Applet则是被浏览器加载和执行。Servlet通过Web服务器接收客户端浏览器发来的请求，执行预定的功能，然后将执行结果返回给客户端的浏览器。Servlet可以使用服务器端的所有Java 类库资源，所以理论上其功能可以无限扩展。
-
+</p>
 2、JSP技术
-
+<p id = "div-border-left-yellow">
 JSP(Java Server Page)是建立在Servlet规范提供的功能之上的一种动态网页技术。
-
+</p>
 3、JavaBean技术
-
+<p id = "div-border-left-yellow">
 JavaBean是Java组件技术的核心，它是Java平台上实现重用的软件组件模型。JavaBean是一种特殊的Java类，需要满足一定的规范要求。
-
+</p>
 4、JDBC技术
-
+<p id = "div-border-left-yellow">
 JDBC(Java DataBase Connectivity)是一种用于执行SQL语句的Java API （Application Programming Interface，应用编程接口)，由一组Java语言编写的类和接口组成。
+</p>
 
 ### HTTP请求/响应机制
 
@@ -65,12 +66,12 @@ JDBC(Java DataBase Connectivity)是一种用于执行SQL语句的Java API （App
 - 服务器解析接收到的请求，定位请求资源，做相应处理，然后封装好响应报文，回送给浏览器。
 - 浏览器收到响应报文，解析HTML、图片等静态内容，渲染网页呈现给用户，解析DOM(Document Object Model，文档对象模型）树，脚本引擎执行脚本代码，完成DOM 操作、CSS属性更改、发送AJAX(Asynchronous JavaScript And XML，异步JavaScript 和XML)请求等功能。
 
-HTTP主要有以下特点：
+<span id = "font-green">HTTP主要有以下特点：</span>
 
-- 简单快速
-- 灵活
-- 无连接
-- 无状态
+- 简单快速<br>
+- 灵活<br>
+- 无连接<br>
+- 无状态<br>
 - 支持B/S及C/S模式
 
 ## 第二章 用户界面设计
@@ -135,23 +136,23 @@ CSS是Cascading Style Sheets(层叠样式表）的缩写，是一种美化网页
 #### CSS选择器格式
 
 1、标记选择器：直接针对HTML标记定义样式。
-
-    HTML标记名{标记属性：属性值; 标记属性：属性值; 标记属性: 属性值;...}
-
+<div class="note info">
+HTML标记名{标记属性：属性值; 标记属性：属性值; 标记属性: 属性值;...}
+</div>
 2、类别选择器：
-
-    .类别选择器名{标记属性: 属性值; 标记属性: 属性值; 标记属性: 属性值;...;}
-    <HTML 标记名 class = "类别选择器名">
-
+<div class="note info">
+.类别选择器名{标记属性: 属性值; 标记属性: 属性值; 标记属性: 属性值;...;}
+<HTML 标记名 class = "类别选择器名">
+</div>
 3、ID选择器：
-
-    #ID选择器名{标记属性：属性值; 标记属性: 属性值; 标记属性: 属性值;...;}
-    <HTML 标记名 id="ID选择器名">
-
+<div class="note info">
+#ID选择器名{标记属性：属性值; 标记属性: 属性值; 标记属性: 属性值;...;}
+<HTML 标记名 id="ID选择器名">
+</div>
 4、伪元素选择器：指对同一HTML元素的各种状态来定义样式的一种方式。
-
-    HTML标记：伪元素{样式}
-
+<div class="note info">
+HTML标记：伪元素{样式}
+</div>
 #### 在HTML中使用CSS的方法
 
 1、嵌入式：将样式表嵌入到HTML标记的属性中，把样式的定义直接作为标记的style属性值。格式如下：
@@ -203,7 +204,7 @@ JavaScript中的对象由属性和方法构成，主要有三种类型：内置�
     - 因为window对象是JavaScript中最顶级的对象，所以在使用当前窗口对象的函数时，可以省略函数前的window，即可以直接使用alert()，而不需要用window.alert()。
 - document对象：属于HTML DOM(Document Object Model，文档对象模型）。当网页被加载时，浏览器会创建当前页面的DOM模型。DOM的最顶层就是HTML文档，document对象就代表当前HTML文档，通过它可以访问页面中的所有元素。
 
-document对象的常用方法如下:
+<span id = "font-blue"><span id = "font-green">document</span>对象的常用方法如下:</span>
 
 - write(字符串）：将字符串或数值显示在显示器上。
 - getElementById()：返回对指定id的第一个对象的引用。
@@ -513,7 +514,7 @@ int executeUpdate(String sql) | 执行指定的静态INSET、UPDATE或DELETE语�
 
 用于表示数据库结果集的数据表，通常由执行查询数据库的语句生成，其中存放了查询结果。
 
-在ResultSet对象中具有指向当前数据行的游标，可以在while循环中使用next()方法来迭代处理结果集。
+在ResultSet对象中具有指向当前数据行的游标，可以在<span id = "font-green">while</span>循环中使用<span id = "font-green">next()</span>方法来迭代处理结果集。
 
 **<center><span id = "font-blue">ResultSet接口常用的获取列值方法</span></center>**
 
@@ -692,12 +693,12 @@ applicationScope | 取得 application 范围的属性名称所对应的值，${a
 param | 可以用来获取参数，${param.username} 等同于request.getParameter("username"); 返回 Slring[] 类型的值
 paramValues | ${paramValues.hobby} 如同 ServletRequest.getParameter Values(String name)， 返回 string[] 类型的值
 
-在JSP中使用JSTL的步骤如下。
-
-1. 首先需要到http：//tomcat.apache.org/taglibs/standard/ 下载JSTL标记库的jar包。
-2. 然后将获取到的JSTL标记库的jar包，复制到Web应用中的WEB-INF\lib文件夹下。
-3. 最后在JSP页面中用taglib指令设置标记前缀，即可使用JSTL标记。
-
+<span id = "inline-blue">在JSP中使用JSTL的步骤如下</span>
+<p id = "div-border-left-purple">
+1. 首先需要到http：//tomcat.apache.org/taglibs/standard/ 下载JSTL标记库的jar包。<br>
+2. 然后将获取到的JSTL标记库的jar包，复制到Web应用中的WEB-INF\lib文件夹下。<br>
+3. 最后在JSP页面中用taglib指令设置标记前缀，即可使用JSTL标记。<br>
+</p>
 JSTL标记：
 
 - <span id = "font-green">\<c:out></span> 用来显示一个表达式的结果，与<%= %>作用相似，它们的区别就是<c:out>标签可以直接通过"."操作符来访问属性
@@ -786,13 +787,13 @@ void service(httpServletRequest request, HttpServletResponse, response) | 根据
 
 #### 编写、编译Servlet
 
-编写Servlet的一般步骤如下:
+编写<span id = "font-green">Servlet</span>的一般步骤如下:
 <p id = "div-border-left-purple" >
 1. 导入javax.servlet包、javax.servlet.http包及其他必要的包。<br>
 2. 继承HttpServlet类，并重写doPost（)和doGet（)方法。<br>
 3. 在doPost(）和doGet()方法中依次实现获取请求参数、创建输出对象、设置响应类型、输出响应内容等功能。<br>
 </p>
-编译和配置Servlet:
+<span id = "font-blue">编译</span>和<span id = "font-blue">配置</span>Servlet:
 
 - Servlet类编写完成之后，需要进行编译和部署。
 - 编译Servlet之前需要先把Servlet API库文件添加到环境变量CLASSPATH 中。可以直接使用Tomcat发行版中包含的servlet-api.jar。向系统的CLASSPATH环境变量中增加下面的值（假定Tomcat安装目录为d:\tomcat)：
@@ -815,12 +816,12 @@ void service(httpServletRequest request, HttpServletResponse, response) | 根据
 ```
 
 ### MVC设计模式
-
+<p id = "div-border-left-yellow">
  所谓设计模式，是针对典型问题所提供的一套成熟的解决方案。MVC就是一种流行的程序设计模式，它把程序理解为由模型层（Model)、视图层（View)和控制器层(Controller)三个部分组成。其中，模型层表示程序的业务逻辑和状态，包括业务模型和数据模型；视图层是程序的用户界面，用于显示模型数据；控制器层响应用户请求，根据请求内容来操作模型层并控制程序的流程，决定要向用户显示的视图。
-
+</p>
 Java Web应用开发也可以采用MVC设计模式，用JSP作为视图层，Servlet作为控制器层，JavaBean作为模型层。这样的开发形式实现了程序的分层结构，将功能实现、用户界面和流程控制分别由不同的模块来实现，并在各个模块之间实现了良好的解耦。(<span id = "font-blue">jsp Model2</span>)
 
-在基于MVC的Web应用中，一次用户请求的处理过程如下：
+在基于MVC的Web应用中，<span id = "font-blue">一次用户请求的处理过程</span>如下：
 
 <span id = "inline-toc">1.</span> 浏览器发出请求；
 <span id = "inline-toc">2.</span> 作为控制器的Servlet接收请求，并将请求以适当的方式分发给对应的业务模型JavaBean来处理；
