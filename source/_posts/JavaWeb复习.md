@@ -1,17 +1,17 @@
 ---
-title: JavaWeb复习整理
+title: JavaWeb复习笔记
 copyright: true
-abbrlink: 3c115208
-notshow: true
+abbrlink: 7e6d3dbd
+notshow: false
 tags:
   - Java
   - 学习
 categories: Java
 description: 完全根据PPT复习范围整理，如发现错误请在评论区留言，会及时修改
+image:
+  - 'http://data.singlelovely.cn/CoverPicture/3c115208.jpg'
 date: 2019-05-29 00:20:00
 password:
-image:
-- "http://data.singlelovely.cn/CoverPicture/3c115208.jpg"
 photos:
 sticky:
 ---
