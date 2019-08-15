@@ -9,7 +9,7 @@ tags:
 categories: Java
 description: 完全根据PPT复习范围整理，如发现错误请在评论区留言，会及时修改
 image:
-  - 'http://data.singlelovely.cn/CoverPicture/3c115208.jpg'
+  - 'http://data.singlelovely.cn/CoverPicture/3c115208.jpg!CoverPicture'
 date: 2019-05-29 00:20:00
 password:
 photos:
