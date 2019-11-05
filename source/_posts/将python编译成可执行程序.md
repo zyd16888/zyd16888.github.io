@@ -10,7 +10,7 @@ description: 使用pyinstaller
 date: 2019-05-22 17:01:00
 password:
 image:
-- "http://data.singlelovely.cn/CoverPicture/a044f431.jpg!CoverPicture"
+- "https://data.singlelovely.cn/CoverPicture/a044f431.jpg!CoverPicture"
 photos:
 sticky:
 ---

@@ -31,10 +31,10 @@ http://m10.music.126.net/20180403235510/7a0336debd973c86b5c21e8b21c753ae/ymusic/
  ![enter description here][4]
 
 
-  [1]: http://data.singlelovely.cn/11.jpeg
-  [2]: http://data.singlelovely.cn/12.jpeg?imageView2/2/w/250/h/300/q/75%7Cimageslim
-  [3]: http://data.singlelovely.cn/13.jpeg?imageView2/2/w/250/h/200/q/75%7Cimageslim
-  [4]: http://data.singlelovely.cn/xsj/2018/3/22/1478145958717.jpg "1478145958717"
+  [1]: https://data.singlelovely.cn/11.jpeg
+  [2]: https://data.singlelovely.cn/12.jpeg?imageView2/2/w/250/h/300/q/75%7Cimageslim
+  [3]: https://data.singlelovely.cn/13.jpeg?imageView2/2/w/250/h/200/q/75%7Cimageslim
+  [4]: https://data.singlelovely.cn/xsj/2018/3/22/1478145958717.jpg "1478145958717"
   
 外链测试：
   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=400581235&auto=0&height=66"></iframe>

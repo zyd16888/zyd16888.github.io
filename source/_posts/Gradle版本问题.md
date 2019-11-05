@@ -32,5 +32,5 @@ Required by:
 
 
 
-  [1]: http://data.singlelovely.cn/xsj/20182/NDGcPRDMONQ53NVOKVA2K.png
-  [2]: http://data.singlelovely.cn/xsj/20182/7OX%29OQX2%5B9_G%7BO2NI8F9E15.png
+  [1]: https://data.singlelovely.cn/xsj/20182/NDGcPRDMONQ53NVOKVA2K.png
+  [2]: https://data.singlelovely.cn/xsj/20182/7OX%29OQX2%5B9_G%7BO2NI8F9E15.png

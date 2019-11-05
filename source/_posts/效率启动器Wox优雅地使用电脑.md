@@ -21,14 +21,14 @@ password:
 
 <font color=#0099ff> Wox - 被誉为 Alfred 的 Windows 版最佳替代品</font>
 &emsp;&emsp;你可以将 Wox 看作一个高效的本地快速搜索框，通过快捷键呼出，然后输入关键字来搜索程序进行快速启动，或者搜索本地硬盘的文件，打开百度、Google 进行搜索，甚至是通过一些插件的功能实现单词翻译、关闭屏幕、查询剪贴板历史、查询编程文档、查询天气等更多功能。
-![ ](http://data.singlelovely.cn/xsj/2018/4/20/wox1.png)
+![ ](https://data.singlelovely.cn/xsj/2018/4/20/wox1.png)
 
 &emsp;&emsp;Wox 最大的特点是可以支持中文拼音的模糊匹配。譬如说你想搜索“设备管理器”，那么只需输入"sheb"就能匹配得到。
 
 <font color=#0099ff>增加程序的搜索目录：</font>
 
 &emsp;&emsp;一开始使用 Wox 时，你会发现，除了开始菜单里面有的程序能搜索到之外，自己的一些绿色软件或者安装到非默认目录的软件都找不到。这时你可以在 Wox 里输入 settings 回车或托盘图标右键选择 Settings 进入设置界面，然后在 程序 中按 增加 按钮添加你的软件所在的文件夹。
-![ ](http://data.singlelovely.cn/xsj/2018/4/20/wox2.png)
+![ ](https://data.singlelovely.cn/xsj/2018/4/20/wox2.png)
 
 <font color=#0099ff>网页搜索功能：</font>
 &emsp;&emsp;Wox 的网页搜索功能是可以让用户自己为某个搜索引擎设置一个关键字。举个简单例子，如果用户经常使用百度搜索。那么用户就可以在 Wox 的设置里的 Web Search 选项中，点击 Add 增加这么一个选项（URL为 http://www.baidu.com/s?wd={q}）：
@@ -76,4 +76,4 @@ eg: cb
 
 
 注意：wox默认替换Win+R，如下图，不需要可以在设置中关闭
-![ ](http://data.singlelovely.cn/xsj/2018/4/20/wox3.png)
+![ ](https://data.singlelovely.cn/xsj/2018/4/20/wox3.png)

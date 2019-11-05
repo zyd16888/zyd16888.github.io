@@ -69,6 +69,6 @@ chkconfig vncserver on
 
 &emsp; &emsp;有了远程桌面以后么，就可以干一些挂机等在终端界面无法操作的事情啦········
 
-  [1]: http://data.singlelovely.cn/xsj/20182/@%5DV0D9K8Y%7BTOL3LD6%28~UWDM.png
-  [2]: http://data.singlelovely.cn/xsj/20182/%5BU4HMPKB9TOC1%5BN8%2809IQPL.png?75|imageslim
-  [3]: http://data.singlelovely.cn/xsj/20182/37N0~QI8JIR@4BL32IGWDTT.png?75|imageslim
+  [1]: https://data.singlelovely.cn/xsj/20182/@%5DV0D9K8Y%7BTOL3LD6%28~UWDM.png
+  [2]: https://data.singlelovely.cn/xsj/20182/%5BU4HMPKB9TOC1%5BN8%2809IQPL.png?75|imageslim
+  [3]: https://data.singlelovely.cn/xsj/20182/37N0~QI8JIR@4BL32IGWDTT.png?75|imageslim

@@ -176,15 +176,15 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="☆实验目标  使用RIP协议实现不同网段之间的通信 熟练RIP协议的路由配置过程 加深对vlan技术的理解  ☆实验工具 eNSP模拟器（510版） ☆网络拓扑图  ☆主要设备配置 注：以下为设备的配置状态，并非配置命令 ☆LSW1 12345678910111213141516171819202122232425262728293031323334353637383940414243444546">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/2018/3/24/RIP%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%9B%BE.png">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/2018/3/25/%E4%B8%BB%E6%9C%BA%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B.png">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/2018/3/25/%E7%BB%93%E6%9E%9C%E6%B5%8B%E8%AF%95.png">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/2018/3/25/%E7%BB%93%E6%9E%9C%E6%B5%8B%E8%AF%952.png">
-<meta property="og:updated_time" content="2019-06-17T13:47:36.010Z">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/2018/3/24/RIP%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%9B%BE.png">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/2018/3/25/%E4%B8%BB%E6%9C%BA%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B.png">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/2018/3/25/%E7%BB%93%E6%9E%9C%E6%B5%8B%E8%AF%95.png">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/2018/3/25/%E7%BB%93%E6%9E%9C%E6%B5%8B%E8%AF%952.png">
+<meta property="og:updated_time" content="2019-11-05T01:12:13.697Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用RIP协议实现不同网段之间的通信（模拟实验）">
 <meta name="twitter:description" content="☆实验目标  使用RIP协议实现不同网段之间的通信 熟练RIP协议的路由配置过程 加深对vlan技术的理解  ☆实验工具 eNSP模拟器（510版） ☆网络拓扑图  ☆主要设备配置 注：以下为设备的配置状态，并非配置命令 ☆LSW1 12345678910111213141516171819202122232425262728293031323334353637383940414243444546">
-<meta name="twitter:image" content="http://data.singlelovely.cn/xsj/2018/3/24/RIP%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%9B%BE.png">
+<meta name="twitter:image" content="https://data.singlelovely.cn/xsj/2018/3/24/RIP%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%9B%BE.png">
 
 
 
@@ -485,7 +485,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-17 21:47:36" itemprop="dateModified" datetime="2019-06-17T21:47:36+08:00">2019-06-17</time>
+                <time title="修改时间：2019-11-05 09:12:13" itemprop="dateModified" datetime="2019-11-05T09:12:13+08:00">2019-11-05</time>
               
             
           </span>
@@ -594,7 +594,7 @@
 <h3 id="实验工具"><a class="header-anchor" href="#实验工具">☆</a>实验工具</h3>
 <p>eNSP模拟器（510版）</p>
 <h3 id="网络拓扑图"><a class="header-anchor" href="#网络拓扑图">☆</a>网络拓扑图</h3>
-<p><img src="http://data.singlelovely.cn/xsj/2018/3/24/RIP%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%9B%BE.png" alt="RIP网络拓扑图"></p>
+<p><img src="https://data.singlelovely.cn/xsj/2018/3/24/RIP%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%9B%BE.png" alt="RIP网络拓扑图"></p>
 <h3 id="主要设备配置"><a class="header-anchor" href="#主要设备配置">☆</a>主要设备配置</h3>
 <p><font color="#00FFFF">注：以下为设备的配置状态，并非配置命令</font></p>
 <h4 id="lsw1"><a class="header-anchor" href="#lsw1">☆</a>LSW1</h4>
@@ -605,10 +605,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#</span><br><span class="line">sysname ZYDR1</span><br><span class="line">#</span><br><span class="line">aaa </span><br><span class="line"> authentication-scheme default</span><br><span class="line"> authorization-scheme default</span><br><span class="line"> accounting-scheme default</span><br><span class="line"> domain default </span><br><span class="line"> domain default_admin </span><br><span class="line"> local-user admin password cipher OOCM4m($F4ajUn1vMEIBNUw#</span><br><span class="line"> local-user admin service-type http</span><br><span class="line">#</span><br><span class="line">firewall zone Local</span><br><span class="line"> priority 16</span><br><span class="line">#</span><br><span class="line">interface Ethernet0/0/0</span><br><span class="line"> ip address 192.168.13.1 255.255.255.0 </span><br><span class="line">#</span><br><span class="line">interface Ethernet0/0/1</span><br><span class="line"> ip address 192.168.24.1 255.255.255.0 </span><br><span class="line">#</span><br><span class="line">interface Serial0/0/0</span><br><span class="line"> link-protocol ppp</span><br><span class="line">#</span><br><span class="line">interface Serial0/0/1</span><br><span class="line"> link-protocol ppp</span><br><span class="line">#</span><br><span class="line">interface Serial0/0/2</span><br><span class="line"> link-protocol ppp</span><br><span class="line">#</span><br><span class="line">interface Serial0/0/3</span><br><span class="line"> link-protocol ppp</span><br><span class="line">#</span><br><span class="line">interface GigabitEthernet0/0/0</span><br><span class="line">#</span><br><span class="line">interface GigabitEthernet0/0/1</span><br><span class="line">#</span><br><span class="line">interface GigabitEthernet0/0/2</span><br><span class="line">#</span><br><span class="line">interface GigabitEthernet0/0/3</span><br><span class="line">#</span><br><span class="line">wlan</span><br><span class="line">#</span><br><span class="line">interface NULL0</span><br><span class="line">#</span><br><span class="line">rip 1</span><br><span class="line"> undo summary</span><br><span class="line"> version 2</span><br><span class="line"> network 192.168.13.0</span><br><span class="line"> network 192.168.24.0</span><br><span class="line">#</span><br><span class="line">user-interface con 0</span><br><span class="line">user-interface vty 0 4</span><br><span class="line">user-interface vty 16 20</span><br><span class="line">#</span><br><span class="line">return</span><br></pre></td></tr></table></figure>
 <p>R3与R2配置类似，LSW2与LSW1类似</p>
 <h4 id="主机配置示例"><a class="header-anchor" href="#主机配置示例">☆</a>主机配置示例</h4>
-<p><img src="http://data.singlelovely.cn/xsj/2018/3/25/%E4%B8%BB%E6%9C%BA%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B.png" alt="主机配置示例"></p>
+<p><img src="https://data.singlelovely.cn/xsj/2018/3/25/%E4%B8%BB%E6%9C%BA%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B.png" alt="主机配置示例"></p>
 <h3 id="结果测试"><a class="header-anchor" href="#结果测试">☆</a>结果测试</h3>
-<p><img src="http://data.singlelovely.cn/xsj/2018/3/25/%E7%BB%93%E6%9E%9C%E6%B5%8B%E8%AF%95.png" alt=" "><br>
-<img src="http://data.singlelovely.cn/xsj/2018/3/25/%E7%BB%93%E6%9E%9C%E6%B5%8B%E8%AF%952.png" alt=" "></p>
+<p><img src="https://data.singlelovely.cn/xsj/2018/3/25/%E7%BB%93%E6%9E%9C%E6%B5%8B%E8%AF%95.png" alt=" "><br>
+<img src="https://data.singlelovely.cn/xsj/2018/3/25/%E7%BB%93%E6%9E%9C%E6%B5%8B%E8%AF%952.png" alt=" "></p>
 
       
     </div>

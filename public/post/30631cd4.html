@@ -176,14 +176,14 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="vps服务商提供的系统一般是不带图形化界面的（Ubuntu部分会有），但有时有些软件必须要图形化界面才能操作，所以需要手动安装vnc，通过vnc实现图形化界面的访问。    目前大多数的一键安装包都是基于ovz架构的vps，kvm架构的由于不能直接安装XFCE，会提示找不到数据源，需要通过其他方法实现。 本教程使用 搬瓦工的Centos 6 x86_64 系统，其他系统自测 ☆准备工作 1、">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/20182/@%5DV0D9K8Y%7BTOL3LD6%28~UWDM.png">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/20182/%5BU4HMPKB9TOC1%5BN8%2809IQPL.png?75%7Cimageslim">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/20182/37N0~QI8JIR@4BL32IGWDTT.png?75%7Cimageslim">
-<meta property="og:updated_time" content="2019-06-17T13:47:35.999Z">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/20182/@%5DV0D9K8Y%7BTOL3LD6%28~UWDM.png">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/20182/%5BU4HMPKB9TOC1%5BN8%2809IQPL.png?75%7Cimageslim">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/20182/37N0~QI8JIR@4BL32IGWDTT.png?75%7Cimageslim">
+<meta property="og:updated_time" content="2019-11-05T01:15:29.870Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux系统的vps（kvm架构）安装vnc">
 <meta name="twitter:description" content="vps服务商提供的系统一般是不带图形化界面的（Ubuntu部分会有），但有时有些软件必须要图形化界面才能操作，所以需要手动安装vnc，通过vnc实现图形化界面的访问。    目前大多数的一键安装包都是基于ovz架构的vps，kvm架构的由于不能直接安装XFCE，会提示找不到数据源，需要通过其他方法实现。 本教程使用 搬瓦工的Centos 6 x86_64 系统，其他系统自测 ☆准备工作 1、">
-<meta name="twitter:image" content="http://data.singlelovely.cn/xsj/20182/@%5DV0D9K8Y%7BTOL3LD6%28~UWDM.png">
+<meta name="twitter:image" content="https://data.singlelovely.cn/xsj/20182/@%5DV0D9K8Y%7BTOL3LD6%28~UWDM.png">
 
 
 
@@ -484,7 +484,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-17 21:47:35" itemprop="dateModified" datetime="2019-06-17T21:47:35+08:00">2019-06-17</time>
+                <time title="修改时间：2019-11-05 09:15:29" itemprop="dateModified" datetime="2019-11-05T09:15:29+08:00">2019-11-05</time>
               
             
           </span>
@@ -589,7 +589,7 @@
 <p><code>本教程使用 搬瓦工的Centos 6 x86_64 系统，其他系统自测</code></p>
 <h3 id="准备工作"><a class="header-anchor" href="#准备工作">☆</a>准备工作</h3>
 <p>1、安装Centos 6 64位系统，最好是自带bbr的，速度会更高。<br>
-<img src="http://data.singlelovely.cn/xsj/20182/@%5DV0D9K8Y%7BTOL3LD6%28~UWDM.png" alt><br>
+<img src="https://data.singlelovely.cn/xsj/20182/@%5DV0D9K8Y%7BTOL3LD6%28~UWDM.png" alt><br>
 2、使用终端模拟软件连接vps，推荐使用SecureCRT或者Xshell5。</p>
 <h3 id="可视化桌面安装"><a class="header-anchor" href="#可视化桌面安装">☆</a>可视化桌面安装</h3>
 <h4 id="升级系统和安装图形界面"><a class="header-anchor" href="#升级系统和安装图形界面">☆</a>升级系统和安装图形界面</h4>
@@ -606,7 +606,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/vncservers</span><br></pre></td></tr></table></figure>
 <p>键盘上点击I键进入编辑模式，在文件最后添加（分辨率自己调节）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">VNCSERVERS=&quot;2:vncuser&quot;</span><br><span class="line">VNCSERVERARGS=&quot;-geometry 1080×1920&quot;</span><br></pre></td></tr></table></figure>
-<p><img src="http://data.singlelovely.cn/xsj/20182/%5BU4HMPKB9TOC1%5BN8%2809IQPL.png?75%7Cimageslim" alt><br>
+<p><img src="https://data.singlelovely.cn/xsj/20182/%5BU4HMPKB9TOC1%5BN8%2809IQPL.png?75%7Cimageslim" alt><br>
 然后输入<code>:wq</code>保存并退出</p>
 <h4 id="启动vnc并设置开机自启"><a class="header-anchor" href="#启动vnc并设置开机自启">☆</a>启动vnc并设置开机自启</h4>
 <p>启动vnc，重启将start改为restart即可</p>
@@ -615,7 +615,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig vncserver on</span><br></pre></td></tr></table></figure>
 <h3 id="连接远程桌面"><a class="header-anchor" href="#连接远程桌面">☆</a>连接远程桌面</h3>
 <p>打开vnc客户端，输入<code>服务器地址:1</code>例如<code>104.207.128.86:1</code>,然后输入密码就可以看到远程桌面了<br>
-<img src="http://data.singlelovely.cn/xsj/20182/37N0~QI8JIR@4BL32IGWDTT.png?75%7Cimageslim" alt></p>
+<img src="https://data.singlelovely.cn/xsj/20182/37N0~QI8JIR@4BL32IGWDTT.png?75%7Cimageslim" alt></p>
 <p>   有了远程桌面以后么，就可以干一些挂机等在终端界面无法操作的事情啦········</p>
 
       

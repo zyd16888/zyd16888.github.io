@@ -107,18 +107,18 @@ system imagine相当于谷歌系统镜像，genymotion也会下载系统镜像�
 
 
   [1]: www.genymotion.net
-  [2]: http://data.singlelovely.cn/xsj/20182/genymotion1.png
-  [3]: http://data.singlelovely.cn/xsj/20182/genymotion%20%282%29.png
-  [4]: http://data.singlelovely.cn/xsj/20182/genymotion%20%283%29.png
-  [5]: http://data.singlelovely.cn/xsj/20182/genymotion%203.png
-  [6]: http://data.singlelovely.cn/xsj/20182/genymotion%206.png
-  [7]: http://data.singlelovely.cn/xsj/20182/genymotion%20%2810%29.png
-  [8]: http://data.singlelovely.cn/xsj/20182/genymotion%20%287%29.png
-  [9]: http://data.singlelovely.cn/xsj/20182/genymotion%20%284%29.png
-  [10]: http://data.singlelovely.cn/xsj/20182/genymotion%20%285%29.png
-  [11]: http://data.singlelovely.cn/xsj/20182/1519211198852.jpg
-  [12]: http://data.singlelovely.cn/xsj/20182/1519211344303.jpg
-  [13]: http://data.singlelovely.cn/xsj/20182/1519211955563.jpg
-  [14]: http://data.singlelovely.cn/xsj/20182/1519211990273.jpg
-  [15]: http://data.singlelovely.cn/xsj/20182/1519212111510.jpg
-  [16]: http://data.singlelovely.cn/xsj/20182/1519212300865.jpg
+  [2]: https://data.singlelovely.cn/xsj/20182/genymotion1.png
+  [3]: https://data.singlelovely.cn/xsj/20182/genymotion%20%282%29.png
+  [4]: https://data.singlelovely.cn/xsj/20182/genymotion%20%283%29.png
+  [5]: https://data.singlelovely.cn/xsj/20182/genymotion%203.png
+  [6]: https://data.singlelovely.cn/xsj/20182/genymotion%206.png
+  [7]: https://data.singlelovely.cn/xsj/20182/genymotion%20%2810%29.png
+  [8]: https://data.singlelovely.cn/xsj/20182/genymotion%20%287%29.png
+  [9]: https://data.singlelovely.cn/xsj/20182/genymotion%20%284%29.png
+  [10]: https://data.singlelovely.cn/xsj/20182/genymotion%20%285%29.png
+  [11]: https://data.singlelovely.cn/xsj/20182/1519211198852.jpg
+  [12]: https://data.singlelovely.cn/xsj/20182/1519211344303.jpg
+  [13]: https://data.singlelovely.cn/xsj/20182/1519211955563.jpg
+  [14]: https://data.singlelovely.cn/xsj/20182/1519211990273.jpg
+  [15]: https://data.singlelovely.cn/xsj/20182/1519212111510.jpg
+  [16]: https://data.singlelovely.cn/xsj/20182/1519212300865.jpg

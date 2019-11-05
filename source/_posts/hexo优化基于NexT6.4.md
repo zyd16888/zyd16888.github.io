@@ -10,7 +10,7 @@ date: 2018-08-02 21:07:40
 password: 
 description: 增加6.0+的新特性,去掉部分过时的功能
 image: 
-- "http://data.singlelovely.cn/xsj/2018/8/9/hexo-next-optimization-title.jpg"
+- "https://data.singlelovely.cn/xsj/2018/8/9/hexo-next-optimization-title.jpg"
 sticky:  
 ---
 
@@ -592,7 +592,7 @@ date: 2018-08-02 21:07:40
 password: 
 description: 增加6.0+的新特性,去掉部分过时的功能
 image: 
-- "http://data.singlelovely.cn/xsj/2018/8/9/hexo-next-optimization-title.jpg"
+- "https://data.singlelovely.cn/xsj/2018/8/9/hexo-next-optimization-title.jpg"
 sticky: 10
 
 ```

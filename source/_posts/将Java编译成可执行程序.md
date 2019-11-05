@@ -12,7 +12,7 @@ description: 使用idea与exe4j（多图）
 date: 2019-05-22 09:42:00
 password:
 image:
-- "http://data.singlelovely.cn/CoverPicture/5f85a932.jpg!CoverPicture"
+- "https://data.singlelovely.cn/CoverPicture/5f85a932.jpg!CoverPicture"
 photos:
 sticky:
 ---

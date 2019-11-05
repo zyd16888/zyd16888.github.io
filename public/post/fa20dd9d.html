@@ -176,15 +176,15 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="折腾好久，终于，博客上线了，想要实现的效果和功能也基本全部实现，在这记录一下折腾的过程，供以后参考。 ☆hexo安装 ☆什么是Hexo ?    Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub等平台上。 ☆安装步骤  安装Git 安装Node.js 安装Hexo Github创建仓库 推送网站  ☆hexo安装过程   Git和No">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/20182/hexo.png">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/20182/hexo3.png">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/20182/hexo2.png">
-<meta property="og:image" content="http://data.singlelovely.cn/xsj/20182/214.png">
-<meta property="og:updated_time" content="2019-06-17T13:47:35.997Z">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/20182/hexo.png">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/20182/hexo3.png">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/20182/hexo2.png">
+<meta property="og:image" content="https://data.singlelovely.cn/xsj/20182/214.png">
+<meta property="og:updated_time" content="2019-11-05T01:14:43.214Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo折腾记">
 <meta name="twitter:description" content="折腾好久，终于，博客上线了，想要实现的效果和功能也基本全部实现，在这记录一下折腾的过程，供以后参考。 ☆hexo安装 ☆什么是Hexo ?    Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub等平台上。 ☆安装步骤  安装Git 安装Node.js 安装Hexo Github创建仓库 推送网站  ☆hexo安装过程   Git和No">
-<meta name="twitter:image" content="http://data.singlelovely.cn/xsj/20182/hexo.png">
+<meta name="twitter:image" content="https://data.singlelovely.cn/xsj/20182/hexo.png">
 
 
 
@@ -485,7 +485,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-06-17 21:47:35" itemprop="dateModified" datetime="2019-06-17T21:47:35+08:00">2019-06-17</time>
+                <time title="修改时间：2019-11-05 09:14:43" itemprop="dateModified" datetime="2019-11-05T09:14:43+08:00">2019-11-05</time>
               
             
           </span>
@@ -611,7 +611,7 @@
 <h2 id="博客同步到github"><a class="header-anchor" href="#博客同步到github">☆</a>博客同步到GitHub</h2>
 <h3 id="github创建仓库"><a class="header-anchor" href="#github创建仓库">☆</a>GitHub创建仓库</h3>
 <p>  登录GitHub后，点击New repository创建新仓库，仓库名称必须为：<strong>用户名/github.io</strong><br>
-<img src="http://data.singlelovely.cn/xsj/20182/hexo.png" alt="   "></p>
+<img src="https://data.singlelovely.cn/xsj/20182/hexo.png" alt="   "></p>
 <h3 id="绑定github仓库与本地的hexo文件"><a class="header-anchor" href="#绑定github仓库与本地的hexo文件">☆</a>绑定GitHub仓库与本地的hexo文件</h3>
 <p>   在hexo的安装目录下，找到<strong>config.yml</strong> 文件，打开，在末尾找到deploy,填入以下内容：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: git                #同步方式</span><br><span class="line"> repository:               #GitHub仓库地址</span><br><span class="line"> branch: master              #仓库所属分支</span><br></pre></td></tr></table></figure>
@@ -620,11 +620,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;GitHub用户名&quot;</span><br><span class="line">git config --global user.email &quot;GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
 <p>然后，生成ssh密钥文件（一直回车就行）：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
-<p><img src="http://data.singlelovely.cn/xsj/20182/hexo3.png" alt="       "><br>
+<p><img src="https://data.singlelovely.cn/xsj/20182/hexo3.png" alt="       "><br>
 生成的密钥文件，默认存储在用户目录下 <strong>.ssh</strong> 文件夹中，其中 <strong>id_rsa</strong>为私钥，<strong>id_rsa.pub</strong>为公钥，将公4钥绑定到GitHub账户上（请自行百度），然后在 git bash 中输入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 <p>如果是第一次的会提示是否continue，输入yes就会看到：You’ve successfully authenticated， but GitHub does not provide shell access ，这就表示已成功连上github。<br>
-<img src="http://data.singlelovely.cn/xsj/20182/hexo2.png" alt="enter description here"><br>
+<img src="https://data.singlelovely.cn/xsj/20182/hexo2.png" alt="enter description here"><br>
 然后在本地的hexo目录中打开 git bash ，输入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>博客就会同步上传到GitHub，然后在浏览器输入：<strong>GitHub用户名/github.io</strong>，就可以看到网站了。</p>
@@ -634,7 +634,7 @@
 <p>进入hexo安装目录，在git中输入以下内容便会自动下载next主题到<code>themes/next</code>目录下面</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <p>然后打开站点配置文件<code>-config.yml</code>找到theme更改为next并保存<br>
-<img src="http://data.singlelovely.cn/xsj/20182/214.png" alt="            "></p>
+<img src="https://data.singlelovely.cn/xsj/20182/214.png" alt="            "></p>
 <p>然后执行<code>hexo g</code> 和 <code>hexo d</code>将更改同步</p>
 <h3 id="next主题美化"><a class="header-anchor" href="#next主题美化">☆</a>next主题美化</h3>
 <h4 id="添加rss"><a class="header-anchor" href="#添加rss">☆</a>添加rss</h4>
