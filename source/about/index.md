@@ -22,9 +22,12 @@ comments: false
 &emsp;&emsp;&emsp;Hexo搭建博客指南:[Next主题](http://theme-next.iissnan.com)
 &emsp;&emsp;&emsp;~~折腾开始于2018年1月20日，基本在2018年1月25日完工。~~
 &emsp;&emsp;&emsp;2018年7月29日~2018年8月12日左右，整站进行升级
-
 &emsp;&emsp;&emsp;重写大部分页面UI，hexo版本升级到3.7.2，nexT主题更换为6.4版本，增加评论功能
+&emsp;&emsp;&emsp;接入又拍云CDN，国内走CDN链接，国外直连
 
+&emsp;&emsp;&emsp;19.3.7 hexo更新为3.9.0，渲染速度加快，next主题因修改的部分太多，无法升级
+
+&emsp;&emsp;&emsp;19.5.24 接入融云备份，提高安全性
 
 
 ### &nbsp;其他流言
