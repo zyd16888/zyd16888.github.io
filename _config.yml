@@ -163,8 +163,8 @@ live2d:
     use: live2d-widget-model-miku  #模板目录，在node_modules里
   display:
     position: left
-    width: 150
-    height: 300
+    width: 300
+    height: 600
   mobile:
     show: false
 
