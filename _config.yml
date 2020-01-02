@@ -224,5 +224,7 @@ encrypt:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:zyd16888/zyd16888.github.io.git
+  repository: 
+      github: git@github.com:zyd16888/zyd16888.github.io.git
+      git16888: git@123.206.46.17:/home/git/blog.git
   branch: master
