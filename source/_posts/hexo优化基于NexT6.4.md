@@ -20,9 +20,7 @@ sticky:
 
 npm install hexo-generator-feed --save
 
-
-
-#### 字数统计：
+#### 字数统计
 
 ##### next主题为5.x版本
 
@@ -500,9 +498,9 @@ path: baidusitemap.xml
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 
-+{% if not is_index %}
-+  {% include 'password.swig' %}
-+{% endif %}
++ {% if not is_index %}
++   {% include 'password.swig' %}
++ {% endif %}
 
 {% if theme.needmoreshare2.enable %}
 ```
@@ -522,11 +520,13 @@ path: baidusitemap.xml
 
 <span id = "font-blue">下面添加：</span> 
 ```
+
 {% if post.image %}
             <div class="out-img-topic">
               <img src={{ post.image }} class="img-topic" />
             </div>
  {% endif %}
+
 ```
 然后在<span id = "font-blue">文章</span> 中写：
 ```
@@ -546,6 +546,7 @@ photos:
 <span id = "font-blue">打开</span>　\blog\node_modules\hexo-generator-index\lib\generator.js
 
 <span id = "font-blue">将内容修改为　</span>
+
 ```javascript
 'use strict';
 var pagination = require('hexo-pagination');
@@ -580,6 +581,7 @@ module.exports = function(locals){
 <span id = "font-blue">使用方法</span>
 
 在文章中添加 sticky 值，数值越大文章越靠前，如
+
 ```
 title: hexo优化基于NexT6.4
 copyright: false
@@ -596,8 +598,3 @@ image:
 sticky: 10
 
 ```
-
-
-
-
-<div class="note default"><p>default</p></div>
