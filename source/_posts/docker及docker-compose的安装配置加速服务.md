@@ -15,7 +15,7 @@ photos:
 sticky:
 ---
 
-本文系统全部以`Ubuntu18.04 Service`为例
+{% cq %}本文系统全部以<span id = "font-green">Ubuntu18.04 Service</span>为例{% endcq %}
 
 ### docker安装
 
@@ -54,7 +54,7 @@ chmod +x /usr/local/bin/docker-compose
 2. 配置镜像加速器
 针对Docker客户端版本大于 1.10.0 的用户
 
-您可以通过修改daemon配置文件/etc/docker/daemon.json来使用加速器
+您可以通过修改`daemon`配置文件<span id = "inline-blue">/etc/docker/daemon.json</span>来使用加速器
 
 ```
 sudo mkdir -p /etc/docker
@@ -67,4 +67,4 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
-注意：因每个人的加速地址不同，所以上文中用xxxxx代替。
+<div class="note warning"><p>因每个人的加速地址不同，所以上文中用xxxxx代替。</p></div>
