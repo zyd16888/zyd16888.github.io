@@ -103,11 +103,10 @@ Color Themes 上面有很多主题模版，你自己去挑选就好了。
 ![LogCat新](https://data.singlelovely.cn/xsj/2018/9/4/LogCat新.png)
 
 如上图所示，效果是不是好了很多！！！也与我们的整体主题风格搭配。贴一下我使用的各项颜色值：
-{% cq %}
+
 <font color = "#AA66CC">Assert: #AA66CC</font>
 <font color = "#33B5E5">Debug: #33B5E5</font>
 <font color = "#FF4444">Error: #FF4444</font>
 <font color = "#99CC00">Info: #99CC00</font>
 <font color = "#FFFFFF">Verbose: #FFFFFF</font>
 <font color = "#FFBB33">Warning: #FFBB33</font>
-{% endcq %}
