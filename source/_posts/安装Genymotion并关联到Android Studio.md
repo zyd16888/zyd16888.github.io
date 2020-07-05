@@ -106,7 +106,7 @@ system imagine相当于谷歌系统镜像，genymotion也会下载系统镜像�
 
 
 
-  [1]: www.genymotion.net
+  [1]: http://www.genymotion.net
   [2]: https://data.singlelovely.cn/xsj/20182/genymotion1.png
   [3]: https://data.singlelovely.cn/xsj/20182/genymotion%20%282%29.png
   [4]: https://data.singlelovely.cn/xsj/20182/genymotion%20%283%29.png

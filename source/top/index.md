@@ -28,5 +28,5 @@ description: 博客文章阅读量排行榜
     console.log("error");
   });
 </script>
-
+<p>LeanCloud 因实名认证问题（需要支付宝刷脸认证，但当前手机不支持刷脸，问题暂时无解），请求可能会出问题，如未正常显示，请谅解。。。</p>
 <style>.post-description { display: none; }<style>
