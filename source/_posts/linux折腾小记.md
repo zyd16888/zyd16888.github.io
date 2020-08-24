@@ -8,7 +8,8 @@ image:
   - 'https://data.singlelovely.cn/CoverPicture/c6360c4.png!CoverPicture'
 date: 2020-02-21 23:28:00
 tags:
-categories:
+- Linux
+categories: Linux
 password:
 photos:
 sticky:

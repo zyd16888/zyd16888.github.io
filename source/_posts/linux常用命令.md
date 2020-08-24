@@ -1,3 +1,21 @@
+---
+title: linux常用命令
+copyright: true
+abbrlink: fe4ef317
+notshow: false
+description: 记录一下常用命令，方便复习、查找
+image:
+  - 'https://data.singlelovely.cn/CoverPicture/fe4ef317.png!CoverPicture'
+tags:
+  - Linux
+  - 学习
+categories: Linux
+date: 2020-07-21 13:49:00
+password:
+photos:
+sticky:
+---
+
 ### 群组管理
 
 - addgroup friends
@@ -27,6 +45,10 @@
     - chgrp dong file.txt
     - -R：递归
     - chown -R oscar:oscar /home/dong
+
+
+
+### 权限管理
 
 - chmod 
     - 修改访问权限
@@ -114,6 +136,8 @@ set autoindent
 set smarthome
 ```
 
+### 软件相关
+
 源文件：`/etc/apt/sources.list`
 
 更新软件包缓存：`sudo apt update`
@@ -169,7 +193,7 @@ apropos : 查找功能
 
 管道符号 | 可以将命令连接起来，好像一个个对接的管道一样，前一个命令的输出成为后一个命令的输入
 
-### 监视系统活动
+### 监视活动
 
 - w
 - date

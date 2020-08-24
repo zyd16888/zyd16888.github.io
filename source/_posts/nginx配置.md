@@ -10,7 +10,7 @@ date: 2020-01-30 19:14:00
 tags: 
 - Linux
 - Ubuntu
-categories: linux
+categories: Linux
 password:
 photos:
 sticky:
