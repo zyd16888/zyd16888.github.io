@@ -1,0 +1,2323 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="PZOeQe5chA9rCPyFSZqgJBKEPsvrT7JHM6oktDVvUP0">
+
+
+
+
+
+
+
+
+
+
+
+  <meta name="360-site-verification" content="b4f5639c9222c12ab24dfea83f3e6b48">
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Noto Serif:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|Consolas:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.ico?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.3.0',
+    sidebar: {"position":"left","width":300,"display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"perspectiveLeftIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="人,生而有崖,学而无涯">
+<meta name="keywords" content="学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试知识点">
+<meta property="og:url" content="http://www.singlelovely.cn/post/ed6658a4.html">
+<meta property="og:site_name" content="CZLisyx-浮生志">
+<meta property="og:description" content="人,生而有崖,学而无涯">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-09-21T13:41:07.557Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="面试知识点">
+<meta name="twitter:description" content="人,生而有崖,学而无涯">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="CZLisyx-浮生志" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://www.singlelovely.cn/post/ed6658a4.html">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>面试知识点 | CZLisyx-浮生志</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8a9a08eec7eba1db3e0f6e3634ddbfac";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">CZLisyx-浮生志</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">z y d</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-top">
+    <a href="/top/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-signal"></i> <br>热度</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block index">
+  
+    <link itemprop="mainEntityOfPage" href="http://www.singlelovely.cn/post/ed6658a4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cxsz Zhu">
+      <meta itemprop="description" content="<center class=" site-description">跌跌撞撞，仍对世界微笑<br>彷徨失措，依然勇敢前行">
+      <meta itemprop="image" content="/images/head.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CZLisyx-浮生志">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">面试知识点
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-03-27 14:08:00" itemprop="dateCreated datePublished" datetime="2020-03-27T14:08:00+08:00">2020-03-27</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-09-21 21:41:07" itemprop="dateModified" datetime="2020-09-21T21:41:07+08:00">2020-09-21</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/" itemprop="url" rel="index"><span itemprop="name">学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comments"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">评论：</span> <span class="post-comments-count valine-comment-count" data-xid="/post/ed6658a4.html" itemprop="commentCount"></span>
+                
+              </span>
+            
+          
+
+          
+          
+             <span id="/post/ed6658a4.html" class="leancloud_visitors" data-flag-title="面试知识点">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">浏览量：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">16k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">27 分钟</span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">人,生而有崖,学而无涯</div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="操作系统"><a class="header-anchor" href="#操作系统">☆</a>操作系统</h2>
+<h3 id="基础"><a class="header-anchor" href="#基础">☆</a>基础</h3>
+<ul>
+<li>★★★ 进程与线程的本质区别、以及各自的使用场景</li>
+</ul>
+<ol>
+<li>进程是资源分配的基本单位，线程是调度的基本单位。</li>
+<li>同一进程的线程，对共享，栈私有，共享地址空间。</li>
+<li>线程间可以直接通信，进程间需要经过IPC。</li>
+<li>多进程：编程容易，不用考虑锁和同步资源问题，容错性强，数据隔离</li>
+<li>多线程：创建快，数据共享，切换快，非均质服务</li>
+</ol>
+<ul>
+<li>★★★ 进程调度算法的特点以及使用场景</li>
+</ul>
+<ol>
+<li>FCFS（先来先服务）：有利于长作业，不利于短作业，非抢占</li>
+<li>SJF（短作业优先）：估计最短运行时间调度，长作业可能会被饿死，非抢占</li>
+<li>SRTN（最短剩余时间优先）：最短作业优先的抢占式，按剩余运行时间调度</li>
+</ol>
+<ul>
+<li>★★★ 进程通信方法的特点以及使用场景★</li>
+</ul>
+<ol>
+<li>管道（无名管道）：半双工，父子、兄弟进程间使用，pipe()</li>
+<li>FIFO（命名管道、有名管道）：客户服务器间应用，fifo()</li>
+<li>消息队列：独立于读写进程、避免了同步阻塞、有选择性接受</li>
+<li>信号量：控制多进程访问共享数据</li>
+<li>共享存储：速度最快</li>
+<li>套接字：不同机器间进程通信</li>
+</ol>
+<ul>
+<li>★★★ 死锁问题</li>
+</ul>
+<p>原因：系统资源不足、进程运行推进的顺序不合适、资源分配不当等</p>
+<ol>
+<li>必要条件：互斥、请求保持、不可抢占、环路等待</li>
+<li>检测：- 每种类型一个资源：对访问过的节点进行标记 - 每种类型多个资源：资源总量进行计算</li>
+<li>解决：剥夺资源、撤销进程、利用抢占、回滚、杀死进程恢复</li>
+<li>预防：破坏四个必要条件</li>
+<li>避免：安全状态检测、银行家算法</li>
+</ol>
+<p>数据库中解决死锁：</p>
+<ol>
+<li>按同一顺序访问对象。</li>
+<li>避免事务中的用户交互。</li>
+<li>保持事务简短并在一个批处理中。</li>
+<li>使用低隔离级别。</li>
+<li>使用绑定连接。</li>
+<li>用存储过程查出引起死锁的进程和SQL语句。</li>
+</ol>
+<ul>
+<li>★★★ 虚拟内存的作用，分页系统实现虚拟内存原理</li>
+</ul>
+<ol>
+<li>让物理内存扩充成更大的逻辑内存，从而让程序获得更多的可用内存</li>
+<li>分页地址映射、内存管理单元（MMU）</li>
+<li>虚拟地址：页面号、偏移量</li>
+</ol>
+<ul>
+<li>★★★ 页面置换算法的原理</li>
+</ul>
+<ol>
+<li>最近最久未使用（LRU）非常重要</li>
+<li>最近未使用（NRU）：使用链表实现，在Redis上作为缓存置换算法</li>
+<li>先进先出（FIFO）</li>
+<li>第二次机会：读写时R = 1，替换时R若为1，则改为0放在尾端，不换出</li>
+<li>时钟</li>
+</ol>
+<ul>
+<li>★★★ 比较分页与分段的区别</li>
+</ul>
+<ol>
+<li>分页透明、分段需要程序员划分</li>
+<li>分页为一维地址空间、分段为二维</li>
+<li>页大小不变、段大小可变</li>
+<li>分页：虚拟内存，分段：程序和数据在逻辑上独立、有利于共享和保护</li>
+</ol>
+<ul>
+<li>★★★ 分析静态链接的不足，以及动态链接的特点★</li>
+</ul>
+<ol>
+<li>不足：静态库更新时那么整个程序都要重新进行链接，对于 printf 这种标准函数库，如果每个程序都要有代码，这会极大浪费资源</li>
+<li>动态：给定的文件系统中一个库只有一个文件，一个副本可以被不同的正在运行的进程共享</li>
+</ol>
+<ul>
+<li>★★☆ 常见进程同步问题★</li>
+</ul>
+<ol>
+<li>哲学家进餐</li>
+<li>读者-写者</li>
+</ol>
+<ul>
+<li>★★☆ 协程的作用</li>
+</ul>
+<ol>
+<li>协程是单进程单线程的超越函数的调度机制，它通过一定的调度手段进行调度</li>
+<li>可重入能力，类似与函数</li>
+<li>用来控制过程输出状态的那些输入状态的管理工作</li>
+</ol>
+<ul>
+<li>
+<p>协程的优势，协程的轻量性体现在哪里？</p>
+<ul>
+<li>用户自己控制切换时机，不需要陷入内核态</li>
+<li>没有线程切换的开销</li>
+<li>不需要多线程锁机制，只要一个线程</li>
+</ul>
+</li>
+<li>
+<p>线程与堆栈的关系</p>
+<ul>
+<li>栈是线程私有的（局部变量、操作数、动态链接）</li>
+<li>堆是线程共享的（对象的实例和数组）</li>
+<li>方法区也是线程共享的</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<p>★☆☆ 进程状态</p>
+<ul>
+<li>就绪：经调度算法可以转为运行</li>
+<li>运行：cpu时间片用完后转为就绪</li>
+<li>阻塞：缺少资源</li>
+</ul>
+</li>
+<li>
+<p>★☆☆ 线程实现的方式（Java），优劣</p>
+<ul>
+<li>继承Thread类，并重写其run()方法</li>
+<li>实现Runnable接口，并实现其run()方法</li>
+<li>实现Callable接口，并实现其call()方法</li>
+<li>实现接口会更好一些：Java 不支持多重继承，因此继承了 Thread 类就无法继承其它类，但是可以实现多个接口</li>
+</ul>
+</li>
+</ul>
+<h3 id="linux"><a class="header-anchor" href="#linux">☆</a>Linux</h3>
+<ul>
+<li>★★★ 硬链接与软链接的区别</li>
+</ul>
+<ol>
+<li>硬链接：文件1 和 文件2 直接指向内存 <code>ln file1 file2</code></li>
+<li>软链接：指向另外一个文件 <code>ln -s file1 file2</code></li>
+</ol>
+<ul>
+<li>★★★ 僵尸进程与孤儿进程的区别，从 SIGCHLD 分析产生僵尸进程的原因</li>
+</ul>
+<ol>
+<li>僵尸进程：子进程退出后，父进程未调用wait()waitpid()，进程描述符未释放</li>
+<li>孤儿进程：父进程退出，子进程运行，会被init进程收养，没有危害</li>
+<li>杀死僵尸进程的父进程，僵尸进程变为孤儿进程</li>
+</ol>
+<ul>
+<li>★★☆ 文件系统的原理，特别是 inode 和 block。数据恢复原理</li>
+</ul>
+<ol>
+<li>inode：一个文件占用一个 inode，记录文件的属性，同时记录此文件的内容所在的 block 编号；</li>
+<li>block：记录文件的内容，文件太大时，会占用多个 block</li>
+<li>superblock：记录文件系统的整体信息，包括 inode 和 block 的总量、使用量、剩余量，以及文件系统的格式与相关信息等</li>
+<li>block bitmap：记录 block 是否被使用的位图</li>
+</ol>
+<ul>
+<li>Linux启动时调用那些文件★</li>
+</ul>
+<ol>
+<li>开启电源 --&gt; BIOS开机自检 --&gt; 引导程序lilo或grub --&gt; 内核的引导（kernel boot）–&gt; 执行init（rc.sysinit、rc）–&gt; mingetty(建立终端) --&gt; shell</li>
+<li>/etc/profile --&gt; ~/.bash_profile --&gt; ~/.bash_login --&gt; ~/.profile</li>
+</ol>
+<ul>
+<li>
+<p>什么是linux的daemon进程？和一般进程有什么区别？</p>
+<ul>
+<li>守护进程，随系统启动和关闭，不与客户端交互，独立于终端。</li>
+<li>使用ps axj命令查看进程时，其终端名(TTY)显示为？，ID显示为-1</li>
+</ul>
+</li>
+<li>
+<p>通过free命令查看内存时，看到的buffer和cache各表示什么含义？</p>
+<ul>
+<li>使用内存、剩余内存</li>
+<li>Cache：缓存区，是高速缓存，是文件系统的cache</li>
+<li>Buffer：缓冲区，传输数据，是块设备的读写缓冲区</li>
+</ul>
+</li>
+<li>
+<p>apache和nginx这两个web服务器有哪些区别？</p>
+<ul>
+<li>apache 是同步多进程模型，一个连接对应一个进程，而 nginx 是异步的，多个连接（万级别）可以对应一个进程</li>
+<li>nginx轻量级，处理静态文件好，</li>
+<li>apache 稳定，处理动态请求有优势</li>
+</ul>
+</li>
+</ul>
+<h2 id="网络"><a class="header-anchor" href="#网络">☆</a>网络</h2>
+<h3 id="基础-v2"><a class="header-anchor" href="#基础-v2">☆</a>基础</h3>
+<ul>
+<li>★★★ <strong>各层的作用，TCP/IP 协议的特点</strong></li>
+</ul>
+<ol>
+<li>
+<p>应用层 ：为特定应用程序提供数据传输服务，例如 HTTP、DNS 等协议。数据单位为报文。</p>
+</li>
+<li>
+<p>传输层 ：为进程提供通用数据传输服务。由于应用层协议很多，定义通用的传输层协议就可以支持不断增多的应用层协议。运输层包括两种协议：传输控制协议 TCP，提供面向连接、可靠的数据传输服务，数据单位为报文段；用户数据报协议 UDP，提供无连接、尽最大努力的数据传输服务，数据单位为用户数据报。TCP 主要提供完整性服务，UDP 主要提供及时性服务。</p>
+</li>
+<li>
+<p>网络层 ：为主机提供数据传输服务。而传输层协议是为主机中的进程提供数据传输服务。网络层把传输层传递下来的报文段或者用户数据报封装成分组。</p>
+</li>
+<li>
+<p>数据链路层 ：网络层针对的还是主机之间的数据传输服务，而主机之间可以有很多链路，链路层协议就是为同一链路的主机提供数据传输服务。数据链路层把网络层传下来的分组封装成帧。</p>
+</li>
+<li>
+<p>物理层 ：考虑的是怎样在传输媒体上传输数据比特流，而不是指具体的传输媒体。物理层的作用是尽可能屏蔽传输媒体和通信手段的差异，使数据链路层感觉不到这些差异</p>
+</li>
+<li>
+<p>表示层 ：数据压缩、加密以及数据描述，这使得应用程序不必关心在各台主机中数据内部格式不同的问题。</p>
+</li>
+<li>
+<p>会话层 ：建立及管理会话。</p>
+</li>
+<li>
+<p>TCP/IP ： 只有四层，数据链路层和物理层合并为网络接口层</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>★★★ <strong>三次握手以及四次挥手具体过程、原因、TIME_WAIT</strong></p>
+</li>
+<li>
+<p>★★★ <strong>可靠传输原理，并设计可靠 UDP 协议</strong></p>
+</li>
+</ul>
+<ol>
+<li>TCP 可靠传输：超时重传</li>
+<li>可靠 UDP 协议：应用层实现确认机制、重传机制、窗口确认机制：RUDP、RTP、UDT</li>
+</ol>
+<ul>
+<li>★★★ <strong>UDP 与 TCP 比较，分析上层协议应该使用 UDP 还是 TCP</strong></li>
+</ul>
+<ol>
+<li>UDP：无连接、尽最大可能交付、一对一、多对多、多对一</li>
+<li>TCP：面向连接、可靠交付、全双工、流量拥塞控制、字节流、一对一、确认机制、重传机制、滑动窗口</li>
+</ol>
+<ul>
+<li>
+<p>★★☆ <strong>路由选择协议及特点</strong></p>
+<ul>
+<li>RIP：距离向量、15跳、固定时间交换路由表、3分钟超时</li>
+<li>OSPF：开放最短路径优先、洪泛发送信息、链路状态发生变化时发送信息</li>
+<li>BGP：比较好不是最佳，TCP，发言人制度</li>
+</ul>
+</li>
+<li>
+<p>★★☆ <strong>DNS 的端口号；TCP 还是 UDP；作为缓存、负载均衡</strong></p>
+</li>
+</ul>
+<ol>
+<li>端口：53，UDP</li>
+<li>使用TCP的情况：数据大于512字节，区域传送</li>
+</ol>
+<ul>
+<li>★★☆ <strong>TCP 拥塞控制、四种方法、理解具体原理</strong>★</li>
+</ul>
+<ol>
+<li>慢开始，拥塞避免，快重传，快恢复</li>
+<li>防止过多的数据注入到网络当中，这样可以使网络中的路由器或链路不致过载</li>
+</ol>
+<ul>
+<li>
+<p>★★☆ <strong>浏览器访问页面（输入网址后发生了什么）</strong></p>
+<ul>
+<li>DHCP配置主机信息（可略过）
+<ul>
+<li>DHCP 请求报文，UDP，255.255.255.255:67,0.0.0.0:68</li>
+<li>DHCP 服务器: DHCP ACK 报文:IP 地址、DNS 服务器的 IP 地址、默认网关路由器的 IP 地址和子网掩码</li>
+</ul>
+</li>
+<li>ARP 解析 MAC 地址(获取路由网关地址)</li>
+<li>DNS解析域名</li>
+<li>HTTP 请求页面</li>
+</ul>
+</li>
+<li>
+<p>★★☆ <strong>集线器、交换机、路由器的作用，以及所属的层次</strong></p>
+<ul>
+<li>集线器：物理层、比特</li>
+<li>交换机：链路层、自学习、按mac地址存储转发</li>
+<li>路由器：网络层、IP地址转发</li>
+</ul>
+</li>
+<li>
+<p>★★☆ <strong>以太网的特点，以及帧结构</strong></p>
+<ul>
+<li>星型结构</li>
+<li>帧结构：目的地址、源地址、类型、IP数据报、FCS</li>
+</ul>
+</li>
+</ul>
+<h3 id="http"><a class="header-anchor" href="#http">☆</a>HTTP</h3>
+<ul>
+<li>
+<p>★★★ GET 与 POST 比较：作用、参数、安全性、幂等性、可缓存</p>
+<ul>
+<li>POST 主要用来传输数据，而 GET 主要用来获取资源</li>
+<li>GET参数：ASCII码</li>
+<li>GET安全、幂等，POST不安全不幂等</li>
+<li>GET、HEAD可缓存，PUT、DELETE、POST不可缓存</li>
+</ul>
+</li>
+<li>
+<p>★★★ Cookie 作用、安全性问题、和 Session 的比较</p>
+<ul>
+<li>保存状态信息（会话管理、行为跟踪），cookie最大4kb</li>
+<li>作用域：默认为当前文档的主机</li>
+<li>Cookie可利用Session存在服务器端</li>
+<li>Cookie 只能存储 ASCII 码字符串，而 Session 则可以存储任何类型的数据</li>
+</ul>
+</li>
+<li>
+<p>★★★ 长连接与短连接原理以及使用场景，流水线</p>
+<ul>
+<li>长连接：建立一个TCP多次进行HTTP通信</li>
+<li>流水线：同一条长连接上连续发出请求</li>
+</ul>
+</li>
+<li>
+<p>★★★ HTTP 存在的安全性问题，以及 HTTPs 的加密、认证和完整性保护作用</p>
+<ul>
+<li>明文进行通信，不验证身份，无法证明报文的完整性</li>
+<li>使用了SSL隧道进行通信</li>
+<li>使用非对称密钥加密方式，传输对称密钥加密方式所需要的 Secret Key</li>
+<li>获取到 Secret Key 后，再使用对称密钥加密方式进行通信</li>
+<li>SSL 提供报文摘要功能来进行完整性保护、MD5</li>
+</ul>
+</li>
+<li>
+<p>★★☆ 缓存 的Cache-Control 字段、Expires 和 max-age 的区别、ETag 验证原理</p>
+<ul>
+<li>缓解服务器压力，降低客户端获取资源的延迟</li>
+<li>no-store：禁止，no-cache：强制确认，private：私有，public：公共</li>
+<li>ETag ： 资源唯一标识</li>
+</ul>
+</li>
+<li>
+<p>★★★ HTTP/1.1 的特性</p>
+<ul>
+<li>默认是长连接</li>
+<li>支持流水线</li>
+<li>支持同时打开多个 TCP 连接</li>
+<li>支持虚拟主机</li>
+<li>新增状态码 100：表示正常</li>
+<li>支持分块传输编码</li>
+<li>新增缓存处理指令 max-age</li>
+</ul>
+</li>
+<li>
+<p>★★☆ HTTP/1.x 的缺陷，以及 HTTP/2 的特点</p>
+<ul>
+<li>缺陷：多个连接才能实现并发和缩短延迟、不会压缩请求和响应首部浪费流量、没有优先级支持</li>
+<li>二进制帧分层、服务端推送、首部压缩</li>
+</ul>
+</li>
+<li>
+<p>★★☆ HTTP 与 FTP 的比较</p>
+</li>
+<li>
+<p>★☆☆ 状态码</p>
+</li>
+<li>
+<p>http协议中的keeplive是做什么的？它的适应场景是什么？</p>
+<ul>
+<li>让多个http请求共享一个Tcp连接，避免每个http新建tcp连接</li>
+<li>定时发送心跳包</li>
+</ul>
+</li>
+<li>
+<p>http请求有多少种？</p>
+<ul>
+<li>8种</li>
+<li>opions：返回服务器针对特定资源所支持的HTML请求方法、get、post、put：向指定资源位置上上传其最新内容</li>
+<li>head：查看某个页面的状态、delete、trace：回显服务器收到的请求、connect</li>
+</ul>
+</li>
+<li>
+<p>查看linux系统中tcp连接的状态和连接数量统计</p>
+<ul>
+<li><code>netstat -an | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'</code></li>
+</ul>
+</li>
+<li>
+<p>bash shell 里<code>$0.$?.$$</code>各表示什么含义</p>
+<ul>
+<li>$$ Shell本身的PID（ProcessID）</li>
+<li>$! Shell最后运行的后台Process的PID</li>
+<li>$? 最后运行的命令的结束代码（返回值）</li>
+<li>$# 是传给脚本的参数个数</li>
+<li>$0 是脚本本身的名字</li>
+<li>$1 是传递给该shell脚本的第一个参数</li>
+<li>$2 是传递给该shell脚本的第二个参数</li>
+<li>$@ 是传给脚本的所有参数的列表</li>
+</ul>
+</li>
+</ul>
+<h3 id="socket"><a class="header-anchor" href="#socket">☆</a>Socket</h3>
+<ul>
+<li>
+<p>★★★ select、poll、epoll 的原理、比较、以及使用场景；epoll 的水平触发与边缘触发</p>
+<ul>
+<li>都是多路复用的具体实现</li>
+<li>select 会修改描述符，而 poll 不会</li>
+<li>select 的描述符类型使用数组实现</li>
+<li>poll 提供了更多的事件类型，并且对描述符的重复利用上比 select 高</li>
+<li>如果一个线程对某个描述符调用了 select 或者 poll，另一个线程关闭了该描述符，会导致调用结果不确定</li>
+<li>select 和 poll 速度都比较慢</li>
+</ul>
+</li>
+<li>
+<p>★★☆ 五种 IO 模型的特点以及比较</p>
+<ul>
+<li>阻塞式I/O：阻塞应用，内核缓存–&gt;应用缓存（数据复制），复制完返回</li>
+<li>非阻塞式I/O：进程调用、返回错误码、继续执行、不断询问io（轮询），CPU利用率低</li>
+<li>I/O复用：单进程处理多IO，无进程创建切换，系统开销小</li>
+<li>信号驱动I/O：进程使用 sigaction 系统调用，内核立即返回，进程继续执行，数据到达时内核向应用发送 SIGIO 信号，进程调用 recvfrom 复制数据，CPU利用率高</li>
+<li>异步I/O：进程执行 aio_read 系统调用会立即返回，进程继续执行，不被阻塞，内核在操作完成后向进程发送信号</li>
+<li>比较
+<ul>
+<li>同步 I/O：将数据从内核缓冲区复制到应用进程缓冲区的阶段（第二阶段），应用进程会阻塞</li>
+<li>异步 I/O：第二阶段应用进程不会阻塞</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>多路复用</p>
+</li>
+<li>
+<p>Java NIO</p>
+</li>
+</ul>
+<h2 id="数据库"><a class="header-anchor" href="#数据库">☆</a>数据库</h2>
+<ul>
+<li>数据库范式
+<ul>
+<li>第一范式：属性的原子性</li>
+<li>第二范式：属性完全依赖于主键</li>
+<li>第三范式：一个数据库表中不包含已经在其它表中包含的非主键关键字信息。</li>
+</ul>
+</li>
+</ul>
+<h3 id="sql"><a class="header-anchor" href="#sql">☆</a>SQL</h3>
+<ul>
+<li>
+<p>★★☆ 手写 SQL 语句，特别是连接查询与分组查询</p>
+</li>
+<li>
+<p>★★☆ 连接查询与子查询的比较</p>
+</li>
+<li>
+<p>★★☆ drop、delete、truncate 比较</p>
+<ul>
+<li>作用
+<ul>
+<li>DELETE 删除表中 WHERE 语句指定的数据。</li>
+<li>TRUNCATE 清空表，相当于删除表中的所有数据。</li>
+<li>DROP 删除表结构</li>
+</ul>
+</li>
+<li>事务
+<ul>
+<li>DELETE 会被放到日志中以便进行回滚；</li>
+<li>TRUNCATE 和 DROP 立即生效，不会放到日志中，也就不支持回滚。</li>
+</ul>
+</li>
+<li>删除空间
+<ul>
+<li>DELETE 不会减少表和索引占用的空间；</li>
+<li>TRUNCATE 会将表和索引占用的空间恢复到初始值；</li>
+<li>DROP 会将表和索引占用的空间释放。</li>
+</ul>
+</li>
+<li>耗时
+<ul>
+<li>DELETE &lt; TRUNCATE &lt; DROP</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>★★☆ 视图的作用，以及何时能更新视图</p>
+<ul>
+<li>虚拟表</li>
+<li>简化复杂操作、保证数据安全性</li>
+<li>更改数据格式和表示</li>
+</ul>
+</li>
+<li>
+<p>★☆☆ 理解存储过程、触发器等作用</p>
+<ul>
+<li>存储过程可以看成是对一系列 SQL 操作的批处理
+<ul>
+<li>优点：封装、提高安全性，代码复用，高性能</li>
+<li>赋值用 select into ，每次只能给一个变量赋值，不支持集合的操作</li>
+</ul>
+</li>
+<li>触发器会在某个表执行以下语句时而自动执行：DELETE、INSERT、UPDATE
+<ul>
+<li>必须指定在语句执行之前还是之后自动执行（前：BEFORE，后：AFTER）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="mysql"><a class="header-anchor" href="#mysql">☆</a>MySQL</h3>
+<ol>
+<li>
+<p>MySQL主键</p>
+<ul>
+<li>其值能唯一地标识表中的每一行</li>
+</ul>
+</li>
+<li>
+<p>事务</p>
+<ul>
+<li>用于处理操作量大，复杂度高的数据</li>
+<li>只有InnoDB支持事务</li>
+<li>ACID</li>
+</ul>
+</li>
+</ol>
+<h2 id="其他"><a class="header-anchor" href="#其他">☆</a>其他</h2>
+<ul>
+<li>new和malloc区别</li>
+</ul>
+<ol>
+<li>malloc和new都是在堆上开辟内存的</li>
+<li>malloc只负责开辟内存，没有初始化功能</li>
+<li>new不但开辟内存，还可以进行初始化</li>
+<li>malloc是函数，开辟内存需要传入字节数</li>
+<li>malloc开辟内存失败返回NULL，new开辟内存失败抛出bad_alloc类型的异常</li>
+<li>malloc开辟的内存永远是通过free来释放的；而new单个元素内存，用的是delete，如果new[]数组，用的是delete[]来释放内存</li>
+<li>malloc开辟内存只有一种方式，而new有四种分别是普通的new（内存开辟失败抛出bad_alloc异常）, nothrow版本的new，const new以及定位new</li>
+</ol>
+<ul>
+<li>闭包
+<ul>
+<li>闭包函数：声明一个在函数中的函数</li>
+<li>内部函数总是可以访问其所在的外部函数中声明的参数和变量，即使在其外部函数被返回（寿命终结）了之后。</li>
+<li>特点：
+<ul>
+<li>外部函数访问内部变量成为可能</li>
+<li>局部变量常驻内存</li>
+<li>避免使用全局变量、防止全局变量污染</li>
+<li>会造成内存泄漏</li>
+</ul>
+</li>
+<li>每次外部函数执行的时候，外部函数的引用地址不同，都会重新创建一个新的地址</li>
+</ul>
+</li>
+</ul>
+<h2 id="python"><a class="header-anchor" href="#python">☆</a>python</h2>
+<ul>
+<li>如何在Python中实现多线程？</li>
+</ul>
+<ol>
+<li>
+<p>答： Python有一个multi-threading包，但是如果你想让multi-thread加速你的代码，那么使用它通常不是一个好主意。</p>
+</li>
+<li>
+<p>Python有一个名为Global Interpreter Lock(GIL)的结构。 GIL确保只有一个“线程”可以在任何时候执行。一个线程获取GIL，做一点工作，然后将GIL传递到下一个线程。</p>
+</li>
+<li>
+<p>这种情况很快发生，因此对于人眼看来，您的线程似乎并行执行，但它们实际上只是轮流使用相同的CPU核心。</p>
+</li>
+<li>
+<p>所有这些GIL传递都增加了执行的开销。这意味着如果您想让代码运行得更快，那么使用线程包通常不是一个好主意。</p>
+</li>
+</ol>
+<ul>
+<li>这是什么意思： *args，**kwargs？我们为什么要用呢？</li>
+</ul>
+<p>我们用<code>*args</code>当我们不确定将多少个参数传递给函数时，或者我们是否要将存储的列表或参数元组传递给函数时。<code>**kwargs</code>当我们不知道将多少关键字参数传递给函数时，或者它可以用于将字典的值作为关键字参数传递时使用。标识符args和kwargs是一个约定，你也可以使用<code>*bob</code>和<code>**billy</code>，但这不是明智之举.</p>
+<ul>
+<li>
+<p>计算出从你生日之日起到今天一共过了多少天？（python、go、shell均可）</p>
+</li>
+<li>
+<p>逆序输出偶数的平方 [1,2,3,4,5,6,7,8,9]</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#列表切片</span></span><br><span class="line">list[i:j]</span><br><span class="line">list[i:j:<span class="number">2</span>] <span class="comment">#取i到j，步长为2</span></span><br><span class="line"><span class="comment">#取奇数位</span></span><br><span class="line">list[::<span class="number">2</span>]</span><br><span class="line"><span class="comment">#取偶数位</span></span><br><span class="line">list[<span class="number">1</span>::<span class="number">2</span>]</span><br></pre></td></tr></table></figure>
+<h2 id="面向对象"><a class="header-anchor" href="#面向对象">☆</a>面向对象</h2>
+<h3 id="思想"><a class="header-anchor" href="#思想">☆</a>思想</h3>
+<ol>
+<li>★★★ 面向对象三大特性
+<ul>
+<li>继承：父类指向子类时为向上转型</li>
+<li>封装：减少耦合、减轻维护负担、提高可重用性、减少重构风险</li>
+<li>多态：编译时多态与运行时多态
+<ul>
+<li>运行时多态：继承、覆盖（重写）、向上转型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>★☆☆ 设计原则
+<ul>
+<li>单一责任原则SRP</li>
+<li>开放封闭原则OCP</li>
+<li>李氏替换原则LSP</li>
+<li>接口分离原则ISP</li>
+<li>依赖倒置原则DIP</li>
+</ul>
+</li>
+</ol>
+<h3 id="设计模式"><a class="header-anchor" href="#设计模式">☆</a>设计模式</h3>
+<h2 id="java"><a class="header-anchor" href="#java">☆</a>Java</h2>
+<h3 id="基础-v3"><a class="header-anchor" href="#基础-v3">☆</a>基础</h3>
+<ol>
+<li>基本类型与包装类型
+<ul>
+<li>byte/8 char/16 short/16 int/32 float/32 double/64 long/64 boolean/~</li>
+</ul>
+</li>
+<li>缓存池、new Integer(123) 与 Integer.valueOf(123) 的区别
+<ul>
+<li>Integer 缓存池的大小默认为 -128~127</li>
+</ul>
+</li>
+<li>String不可变的原因、好处
+<ul>
+<li>final 声明、不可被继承</li>
+<li>Java8 中使用 char 存储、Java9 后使用byte数组存储</li>
+<li>可以缓存hash值、String Pool的需要、提高安全性（参数不变）、线程安全</li>
+<li>注意：StringBuffer可变、线程安全，StringBuilder可变、线程不安全</li>
+</ul>
+</li>
+<li>参数传递的方式、类型转换、switch
+<ul>
+<li>值传递、地址值</li>
+<li>不能隐式向下转型、<code>+=</code> 或者 <code>++</code> 运算符会执行隐式类型转换</li>
+<li>switch 不支持 long</li>
+</ul>
+</li>
+<li>Java类的初始化顺序
+<ul>
+<li>静态成员和<code>static块</code> -&gt; 普通成员和非<code>static</code>块 -&gt; 构造函数</li>
+<li>父类静态 -&gt; 子类静态 -&gt; 父类普通 -&gt; 父类构造 -&gt; 子类普通 -&gt; 子类构造</li>
+</ul>
+</li>
+<li><code>equal()</code> 与 <code>==</code> 的区别
+<ul>
+<li>对于基本类型，== 判断两个值是否相等，基本类型没有 equals() 方法</li>
+<li>对于引用类型，== 判断两个变量是否引用同一个对象，而 equals() 判断引用的对象是否等价</li>
+</ul>
+</li>
+<li>在覆盖 equals() 方法时应当总是覆盖 hashCode() 方法，保证等价的两个对象哈希值也相等</li>
+<li>clone()、浅拷贝、深拷贝
+<ul>
+<li>clone() 是 Object 的 protected 方法、需要显式重写</li>
+<li>浅拷贝对象和原始对象的引用类型引用同一个对象</li>
+<li>深拷贝对象和原始对象的引用类型引用不同对象</li>
+<li>clone替代：拷贝构造函数、拷贝工厂</li>
+</ul>
+</li>
+<li>反射的优缺点
+<ul>
+<li>定义：允许运行中的 Java 程序获取自身的信息，并且可以操作类或对象的内部属性</li>
+<li>优点：可扩展性、类浏览器和可视化开发环境、调试器和测试工具</li>
+<li>缺点：性能开销高、安全限制、内部暴露</li>
+</ul>
+</li>
+<li>Java与c++的区别
+<ul>
+<li>Java面向对象，c++兼容c、可以面向过程</li>
+<li>Java跨平台</li>
+<li>Java无指针、自动垃圾回收</li>
+<li>Java不支持多重继承，c++可以</li>
+<li>Java不支持操作符重载</li>
+<li>c++可以使用goto</li>
+</ul>
+</li>
+<li>泛形相关
+<ul>
+<li>允许在定义类、接口、方法时使用类型形参，在声明变量、创建对象、调用方法时再传入实际类型参数</li>
+<li>好处：编译时检查类型安全、隐式强制转换</li>
+<li>工作方式：通过类型擦除实现</li>
+<li>限定通配符：<? extends T> <? super T> 非限定通配符：<?></li>
+</ul>
+</li>
+</ol>
+<h3 id="容器-集合"><a class="header-anchor" href="#容器-集合">☆</a>容器（集合）</h3>
+<ul>
+<li><a href="https://www.jianshu.com/p/75adf47958a7" target="_blank" rel="noopener">HashMap 相关面试题及其解答</a></li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+      <div>
+        
+          
+        
+      </div>
+
+    
+
+    
+
+    
+      <div>
+        
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Cxsz Zhu</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://www.singlelovely.cn/post/ed6658a4.html" title="面试知识点">http://www.singlelovely.cn/post/ed6658a4.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+          <div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;来评分吧&lt;)</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/5fdb7ae9.html" rel="next" title="linux折腾小记">
+                <i class="fa fa-chevron-left"></i> linux折腾小记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/fe4ef317.html" rel="prev" title="linux常用命令">
+                linux常用命令 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/head.png" alt="Cxsz Zhu">
+            
+              <p class="site-author-name" itemprop="name">Cxsz Zhu</p>
+              <p class="site-description motion-element" itemprop="description"><center class="site-description">跌跌撞撞，仍对世界微笑<br>彷徨失措，依然勇敢前行</center></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">70</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/zyd16888" target="_blank" title="GitHub">GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/cxsz_db" target="_blank" title="Twitter">Twitter</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://weibo.com/u/2846799145" target="_blank" title="Weibo">Weibo</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/zyd16888" target="_blank" title="Zhihu">Zhihu</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:cxsz16888@gmail.com" target="_blank" title="E-Mail">E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-angle-double-right"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://c1oudust.me/" title="Vedfolnir" target="_blank">Vedfolnir</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://thaddeus.ink/" title="THADDEUS" target="_blank">THADDEUS</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.glowwormhouse.com/" title="萤虫屋" target="_blank">萤虫屋</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          <div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("02/21/2018 13:14:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#操作系统"><span class="nav-number">1.</span> <span class="nav-text">☆操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础"><span class="nav-number">1.1.</span> <span class="nav-text">☆基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linux"><span class="nav-number">1.2.</span> <span class="nav-text">☆Linux</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络"><span class="nav-number">2.</span> <span class="nav-text">☆网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础-v2"><span class="nav-number">2.1.</span> <span class="nav-text">☆基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http"><span class="nav-number">2.2.</span> <span class="nav-text">☆HTTP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#socket"><span class="nav-number">2.3.</span> <span class="nav-text">☆Socket</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库"><span class="nav-number">3.</span> <span class="nav-text">☆数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sql"><span class="nav-number">3.1.</span> <span class="nav-text">☆SQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql"><span class="nav-number">3.2.</span> <span class="nav-text">☆MySQL</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">4.</span> <span class="nav-text">☆其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python"><span class="nav-number">5.</span> <span class="nav-text">☆python</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面向对象"><span class="nav-number">6.</span> <span class="nav-text">☆面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#思想"><span class="nav-number">6.1.</span> <span class="nav-text">☆思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计模式"><span class="nav-number">6.2.</span> <span class="nav-text">☆设计模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#java"><span class="nav-number">7.</span> <span class="nav-text">☆Java</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础-v3"><span class="nav-number">7.1.</span> <span class="nav-text">☆基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#容器-集合"><span class="nav-number">7.2.</span> <span class="nav-text">☆容器（集合）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heartbeat"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cxsz Zhu</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">总字数：</span>
+    
+    <span title="总字数">218k</span>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  <div class="footer-custom"><i class="fa fa-bolt"></i> Powered By <a target="_blank" href="https://www.upyun.com/">又拍云</a> &ensp; | &ensp;  <i class="fa fa-clock-o"></i>  <a target="_blank" href="http://www.beian.miit.gov.cn/"> 京ICP备17009244号-2 </a></div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/reading_progress/reading_progress.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="\js\src\av-min.js"></script>
+  
+  
+  <script src="\js\src\Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '8QMj0uOJdczOlxeHKH2i6Spb-gzGzoHsz',
+        appKey: 'AGFEQO5aIXQBAGF5mc5N2tHL',
+        placeholder: 'ヾﾉ≧∀≦)o 来呀！快活呀！ \n 留言时填写邮箱，在收到回复时可以实时提醒哦(ー_ー)!!',
+        avatar:'wavatar',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: true
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 13008,
+    el: 'wpac-rating',
+    color: '7B68EE'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script type="text/javascript">pangu.spacingPage();</script>
+
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
+
+  
+
+  <!-- 打字礼花及震动特效 -->
+<script type="text/javascript" src="https://data.singlelovely.cn/js/activate-power-mode.js"></script>
+<script>
+    POWERMODE.colorful = true; // ture 为启用礼花特效
+    POWERMODE.shake = false; // false 为禁用震动特效
+    document.body.addEventListener('input', POWERMODE);
+</script>
+
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"left","width":300,"height":600},"mobile":{"show":false},"log":false});</script></body>
+</html>
