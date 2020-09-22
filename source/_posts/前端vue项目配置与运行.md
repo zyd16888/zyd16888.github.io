@@ -5,10 +5,13 @@ abbrlink: ead1bac9
 notshow: false
 description: 简单说明一下配置运行过程，及其中的坑
 date: 2020-08-27 08:18:00
-tags:
-categories:
+tags: 
+- 前端
+- vue
+categories: 前端
 password:
-image:
+image: 
+- 'https://data.singlelovely.cn/CoverPicture/ead1bac9.png!CoverPicture'
 photos:
 sticky:
 ---
