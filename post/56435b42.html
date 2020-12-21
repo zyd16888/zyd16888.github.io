@@ -176,7 +176,7 @@
 <meta property="og:site_name" content="CZLisyx-浮生志">
 <meta property="og:description" content="端口映射">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-12-21T05:25:59.539Z">
+<meta property="og:updated_time" content="2020-12-21T05:36:46.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hyper-V虚拟机映射端口到外网">
 <meta name="twitter:description" content="端口映射">
@@ -463,7 +463,7 @@
                 
               
 
-              <time title="创建时间：2020-12-21 13:21:00 / 修改时间：13:25:59" itemprop="dateCreated datePublished" datetime="2020-12-21T13:21:00+08:00">2020-12-21</time>
+              <time title="创建时间：2020-12-21 13:21:00 / 修改时间：13:36:46" itemprop="dateCreated datePublished" datetime="2020-12-21T13:21:00+08:00">2020-12-21</time>
             
 
             
@@ -572,7 +572,7 @@
       
         <p>Hyper-V中创建虚拟机后，可以连接虚拟交换机，通过虚拟交换机连接到物理机</p>
 <p>但虚拟机如果有端口需要对外提供服务时，外部网络只能访问到物理机，无法访问到虚拟交换机的网络</p>
-<p>此时则可以使用<code>[netsh](https://docs.microsoft.com/zh-cn/windows-server/networking/technologies/netsh/netsh)</code>将虚拟机网络端口映射到物理机</p>
+<p>此时则可以使用 <a href="https://docs.microsoft.com/zh-cn/windows-server/networking/technologies/netsh/netsh" target="_blank" rel="noopener">netsh</a> 将虚拟机网络端口映射到物理机</p>
 <p><span id="inline-purple">添加端口转发</span></p>
 <p>比如使用IPv4+Port访问转发到IPv4+Port访问,就使用</p>
 <p>netsh interface portproxy add v4tov4 listenaddress=监听IP listenport=监听端口 connectport=目标端口 connectaddress=目标IP</p>
