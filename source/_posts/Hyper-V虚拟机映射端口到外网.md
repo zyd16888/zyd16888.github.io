@@ -20,7 +20,7 @@ Hyper-V中创建虚拟机后，可以连接虚拟交换机，通过虚拟交换�
 
 但虚拟机如果有端口需要对外提供服务时，外部网络只能访问到物理机，无法访问到虚拟交换机的网络
 
-此时则可以使用`[netsh](https://docs.microsoft.com/zh-cn/windows-server/networking/technologies/netsh/netsh)`将虚拟机网络端口映射到物理机
+此时则可以使用 [netsh](https://docs.microsoft.com/zh-cn/windows-server/networking/technologies/netsh/netsh) 将虚拟机网络端口映射到物理机
 
 <span id="inline-purple">添加端口转发</span>
 
