@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.singlelovely.cn/"/>
-  <updated>2020-12-21T05:36:46.559Z</updated>
+  <updated>2021-01-09T07:58:21.199Z</updated>
   <id>http://www.singlelovely.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>站室改造步骤</title>
+    <link href="http://www.singlelovely.cn/post/cf716142.html"/>
+    <id>http://www.singlelovely.cn/post/cf716142.html</id>
+    <published>2021-01-08T06:00:00.000Z</published>
+    <updated>2021-01-09T07:58:21.199Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="站室传感器点表整理"><a class="header-anchor" href="#站室传感器点表整理">☆</a>站室传感器点表整理</h2><ul><li>首先从原来站室的系统的数据库或者站控中查找该类型的传感器的位置、参数序号、调度号、位号、设备号等相关信息<ul><li>通过IP传输信息的设备，是通过调度号确定设备位置的</li><li>使用485传输数据的设备，是通过报文+位号确定设备位置的</li><li>需要将不同厂商的设备分类整理，以便于后序工作</li></ul></li></ul><p>附：<a href="https://data.singlelovely.cn/down/%E6%97%97%E4%B8%9C%E8%AE%BE%E5%A4%87%E7%82%B9%E8%A1%A8_1231.xlsx" target="_blank" rel="noopener">旗东设备点表</a></p><h2 id="站室智能网关以及串口服务器的安装"><a class="header-anchor" href="#站室智能网关以及串口服务器的安装">☆</a>站室智能网关以及串口服务器的安装</h2><ol><li>确定智能网关的安装位置，以及取电的位置，然后将智能网关安装到合适的位置，并且将数据传输的线路连接。</li></ol><p><img src="https://data.singlelovely.cn/images/20210109144401.png" alt="智能网关安装"></p><ol start="2"><li>将原来旧的串口服务器换为新的串口服务器，将休普温湿度、修普温度、消防、电池这四个传感器的数据线接到串口服务器上，然后将串口服务器的数据传输线接到智能网关上（如485线足够长，可以直接将485线接入网关，而不必加装串口服务器）</li></ol><p><img src="https://data.singlelovely.cn/images/20210109144745.jpg" alt="串口服务器"></p><p>安装串口服务器时，需注意com口顺序及485线序</p><h2 id="站室点表配置"><a class="header-anchor" href="#站室点表配置">☆</a>站室点表配置</h2><p>站室点表需要传入网关中，所以点表配置即为网关配置</p><p>主要涉及的有</p><ul><li>a_bit : 监测点位类型</li><li>硬件配置 : 需要外挂的设备硬件及IP，对应外键为config表中的接口</li><li>服务参数 : 参数序号及读取的命令</li><li>mqtt点表 : 监测点位配置</li><li>主站配置 : 与主站通讯相关配置</li><li>服务启用表 : 选择启用相对应的服务</li></ul><h3 id="修改主站配置表"><a class="header-anchor" href="#修改主站配置表">☆</a>修改主站配置表</h3><p><img src="https://data.singlelovely.cn/images/20210109151109.png" alt="主站配置"></p><p>一般情况需要修改的为设备地址项与IP地址项，设备地址项为主站总召的网关名称，IP地址为主站的mqtt服务器地址</p><h3 id="修改硬件配置表"><a class="header-anchor" href="#修改硬件配置表">☆</a>修改硬件配置表</h3><p><img src="https://data.singlelovely.cn/images/20210109151433.png" alt="硬件配置"></p><p>需要修改的为对方IP与端口号（通过485传输的无需填写），如需增加硬件，则需将硬件接口、波特率、停止位、数据位、校验方式、传感器厂家id与config表中的数据对应</p><h3 id="修改服务参数表"><a class="header-anchor" href="#修改服务参数表">☆</a>修改服务参数表</h3><p><img src="https://data.singlelovely.cn/images/20210109152203.png" alt="服务参数表"></p><p>网关本体1 为配置网关的DNS地址，需要配置为网关地址，格式为：route add default gw <a href="http://xxx.xxx.xxx.xxx" target="_blank" rel="noopener">xxx.xxx.xxx.xxx</a></p><p>网关本体2 为配置网关的ip地址，需要配置为网关地址，格式为：ifconfig eth0:1 <a href="http://xxx.xxx.xxx.xxx" target="_blank" rel="noopener">xxx.xxx.xxx.xxx</a></p><p>eth0:1 为给第一个网口添加一个IP地址，而不是直接修改IP地址，以防止数据库上传错误后无法连接网关</p><ul><li>网关默认IP为：<ul><li>eth0: 192.168.1.177</li><li>eth1: 192.168.2.177</li><li>eth2: 192.168.3.177</li><li>eth3: 192.168.4.177</li></ul></li></ul><p>此处的参数序号，对应mqtt点表中的参数序号，硬件id对应硬件配置中的id</p><p>参数序号一般为一种硬件对应一个，但消防、休普温度等，由于一次485命令最多读取100个点位，实际检测点位较多，则需要对应多个参数序号</p><p>参数序号理论上可以自由指定，但为了统一维护方便，请按照以下定义：</p><p>环境21-40、局放41-60、机器人61-80、机械特性81-100、消防101-120、休普121-140、</p><p>电池141-160、安防主机160-180。</p><p>注：1-20为网关本身预留，如有新增设备类型，从180继续增加。每个类型预留20个设备号。</p><h3 id="修改mqtt点表"><a class="header-anchor" href="#修改mqtt点表">☆</a>修改mqtt点表</h3><p><img src="https://data.singlelovely.cn/images/20210109153430.png" alt="mqtt点表"></p><p>首先需要确定的是点表序号，点表序号为主键，唯一值，为了方便管理，按如下规范定义点表序号：<a href="https://data.singlelovely.cn/down/%E7%82%B9%E8%A1%A8%E5%BA%8F%E5%8F%B7%E5%AE%9A%E4%B9%89.xlsx" target="_blank" rel="noopener">点表序号定义</a></p><p>位置为设备安装位置，此项内容会传输到主站作为设备安装展示，需要与现场对应，建议与主站沟通确定格式</p><p>点类型为 a_bit 表的外键，为区分不同监测传感器的唯一标识，同一厂家、同种设备的点类型为唯一，需要在 a_bit 表中查找确定</p><p>参数序号为服务参数表中参数序号的外键，一般同种设备相同，但消防、修普等可能会有不同，需要注意</p><p><img src="https://data.singlelovely.cn/images/20210109153712.png" alt="mqtt点表2"></p><p>位号为监测点位顺序号：</p><ol><li>通过485线传输数据的，一般为从1开始往后排，最高为100</li><li>通过网线传输数据的，一般为1、2、3、4 这样</li><li>机械特性与局放无位号</li><li>以上规律不具有普适性，需根据现场状况进一步确定</li></ol><p>值、状态，默认为0即可</p><p>模块号和设备号即为整理点表时的调度号</p><p>其他剩余项： 阈值、倍数、精度、越限值，不同的设备填写的数值不同，需要根据实际情况确定</p><h2 id="数据库写入网关"><a class="header-anchor" href="#数据库写入网关">☆</a>数据库写入网关</h2><p>点表配置完成后，需要将点表数据库写入网关</p><p>首先需要将数据库文件重命名为：00-0.0.6.db</p><p>使用ssh或者telnet连接到网关</p><p>在命令行使用 scp 或者 使用图形化软件winSCP 将数据库文件复制到 /ts/db/ 目录下</p><p>命令行下使用 ls -l /ts/db 查看数据库文件修改时间，确定修改文件正确</p><p>命令行下使用 reboot 重启网关，加载配置文件</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hyper-V虚拟机映射端口到外网</title>
